@@ -30,6 +30,37 @@ p{
   float: right;
 }
 
+/* Fonts
+-------------------------------------------------- */
+
+
+@font-face {
+  font-family: 'Frutiger Roman';
+  src: url('fonts/Frutiger_Roman.ttf'); /* IE9 Compat Modes */
+  src: url('fonts/Frutiger_Roman.ttf')  format('truetype'), /* Safari, Android, iOS */
+}
+
+h1{
+  font-family: 'Frutiger Roman';
+  font-weight: bold;
+  size: 40pt;
+  text-transform: uppercase;
+}
+
+h2{
+  font-family: 'Frutiger Roman';
+  font-weight: bold;
+  size: 20pt;
+  text-transform: uppercase;
+}
+
+p{
+  font-family: 'Open Sans';
+  font-weight: normal;
+  size: 13pt;
+  text-align: left;
+}
+
 
 /* CUSTOMIZE THE NAVBAR
 -------------------------------------------------- */
@@ -76,15 +107,16 @@ p{
 }
 
 .icon-header {
-    width: 40px;
     margin-top: 0px;
+    margin-left:0.5rem; 
 }
 
-[class~='icon-header']:last-of-type {
-  margin-right: -1rem;
-  margin-top: 0rem;
-  width: 30px;
-  padding-top:1rem; 
+.icon-header:first-child {
+    margin-left: 1rem;
+}
+
+.fa:hover{
+  color: #fff200;
 }
 
 .navbar-inverse {
@@ -247,7 +279,6 @@ p{
 .block{
   padding: 2rem;
   box-shadow: 1px 1px 3px #343538;
-  border: black solid 1px;
   height: 250px;
   background-color: #f1f2f2;
   overflow: hidden;
@@ -257,6 +288,10 @@ p{
 
 .big{
   height: 530px;
+}
+
+.marketing .blueHard:hover h2{
+  color: #fff200;
 }
 
 .block p{
@@ -334,7 +369,10 @@ p{
 
 .marketing ol li{
   padding-bottom:1.5rem;
-  padding-left: 2rem;
+}
+
+.marketing ol li:first-child{
+      margin-bottom: 1rem;
 }
 
 .marketing ol li:before{
@@ -345,13 +383,8 @@ p{
   counter-increment: section;
   content: counter(section);
   position: absolute;
-  left:4rem;
+  left:2rem;
 }
-
-
-
-
-
 
 /* colors 
 -----------------------------*/
@@ -538,6 +571,10 @@ footer p{
   margin-left: auto;
   margin-right: auto;
   padding-bottom:2rem; 
+}
+
+footer li:hover{
+  color: #fff200;
 }
 
 
