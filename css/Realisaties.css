@@ -1,0 +1,33 @@
+.collorYellow{
+  color: #fff200;
+}
+
+
+.animated img{
+  z-index: -1;
+  margin-top: 0rem;
+  width: 100%;
+  height: 100%;
+}
+
+.animated:hover h2{
+  margin-top: -53rem;
+}
+
+.animated h2{
+  margin-top: -4rem;
+  color: white;
+}
+
+.glyphicon-chevron-right, .glyphicon-chevron-up {
+    position: absolute;
+    right: 15px;
+    top: 497px;
+}
+
+#slideCarousel h2{
+  color: white;
+    padding-left: 2rem;
+    padding-top: 2rem;
+    margin-bottom: 0rem;
+}
