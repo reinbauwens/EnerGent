@@ -1,0 +1,27 @@
+{# extend the parent tpl #}
+{% extends 'layout.twig' %}
+
+{# set the pagetitle in the parent tpl #}
+{% set pageTitle = 'Login' %}
+
+{# Page specific css #}
+{% block pageCss %}
+<link rel="stylesheet" media="screen" href="{{ app.request.baseUrl }}/css/login.css" />
+{% endblock %}
+
+{% block pageContent %}
+{# Page specific content #}
+<div class="login">
+  	<form action="{{ path('Auth.Login') }}" method="post" {{ form_enctype(loginform) }} novalidate="novalidate">{# disable HTML5 formchecking #}
+		<p>{{ form_widget(loginform.username, { 'attr' : { 'class': 'form-control','placeholder':'User Name' }} ) }}</p>
+		<p>{{ form_widget(loginform.password, { 'attr' : { 'class': 'form-control','placeholder':'Password' }} ) }}</p>
+		<h2 id='error' class="text-danger">{{ form_errors(loginform.password)|striptags }}</h2><p class="submit"><input type="submit" name="commit" value="Login"></p>
+		<input type="hidden" name="moduleAction" id="moduleAction" value="login" />
+		{{ form_widget(loginform._token) }}
+	</form>
+	
+</div>
+{% endblock %}
+{% block pageScripts %}
+<script src="{{ app.request.baseUrl }}/js/auth.js"></script>
+{% endblock %}

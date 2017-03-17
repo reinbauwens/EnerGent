@@ -1,0 +1,24 @@
+{
+	"require": {
+		"php": "^5.2|^7.0",
+			"silex/silex": "~1.1",
+		"twig/twig": "~1.0",
+    	"symfony/twig-bridge": "~2.1",
+		"doctrine/dbal": "~2.1",
+		"knplabs/repository-service-provider": "dev-master",
+		"symfony/form": "~2.1",
+		"symfony/validator": "~2.1",
+        	"symfony/config": "~2.1",
+        	"symfony/translation": "~2.1",
+        	"symfony/security-csrf": "~2.1",
+    	"monolog/monolog": "^1.4"
+	},
+	"require-dev": {
+    	"heroku/heroku-buildpack-php": "*"
+  	},
+	"autoload": {
+		"psr-0": {
+			"RNR": "src/"
+		}
+	}
+}

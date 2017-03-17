@@ -1,0 +1,162 @@
+{% extends 'layout.twig' %}
+{% set pageTitle = 'Admin' %}
+
+{% block pageCss %}
+	<link rel="stylesheet" media="screen" href="{{ app.request.baseUrl }}/css/Home.css" />
+{% endblock %}
+{% block pageContent %}
+      <div class="container marketing">
+
+        <!-- START THE FEATURETTES -->
+
+        <div class="row featurette">
+          <div class="col-md-8">
+            <div class="block blueHard ">
+              <h1 class="featurette-heading">Wat is</h1>
+              <h1 class="featurette-heading">zonnestad</h1>
+              <p class="lead" id="bigteksthome">Met ‘Gent zonnestad’ voert de energiecoöperatie EnerGent campagne voor meer zonnepanelen in Gent. De campagne is gebaseerd op een groepsaankoop met vooraf bepaalde prijzen. </p>
+              <span class="glyphicon glyphicon-chevron-right glyphicon-white" aria-hidden="true"></span>
+            </div>
+          </div>
+          
+          <div class="col-md-4">
+              <div class="block">
+              <h2 class="featurette-heading center">Zonnestad in cijfers</h2>
+              <span class="glyphicon glyphicon-chevron-right glyphicon-grey" aria-hidden="true"></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="row featurette">
+          <div class="col-md-4">
+            <div class="block blueHard big">
+              <h1 class="featurette-heading">Hoe werkt het?</h1>
+                <ol> 
+                  <li>Je meldt je aan. </li>
+                  <li>Binnen de week krijg je van ons een advies op maat, met een indicatieve prijs.</li> 
+                  <li>Ga je akkoord dan komt de aannemer ter plaatse voor een detail - offerte. </li>
+                  <li>Ga je hiermee akkoord, dan liggen er enkele weken later zonnepanelen op je dak.</li>
+                  <li>Daarna volgt nog een inspectiebezoek & advies voor opvolging.</li>
+                </ol>
+                <div class="textWrapper">
+                  <a class="btn btn-lg btn-primary buttonWhite" href="HoeWerktHet.html" role="button">Ik heb interesse</a>
+                </div>
+              </div>
+          </div>
+          <div class="col-md-4">
+            <div class="block animated">
+              <img class="featurette-image img-responsive center-block" src="{{ app.request.baseUrl }}/img/Zonnestad_EigenWoning.png" alt="Generic placeholder image">
+              <h2 class="featurette-heading">Eigen woningen</h2>
+              <p class="lead">Je droomt misschien al jaren van zonnepanelen en nu je dak gerenoveerd is of binnenkort zal worden, zet je de stap. Over enkele weken kunnen de zonnepanelen er liggen en bespaar je meteen op je energierekening.</p>
+              <span class="glyphicon glyphicon-chevron-up arrowRightBottom glyphicon-white" aria-hidden="true"></span>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="block animated">
+              <img class="featurette-image img-responsive center-block" src="{{ app.request.baseUrl }}/img/Zonnestad_Appartement.png" alt="Generic placeholder image">
+              <h2 class="featurette-heading">Appartementen</h2>
+              <p>Appartementen hebben vaak ideale daken, maar de eigendomsstructuur van het gebouw ligt moeilijker. Wij helpen mee in een plan van aanpak (RVB, syndicus, etc.) en het opstellen van de meest geschikte contracttypes.</p>
+              <span class="glyphicon glyphicon-chevron-up arrowRightBottom glyphicon-white" aria-hidden="true"></span>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="block animated">
+              <img class="featurette-image img-responsive center-block" src="{{ app.request.baseUrl }}/img/Zonnestad_Huurwoning.png" alt="Generic placeholder image">
+              <h2 class="featurette-heading">Huurwoningen</h2>
+              <p>Huurder of verhuurder? Ook hier bestaan er verschillende pistes met voordelen voor beide partijen. Wij helpen mee in de berekeningen en het opstellen van de meest geschikte contracttypes voor de lokale situatie. </p>
+              <span class="glyphicon glyphicon-chevron-up arrowRightBottom glyphicon-white" aria-hidden="true"></span>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="block animated">
+              <img class="featurette-image img-responsive center-block" src="{{ app.request.baseUrl }}/img/Zonnestad_GroteDaken.png" alt="Generic placeholder image">
+              <h2 class="featurette-heading">Grotere daken</h2>
+              <p>Ook grotere daken lenen zich tot heel interessante investeringen. Ofwel investeer je zelf, ofwel investeert EnerGent. Voor dit laatste zijn we op zoek naar daken die voldoende groot zijn en waar eveneens voldoende energie ter plaatse wordt verbruikt.  </p>
+              <span class="glyphicon glyphicon-chevron-up arrowRightBottom glyphicon-white" aria-hidden="true"></span>
+            </div>
+          </div>  
+        </div>
+
+        <div class="row featurette">
+          <div class="col-md-4">
+            <div class="block animated yellow backgroundimage1">
+              <img class="featurette-image img-responsive center-block" src="{{ app.request.baseUrl }}/img/Empty.png" alt="Generic placeholder image">
+              <h2 class="featurette-heading">Installaties</h2>
+              <ul>
+                <li>Prijs installatie: 1.095 EUR/kWp tot 1.385 EUR/kWp (excl. btw), naargelang dakeigenschappen</li>
+                <li>Tien jaar garantie op omvormers</li>
+                <li>Zonnepanelen met een hoge eco- en sociale score.</li>
+              </ul>
+              <span class="glyphicon glyphicon-chevron-up arrowRightBottom glyphicon-grey" aria-hidden="true"></span>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <a href="Realisaties.html">
+              <div class="block animated yellow backgroundimage2">
+                <img class="featurette-image img-responsive center-block" src="{{ app.request.baseUrl }}/img/Empty.png" alt="Generic placeholder image">
+                <h2 class="featurette-heading">Realisaties</h2>
+                <p>Ondertussen werden al X installaties gerealiseerd en zijn er > Y op komst. </p>
+                <span class="glyphicon glyphicon-chevron-up arrowRightBottom glyphicon-grey" aria-hidden="true"></span>
+              </div>
+            </a>
+          </div>
+          <div class="col-md-4">
+            <div class="block">
+              <h1 class="featurette-heading">Help mee</h1>
+              <p>Help ons het zonnepotentieel van Gent waar te maken. Door zelf zonnepanelen te plaatsen of door vrienden en buren te wijzen op de campagne. Ontketen een echte zonnedynamiek in je straat. Ideeën? Contacteer ons.</p>
+              <span class="glyphicon glyphicon-chevron-right arrowRightBottom glyphicon-grey" aria-hidden="true"></span>
+            </div>
+          </div>
+        </div>
+
+      
+        <div id="slideCarousel" class="carousel slide car2" >
+
+          <!-- Carousel items -->
+          <div class="carousel-inner">
+            <div class="item active">
+              <div class="col-sm-10 col-md-offset-1 row carousel-parnters">
+                <div class="col-sm-3"><a class="thumbnail"><img class="featurette-image img-responsive center-block" src="{{ app.request.baseUrl }}/img/natuurpunt.png" alt="Generic placeholder image"></a>
+                </div>
+                <div class="col-sm-3"><a class="thumbnail"><img class="featurette-image img-responsive center-block" src="{{ app.request.baseUrl }}/img/gmf.png" alt="Generic placeholder image"></a>
+                </div>
+                <div class="col-sm-3"><a class="thumbnail"><img class="featurette-image img-responsive center-block" data-src="holder.js/200x200/auto" alt="Generic placeholder image"></a>
+                </div>
+                <div class="col-sm-3"><a class="thumbnail"><img class="featurette-image img-responsive center-block" data-src="holder.js/200x200/auto" alt="Generic placeholder image"></a>
+                </div>
+              </div>
+              <!--/row-->
+            </div>
+            <!--/item-->
+            <div class="item">
+              <div class="col-sm-10 col-md-offset-1 row carousel-parnters">
+                <div class="col-sm-3"><a class="thumbnail"><img class="featurette-image img-responsive center-block" src="{{ app.request.baseUrl }}/img/natuurpunt.png" alt="Generic placeholder image"></a>
+                </div>
+                <div class="col-sm-3"><a class="thumbnail"><img class="featurette-image img-responsive center-block" src="{{ app.request.baseUrl }}/img/gmf.png" alt="Generic placeholder image"></a>
+                </div>
+                <div class="col-sm-3"><a class="thumbnail"><img class="featurette-image img-responsive center-block" data-src="holder.js/200x200/auto" alt="Generic placeholder image"></a>
+                </div>
+                <div class="col-sm-3"><a class="thumbnail"><img class="featurette-image img-responsive center-block" data-src="holder.js/200x200/auto" alt="Generic placeholder image"></a>
+                </div>
+              </div>
+              <!--/row-->
+            </div>
+            <!--/item-->
+          </div>
+          <!--/carousel-inner-->
+          <a class="left carousel-control" href="#slideCarousel" role="button" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+
+          <a class="right carousel-control" href="#slideCarousel" role="button" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+        </div>
+        <!--/myCarousel-->
+    </div>
+{% endblock %}
+{% block pageScripts %}
+	<script src="{{ app.request.baseUrl }}/js/Home.js"></script>
+{% endblock %}

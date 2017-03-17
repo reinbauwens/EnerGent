@@ -1,0 +1,41 @@
+{% set firstPage = 1 %}
+{% set prevPage = curPage - 1 %}
+{% set nextPage = curPage + 1 %}
+{% set lastaPage = numPages %}
+
+{% if numPages > 1 %}
+<div class="text-center">
+    <ul class="pagination pagination-sm">
+
+        {% if curPage > 1 %}
+            <li class="previousPage"><a href="{{ app.request.baseUrl }}{{ requestParams|merge({ 'p': prevPage })|querystring }}"
+data-p="{{ prevPage }}">Anterior</a></li>
+        {% else %}
+            <li class="previousPage disabled"><span>Anterior</span></li>
+        {% endif %}
+
+        {% for page in pagination %}
+        <li {% if page == curPage %} class="active"{% endif %}{% if page == '..' %} class="disabled"{% endif %}>
+            {% if page == curPage %}
+                <span>{{ page }}</span>
+            {% elseif page == '..' %}
+                <span>…</span>
+            {% else %}
+                <a href="{{ app.request.baseUrl }}{{ requestParams|merge({ 'p': page })|querystring }}"
+data-p="{{ page }}">{{ page }}</a>
+            {% endif %}
+        </li>
+        {% endfor %}
+
+        {% if curPage < numPages %}
+            <li class="nextPage"><a href="{{ app.request.baseUrl }}{{ requestParams|merge({ 'p': nextPage })|querystring }}"
+data-p="{{ nextPage }}">Siguiente</a></li>
+        {% else %}
+            <li class="nextPage disabled"><span>Siguiente</span></li>
+        {% endif %}
+
+    </ul>
+
+    
+</div>
+{% endif %}

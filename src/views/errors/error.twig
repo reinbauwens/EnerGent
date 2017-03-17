@@ -1,0 +1,31 @@
+{# extend the parent tpl #}
+{% extends 'layout.twig' %}
+
+{# set the pagetitle in the parent tpl #}
+{% set pageTitle = pageTitle %}
+
+{# Page specific css #}
+{% block pageCss %}
+	<link rel="stylesheet" media="screen" href="{{ app.request.baseUrl }}/css/errorStyle.css" />
+{% endblock %}
+
+{% block pageContent %}
+	<div class = "errorMessage">
+		<div class="error">
+		</div>
+
+		<h2>{{ errorTitle }}</h2>
+		</br>
+		<h3>{{ msgOne }}</h3>
+		</br>
+		<h4>{{ msgTwo }}</h4>
+		
+		{% if errorMsg %}
+			</br>
+			<p>{{ error }}</p>
+		{% endif %}
+	</div>
+{% endblock %}
+{% block pageScripts %}
+	<script type="text/javascript" src="{{ app.request.baseUrl }}/js/errorScript.js" ></script>
+{% endblock %}

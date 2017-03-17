@@ -1,0 +1,793 @@
+/* GLOBAL STYLES
+-------------------------------------------------- */
+/* Padding below the footer and lighter body text */
+
+body {
+  color: #636464;
+  background-color: #efefef;
+  counter-reset: section;
+}
+
+a, a:focus, a:hover {
+  color: inherit; /* blue colors for links too */
+  text-decoration: inherit; /* no underline */
+}
+
+p{
+  text-align: justify;
+  font-size: 13px;
+}
+
+
+#navbar{
+  float: right;
+}
+
+.cWrapper{
+  max-width: 1048px;
+  margin: auto;
+}
+
+/* Fonts
+-------------------------------------------------- */
+
+
+@font-face {
+  font-family: 'Frutiger Roman';
+  src: url('fonts/Frutiger_Roman.ttf'); /* IE9 Compat Modes */
+  src: url('fonts/Frutiger_Roman.ttf')  format('truetype'), /* Safari, Android, iOS */
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url('fonts/OpenSans-Regular.ttf'); /* IE9 Compat Modes */
+  src: url('fonts/OpenSans-Regular.ttf')  format('truetype'), /* Safari, Android, iOS */
+}
+
+@font-face {
+  font-family: 'Frutiger Roman';
+  src: url('fonts/Frutiger_Roman.ttf'); /* IE9 Compat Modes */
+  src: url('fonts/Frutiger_Roman.ttf')  format('truetype'), /* Safari, Android, iOS */
+}
+
+h1{
+  font-family: 'Frutiger Roman';
+  font-weight: bold;
+  size: 40pt;
+  text-transform: uppercase;
+}
+
+h2{
+  font-family: 'Frutiger Roman';
+  font-weight: bold;
+  size: 20pt;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+p{
+  font-family: 'Open Sans';
+  font-weight: normal;
+  size: 13pt;
+  text-align: left;
+}
+
+
+/* CUSTOMIZE THE NAVBAR
+-------------------------------------------------- */
+
+/* Special class on .container surrounding .navbar, used for positioning it into place. */
+.navbar-wrapper {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 20;
+
+}
+
+/* Flip around the padding for proper display in narrow viewports */
+.navbar-wrapper > .container {
+  padding-right: 0;
+  padding-left: 0;
+}
+.navbar-wrapper .navbar {
+  padding-right: 15px;
+  padding-left: 15px;
+  
+}
+.navbar-wrapper .navbar .container {
+  width: 1141;
+  text-align: right;
+}
+
+.fullsize {
+    width: 100%;
+    height: 100%;
+}
+
+
+
+.navbar-nav>li>a{
+  font: "frutiger light";
+  color: #f1f2f2;
+  text-shadow: 1px  1px #343538;
+  padding:0px 5px 0px 0px;
+  text-transform: uppercase;
+  
+}
+
+.icon-header {
+    margin-top: 0px;
+    margin-left:0.5rem; 
+}
+
+.icon-header:first-child {
+    margin-left: 1rem;
+}
+
+.fa:hover{
+  color: #fff200;
+}
+
+.navbar-inverse {
+    background-color:none;
+    border-color: none; 
+}
+
+.nav .open>a, .nav .open>a:focus, .nav .open>a:hover{
+    text-decoration: none;
+    background-color:transparent;
+}
+.nav>li>a:focus, .nav>li>a:hover {
+    text-decoration: none;
+    background-color: transparent;
+}
+
+.glyphicon-envelope{
+  font-size: 2.5rem;
+}
+
+.icon-header a {
+    padding-top: none;
+    padding-bottom: none;
+    line-height: none;
+}
+
+.navbar ul{
+  margin-top:2rem; 
+}
+
+.nav>li>a>img {
+    margin-top: -0.5rem;
+}
+
+.nav li{
+  display: inline-block;
+}
+
+.glyphicon {
+    top: 6px;
+  }
+
+@media (min-width: 768px){
+  .glyphicon {
+    top: -9px;
+  }
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+    background-color: transparent;
+    border: none;
+    margin: 0;
+    padding: 0;
+ }
+
+.dropdown-menu li{
+  background-color: rgba(63,130,193,0.75);
+  border-bottom: 1px solid white;
+  clear: both;
+  text-align: right;
+  width: 100%;
+}
+
+.dropdown-menu li a{
+  color: #f1f2f2;
+  text-transform: uppercase;
+}
+
+.dropdown-menu li a:hover{
+  color: #fff200;
+  background-color: rgba(63,130,193,0.75);
+  padding: 4px 20px;
+}
+
+
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+/* Carousel base class */
+.carousel {
+  height: 400px;
+  margin-bottom: 30px;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  z-index: 10;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel .item {
+  height: 400px;
+  background-color: #777;
+}
+.carousel-inner > .item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 400px;
+}
+
+.carousel-parnters{
+  margin-top: 2rem;
+}
+
+.carousel-indicators .active {
+    background-color: #fff200;
+    border-color: #fff200;
+}
+
+.carousel-indicators li{
+  background-color: #efefef;
+  border-color: #efefef;
+}
+
+
+/* Blocks CONTENT
+-------------------------------------------------- */
+
+/* Center align the text within the three columns below the carousel */
+.marketing .col-lg-4 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+.marketing h2 {
+  text-transform: uppercase;
+  font-size: 3rem;
+}
+
+.animated h2{
+  text-align: center;
+}
+
+.marketing p{
+  text-align: justify;
+  font-size: 2rem;
+}
+.marketing .col-lg-4 p {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.col-md-6{
+  background-color: #d3d3d3;
+  height: 25rem;
+}
+
+.col-md-5{
+  background-color: #C0C0C0;
+  height: 25rem;
+  float: right;
+}
+
+.row{
+  overflow: hidden;
+}
+
+.block{
+  padding: 2rem;
+  box-shadow: 1px 1px 3px rgba(0,0,0,0.25);
+  height: 250px;
+  background-color: #f1f2f2;
+  overflow: hidden;
+  margin-bottom: 30px; 
+  position: relative;
+}
+
+.big{
+  height: 530px;
+}
+
+.medium{
+  height: 330px;
+}
+
+.small{
+  height: 70px;
+}
+
+.marketing .blueHard:hover h2{
+  color: #fff200;
+}
+
+.block p{
+  padding-right: 4rem;
+}
+
+.animated{
+  padding: 0rem;
+}
+
+.animated p, .animated ul{
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    color: #f1f2f2;
+    height: 100%;
+    padding: 2rem;
+    position: relative;
+    background-color: rgba(63,130,193,0.75);
+}
+
+.animated:hover p, .animated ul{
+  margin-top: 0rem;
+  z-index: 15;
+}
+
+.animated li{
+  font-size: 13pt;
+}
+
+.animated:hover .glyphicon-grey{
+  color: #3f82c1;
+}
+
+.animated:hover .glyphicon-white{
+  color: #fff200;
+}
+
+.animated h2{
+    background-color: rgba(63,130,193,0.75);
+    margin: 0rem;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    padding-top:2.5rem;
+    padding-bottom:0.5rem;  
+    position: relative;
+}
+
+.animated p{
+    padding-top: 1rem;
+
+}
+
+.yellow h2, .yellow p, .yellow ul{
+  background-color: rgba(255,242,00,0.75);
+  color: #636464;
+}
+
+.animated ul{
+  padding-left:5rem;
+}
+
+
+.animated:hover h2{
+  margin-top:-20rem;
+}
+
+.animated img{
+  z-index: -1;
+  margin-top:5rem;
+  width: 300px;
+  height: 150px;
+}
+
+.marketing ol{
+  font-size: 2rem;
+  list-style: none;
+}
+
+.marketing ol li{
+  padding-bottom:1.5rem;
+}
+
+.marketing ol li:first-child{
+      margin-bottom: 1rem;
+}
+
+.marketing ol li:before{
+  background-color: white;
+  color: #3f82c1;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  margin-right: 1rem;
+  counter-increment: section;
+  content: counter(section);
+  position: absolute;
+  left:2rem;
+}
+
+.center{
+  text-align: center;
+}
+
+.backgroundimage1{
+  background-image: url("../img/Zonnestad_Installatie.png");
+  background-size:     cover;                     
+  background-repeat:   no-repeat;
+  background-position: center center;  
+}
+
+.backgroundimage2{
+  background-image: url("../img/Zonnestad_Realisaties.png");
+  background-size:     cover;                      
+  background-repeat:   no-repeat;
+  background-position: center center;  
+}
+
+
+/* colors 
+-----------------------------*/
+.blueHard{
+  background-color: #3f82c1;
+  color: white;
+}
+
+.yellow{
+  background-color: FFF200;
+}
+.lightBlue{
+  background-color: rgba(63,130,193,0.75);
+  color: white; 
+}
+
+.whiteGrey{
+  background-color: rgba(63,130,193,0.25);
+  
+}
+
+
+
+/* buttons & readmores
+-----------------------------*/
+
+.buttonBlue{
+  background-color: transparent;
+  border: #3f82c1 2px solid;
+  color: #3f82c1;
+  text-align: center;
+  font: 18pt, sans, semibold; 
+  text-transform: uppercase;
+  background-color:#f1f2f2; 
+}
+
+.buttonBlue:hover{
+  background-color :#3f82c1;
+  color : #f1f2f2;
+}
+
+.buttonWhite{
+  background-color: transparent;
+  border: #f1f2f2 2px solid;
+  color: #f1f2f2;
+  text-align: center;
+  font: 18pt, sans, semibold; 
+  text-transform: uppercase;
+}
+
+.buttonWhite:hover{
+  background-color :#fff200;
+  color : #3f82c1;
+  border-color: #3f82c1;
+}
+
+.textWrapper{
+  text-align: center;
+  width: 100%;
+}
+
+.glyphicon-grey{
+  font-size: 20pt;
+  color: #636464;
+  text-align: center;
+}
+
+.glyphicon-grey:hover{
+  color: #3f82c1;
+}
+
+.glyphicon-white{
+  font-size: 20pt;
+  color: #f1f2f2;
+  text-align: center;
+}
+
+.glyphicon-white:hover{
+  color: #fff200;
+}
+
+.glyphicon-chevron-right, .glyphicon-chevron-up{
+  position: absolute;
+  right: 15px;
+  top: 213px;
+  z-index: 1000;
+}
+/* Featurettes
+------------------------- */
+
+.featurette-divider {
+  margin: 80px 0; /* Space out the Bootstrap <hr> more */
+}
+
+/* Thin out the marketing headings */
+.featurette-heading {
+  line-height: 1;
+}
+
+
+
+.icon{
+  width: 30px;
+  height: 30px;
+  float: left;
+  margin-right: 1rem;
+  margin-top: 1rem;
+}
+
+
+.col-md-4 button{
+  float: right;
+}
+
+  .car2 .item{
+    height: inherit;
+        background-color: #777;
+  }
+
+  .car2{
+    height: inherit;
+        background-color: #777;
+  }
+
+/*footer
+------------------------*/
+
+footer{
+  color: white;
+  background-color: #606060;
+  padding-bottom: 2rem;
+  text-transform: uppercase;
+}
+
+footer ul{
+  padding-left:0px;
+}
+
+footer p{
+  margin-bottom: 0rem;
+  text-align: center;
+}
+
+.footer{
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom:2rem; 
+}
+
+footer li:hover{
+  color: #fff200;
+}
+
+
+
+footer ul{
+  margin-top: 2rem;
+  list-style-type: none;
+}
+
+footer h2{
+  text-align: left;
+}
+
+#PReset{
+  padding: 0px;
+}
+
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+footer{
+  padding-top:1rem; 
+  text-align: center;
+}
+.marketing ol, .marketing li {
+    font-size: 4vw;
+}
+
+
+
+.marketing p {
+    font-size: 1.1rem;
+    text-align: left;
+}
+
+.marketing h2{
+    font-size: 2rem;
+    margin-top: 2.5rem;
+}
+
+.animated:hover h2 {
+    margin-top: -18rem;
+}
+
+@media (min-width: 335px) {
+  .marketing h2{
+    margin-top: 0rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1rem;
+  }
+
+  .animated:hover h2 {
+      margin-top: -20rem;
+  }
+
+  .marketing ol, .marketing li {
+    font-size: 4vw;
+  }
+
+
+  .marketing p {
+      font-size: 3.3vw;
+      text-align: left;
+  }
+}
+
+@media (min-width: 431px) {
+  .marketing h2{
+      font-size: 2.3rem;
+  }
+  .marketing p {
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 452px) {
+  footer .col-md-3{
+    width: 50%;
+    float: left;
+    height: 20rem;
+  }
+
+  footer h2{
+    font-size: 2vw;
+  }
+
+  footer{
+    text-align: left;
+  }
+}
+
+@media (min-width: 541px) {
+  .marketing ol, .marketing li {
+    font-size: 2.7vw;
+  }
+
+  footer h2{
+    font-size: 3rem;
+  }    
+}
+
+@media (min-width: 860px){
+  .cWrapper .col-md-4{
+    float: left;
+    width: 33%;
+  }
+    .cWrapper .col-md-8{
+    float: left;
+    width: 66%;
+  }
+  .marketing ol, .marketing p, .marketing li  {
+    font-size: 1.3vw;
+  }
+
+  .marketing h2 {
+      font-size: 2rem;
+      margin-top: 0.2rem;
+  }
+
+  .marketing h1{
+    font-size: 30ptn;
+  }
+
+  .container {
+      width: 95%;
+      margin-left: 2.5%;
+      margin-right: 2.5%;
+  }
+
+    .animated img {
+    margin-top: 3.5rem;
+  }
+
+  .animated:hover h2 {
+    margin-top: -19rem;
+  }
+
+  .col-md-offset-1 {
+    margin-left: 8.33333333%;
+  }
+
+  .col-sm-3{
+    float: left;
+    width: 25%;
+  }
+
+  .col-sm-10 {
+    width: 83.33333333%;
+  }
+
+  #bigteksthome{
+    font-size:1.5rem;
+  }
+
+  .marketing h2{
+    margin-top: 1.5rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1rem;
+  }
+}
+
+@media (min-width: 768px) {
+  /* Navbar positioning foo */
+  .navbar-wrapper {
+    margin-top: 0px;
+  }
+  .navbar-wrapper .container {
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+  .navbar-wrapper .navbar {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  /* The navbar becomes detached from the top, so we round the corners */
+  .navbar-wrapper .navbar {
+    border-radius: 4px;
+  }
+
+  /* Bump up size of carousel content */
+  .carousel-caption p {
+    margin-bottom: 20px;
+    line-height: 1.4;
+  }
+}
+
+@media (min-width: 920px){
+  footer li{
+    font-size:14px;
+  }
+
+  footer .col-md-3{
+    width: 25%;
+    float: left;
+  }
+
+  h1 {
+    size: 40pt;
+  }
+
+  .cWrapper .col-md-8{
+    float: left;
+    width: 66%;
+  }
+  .marketing ol, .marketing p, .marketing li  {
+    font-size: 1.3rem;
+  }
+}

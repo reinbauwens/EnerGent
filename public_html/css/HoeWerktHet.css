@@ -1,0 +1,16 @@
+.container .dropdown-menu {
+    display: block;
+    background-color: transparent;
+    border: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: none;
+    left: none;
+    z-index: none;
+    display: none;
+    float: left;
+    min-width: 160px;
+    padding: 5px 0;
+    margin: 2px 0 0;
+ }

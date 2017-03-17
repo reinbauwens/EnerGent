@@ -1,0 +1,84 @@
+{% extends 'layout.twig' %}
+{% set pageTitle = 'Admin' %}
+
+{% block pageCss %}
+	<link rel="stylesheet" media="screen" href="{{ app.request.baseUrl }}/css/HelpMee.css" />
+{% endblock %}
+{% block pageContent %}
+       <!-- Marketing messaging and featurettes
+    ================================================== -->
+    <!-- Wrap the rest of the page in another container to center all the content. -->
+    <div class="cWrapper">
+      <div class="container marketing">
+        <!-- START THE FEATURETTES -->
+        <div class="row featurette">
+          <div class="col-md-12">
+            <div class="block small blueHard">
+              <p>
+                Gent heeft een enorm zonnepotentieel, dat tot nu toe weinig of niet gebruikt wordt! Lege daken liggen er nutteloos bij. Energent wil daar samen met jou verandering in brengen! Wil jij Gent mee klimaatneutraal maken en terwijl ook financieel voordeel doen? Lees dan zeker verder!
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="row featurette">
+          <div class="col-md-4">
+            <div class="block lightBlue">
+            <h1>LEG ZELF ZONNEPANELEN</h1>
+            </div>
+          </div>
+          <div class="col-md-8  ">
+            <div class="block whiteGrey">
+            <h2>HEB JE EEN ONGEBRUIKT DAK? BEN JE HUURDER, VERHUURDER OF BEWONER VAN EEN APPARTEMENT?</h2>
+            <p>Ook voor jou hebben we interessante mogeijkheden. Indien interesse, neem dan zeker vrijblijvend contact op.</p>
+            <a class="btn btn-lg btn-primary buttonWhite" href="#" role="button">Ik heb interesse</a>
+            </div>
+          </div>
+        </div>
+        <div class="row featurette">
+          <div class="col-md-8 ">
+            <div class="block medium whiteGrey">
+            <p>Argumenten nodig? Dit zijn onze troeven: </p>
+            <ul>
+              <li>Zonnestad heeft gunstige prijzen onderhandeld met de installateur</li>
+              <li>Kwalitatieve materialen en toestellen , waaronder 10 jaar garantie op de omvormer, zie installatie (link naar installatiepagina)</li>
+              <li>Een vrijblijvende gedetailleerde raming op basis van jouw situatie. </li>
+              <li>Een snelle afhandeling, sneller dan groepsaankopen</li>
+              <li>Een hoge eco- en sociale score van de TRINA panelen, zie de solar scoreboard (link naar deze pagina)</li>
+              <li>Kwaliteitscontrole na installatie door EnerGent (meer dan de wettelijke verplichting)</li>
+              <li>Ook hulp in contracten voor de minder evidente doelgroepen (bewoners van appartementen, huurders, verhuurders)</li>
+              <li>De organisatie gaat uit van EnerGent, dus het initiatief is door en voor Gentse burgers.</li>
+            </ul>
+            <p>Heb je met succes jouw buren kunnen overtuigen? Indien jullie in dezelfde straat wonen en jullie houden er ongeveer dezelfde timing op na voor de installatie, dan maak je aanspraak op de burenkorting! </p>
+            </div>
+          </div>
+          <div class="col-md-4 ">
+            <div class="block medium lightBlue">
+            <h1>OVERTUIG BUREN, VRIENDEN OF KENNISSEN</h1>
+            </div>
+          </div>
+        </div>
+        <div class="row featurette">
+          <div class="col-md-4">
+            <div class="block lightBlue">
+            <h1>Vrijwilliger worden</h1>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="block whiteGrey" >
+            <h2>Brainstorm samen met ons over de zonnecampagne </h2>
+            <p>Een campagne als Gent zonnestad is een campagne die regelmatig nieuwe impulsen nodig heeft. Kom gerust mee nadenken voor nieuwe ideëen, werkwijzes, etc. Contacteer ons op: info@energent.be.</p>
+            </div>
+          </div>
+          <div class="col-md-4 ">
+            <div class="block whiteGrey">
+            <h2>Ga mee op zoek naar naar grote daken</h2>
+            <p>...zodat we samen van Gent echt een zonnestad kunnen maken! We zoeken grote daken (> 50 m2) waar ter plaatse een voldoende hoog elektriciteitsverbruik is.</p>
+            </div>
+          </div>
+        </div>
+
+    </div>
+{% endblock %}
+{% block pageScripts %}
+	<script src="{{ app.request.baseUrl }}/js/HelpMee.js"></script>
+{% endblock %}

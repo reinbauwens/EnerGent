@@ -1,0 +1,47 @@
+<div class="menu-left">
+		<h1>Resumen</h1>
+		<ul>
+			<li><a href="{{ path('Inventory.laptops') }}" class="{% if 'Inventory.laptops' ==  app.request.attributes.get('_route') %}active{% endif %}"><span>Laptops</span></a></li>
+			<li><a href="{{ path('Inventory.people') }}" class="{% if 'people' in app.request.attributes.get('_route') %}active{% endif %}"><span>Propietarios</span></a></li>
+			{% if access_level > 499 %}<li><a href="{{ path('Inventory.places') }}" class="{% if 'places' in app.request.attributes.get('_route') %}active{% endif %}"><span>Localidades</span></a></li>
+			{% endif %}
+			<li><a href="{{ path('Inventory.MassAssignment') }}" class="{% if 'MassAssignment' in app.request.attributes.get('_route') %}active{% endif %}"><span>Asignaciones por lote</span></a></li>
+			{#
+			<li class='active has-sub'><a href='#'><span>Asignaciones</span></a>
+				<ul>
+					<li><a href="{{ path('Inventory.laptops') }}"><span>Lista de asignaciones</span></a></li>
+					<li><a href='#'><span>Nuevo asignacion</span></a></li>
+					<li><a href='#'><span>Asignacion masiva</span></a></li>
+				</ul>
+			</li>
+			<li class='active has-sub'><a href='#'><span>Movmientos</span></a>
+				<ul>
+					<li><a href='#'><span>Lista de Movimientos</span></a></li>
+					<li><a href='#'><span>Nuevo movimiento</span></a></li>
+					<li><a href='#'><span>Movimento massivo</span></a></li>
+					<li><a href='#'><span>Registrat entrega</span></a></li>
+				</ul>
+			</li>
+			<li><a href='#'><span>Lotes</span></a></li>
+			<li class='active has-sub'><a href='#'><span>Reportes</span></a>
+				<ul>
+					<li><a href='#'><span>Numeros seriales por localidad</span></a></li>
+					<li><a href='#'><span>Donde estan las laptops?</span></a></li>
+					<li><a href='#'><span>Movimientos</span></a></li>
+					<li><a href='#'><span>Movimientos agrupados por tipo</span></a></li>
+					<li><a href='#'><span>Laptops por localidad</span></a></li>
+					<li><a href='#'><span>Prestamos</span></a></li>
+					<li><a href='#'><span>Laptops per estado</span></a></li>
+					<li><a href='#'><span>registro de cambios de estado</span></a></li>
+					<li><a href='#'><span>Imprimir codigos de barra</span></a></li>
+				</ul>
+			</li>
+			<li class='active has-sub'><a href='#'><span>Configuracion</span></a>
+				<ul>
+					<li><a href='#'><span>Lista de asignaciones</span></a></li>
+					<li><a href='#'><span>Nuevo asignacion</span></a></li>
+					<li><a href='#'><span>Asignacion masiva</span></a></li>
+				</ul>
+			</li>#}
+		</ul>
+	</div>
