@@ -8,21 +8,6 @@ use Symfony\Component\HttpFoundation\Response;
 
 //Handle errors that were generated
 $app->error(function (\Exception $e, $code) use ($app) {
-	//check if the user is logged in
-	//set acces level and username to default
-	$access_level = 0;
-	$username = '';
-
-	// check if user is already logged in
-	if ($app['session']->get('user') && ($app['db.people']->fetchAdminPerson($app['session']->get('user')))) {
-
-		//get the user from de database.
-		$user = $app['db.people']->fetchAdminPerson($app['session']->get('user'));
-
-		//set acces level and username
-		$username = $user[0]['name'];
-		$access_level = $user[0]['access_level'];
-	}
 
 	if ($code == 404) { //set page content for 404 page not found error
 		//set the breadcrumbs for the page
