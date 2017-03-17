@@ -26,7 +26,7 @@ class HomeController implements ControllerProviderInterface {
 
 		// Bind sub-routes
 		$controllers
-			->get('/', array($this, 'welkom'))
+			->get('/', array($this, 'index'))
 			->method('GET|POST')
 			->bind('Home.start');
 
@@ -59,8 +59,8 @@ class HomeController implements ControllerProviderInterface {
 	 * @param Application $app An Application instance
 	 * @return string A blob of HTML
 	 */
-	public function welkom(Application $app) {
-		return $app['twig']->render('Home/welkom.twig', array(
+	public function index(Application $app) {
+		return $app['twig']->render('Home/index.twig', array(
 		));
 	}
 
