@@ -6,6 +6,9 @@ require __DIR__ . DIRECTORY_SEPARATOR . 'bootstrap.php';
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 
+// == Set Defaults
+date_default_timezone_set('Europe/Brussels');
+
 //Handle errors that were generated
 $app->error(function (\Exception $e, $code) use ($app) {
 
