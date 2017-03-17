@@ -39,7 +39,7 @@ $app->register(new Knp\Provider\RepositoryServiceProvider(), array(
 ));
 
 //Define the base path for the media
-$app['Inventory.base_url'] = '/public_html/';
+$app['Inventory.base_url'] = '/';
 //Define the base path for the media
 $app['Inventory.base_path'] = __DIR__ . '/../public_html' . $app['Inventory.base_url'];
 
