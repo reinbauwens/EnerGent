@@ -1,1 +1,9 @@
-FallbackResource public_html/index.php
+<IfModule mod_rewrite.c>
+    Options -MultiViews
+    RewriteEngine On
+    RewriteBase /public_html
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule ^(.*)? index.php/$1 [QSA,L]
+    RewriteRule ^/?$ /public_html/ [R=301]
+</IfModule>
