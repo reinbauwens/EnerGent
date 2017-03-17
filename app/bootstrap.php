@@ -39,14 +39,14 @@ $app->register(new Knp\Provider\RepositoryServiceProvider(), array(
 ));
 
 //Define the base path for the media
-$app['Inventory.base_url'] = '/';
+$app['Inventory.base_url'] = '/public_html/';
 //Define the base path for the media
 $app['Inventory.base_path'] = __DIR__ . '/../public_html' . $app['Inventory.base_url'];
 
 // Path configuration
 $app['paths'] = array(
-    'root' => __DIR__ .  DIRECTORY_SEPARATOR,
-    'web' => __DIR__ . DIRECTORY_SEPARATOR.'public_html'.DIRECTORY_SEPARATOR,
+    'root' => __DIR__ . DIRECTORY_SEPARATOR.'..'. DIRECTORY_SEPARATOR,
+    'web' => __DIR__ . DIRECTORY_SEPARATOR.'..'.DIRECTORY_SEPARATOR.'public_html'.DIRECTORY_SEPARATOR,
 );
 
 // Use UrlGenerator Service Provider - @note: Be sure to install "symfony/twig-bridge" via Composer if you want to use the `url` & `path` functions in Twig
