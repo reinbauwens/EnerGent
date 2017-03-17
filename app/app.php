@@ -61,6 +61,6 @@ $app->get('/', function(Silex\Application $app) {
 $app['twig']->addGlobal('user',$app['session']->get('user'));
 
 // Mount our controllers (dynamic routes)
-$app->mount('/Home/', new RNR\Provider\Controller\HomeController());
+$app->mount('/', new RNR\Provider\Controller\HomeController());
 
 
