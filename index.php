@@ -8,7 +8,7 @@ if (php_sapi_name() === 'cli-server' && is_file($filename)) {
 }
 
 // Require the app and run it
-require_once __DIR__ . DIRECTORY_SEPARATOR . '..' . DIRECTORY_SEPARATOR . 'app' . DIRECTORY_SEPARATOR . 'app.php';
+require_once __DIR__ . DIRECTORY_SEPARATOR . 'app' . DIRECTORY_SEPARATOR . 'app.php';
 
 
 
