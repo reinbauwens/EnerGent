@@ -16,7 +16,12 @@ a, a:focus, a:hover {
 p{
   text-align: justify;
   font-size: 13px;
+    margin: 0 0 0px;
 }
+
+h1{
+    font-size:20pt;
+  }
 
 
 #navbar{
@@ -217,6 +222,42 @@ p{
   z-index: 10;
 }
 
+.carouselImg img{
+  float: left;
+  width: 100%;
+}
+
+.carousel-caption h2, .carousel-caption h1, .carousel-caption p, .carousel-caption a{
+  clear: both;
+  float:left;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.carousel-caption  h2, .carousel-caption h1,.carousel-caption p{
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.carousel-caption h1{
+  margin-top: 0rem;
+  padding-top: 0rem;
+}
+
+
+.carousel-caption .col-md-4{
+  display: none;
+}
+
+.carousel-caption .col-md-8{
+  margin-left:-2rem;
+}
+
+
+
+
+
+
 /* Declare heights because of positioning of img element */
 .carousel .item {
   height: 400px;
@@ -227,7 +268,8 @@ p{
   top: 0;
   left: 0;
   min-width: 100%;
-  height: 400px;
+  height: 500px;
+  max-width: none;
 }
 
 .carousel-parnters{
@@ -244,6 +286,18 @@ p{
   border-color: #efefef;
 }
 
+img {
+  max-width: 100%;
+  width: auto   9;
+  height: auto;
+  vertical-align: middle;
+  border: 0;
+  -ms-interpolation-mode: bicubic;
+}
+
+.colloryellow{
+  color:  #fff200;
+}
 
 /* Blocks CONTENT
 -------------------------------------------------- */
@@ -296,6 +350,16 @@ p{
   position: relative;
 }
 
+.block:hover .glyphicon-white{
+  color: #fff200;
+}
+
+.block:hover .glyphicon-grey{
+  color: #337ab7;
+}
+
+
+
 .big{
   height: 530px;
 }
@@ -326,13 +390,12 @@ p{
     -o-transition: all 0.5s ease-in-out;
     transition: all 0.5s ease-in-out;
     color: #f1f2f2;
-    height: 100%;
     padding: 2rem;
     position: relative;
     background-color: rgba(63,130,193,0.75);
 }
 
-.animated:hover p, .animated ul{
+.animated:hover p, .animated ul, .animated a{
   margin-top: 0rem;
   z-index: 15;
 }
@@ -369,6 +432,11 @@ p{
 .yellow h2, .yellow p, .yellow ul{
   background-color: rgba(255,242,00,0.75);
   color: #636464;
+  
+}
+
+.yellow p, .yellow ul{
+  height: 100%;
 }
 
 .animated ul{
@@ -379,7 +447,20 @@ p{
 .animated:hover h2{
   margin-top:-20rem;
 }
-
+.lead {
+    margin-bottom: 0px;
+}
+#buttonannimated{
+  font-size:13px;
+  margin-top: 1rem;
+  margin-left: 3rem;
+  clear: both;
+}
+.collorblue{
+  background-color: rgba(63,130,193,0.75);
+  height: 100%;
+  text-align: center;
+}
 .animated img{
   z-index: -1;
   margin-top:5rem;
@@ -558,9 +639,10 @@ p{
 
 footer{
   color: white;
-  background-color: #606060;
-  padding-bottom: 2rem;
+  background-color: #3f82c1;
   text-transform: uppercase;
+  padding-bottom:1rem; 
+  text-align: center;
 }
 
 footer ul{
@@ -572,12 +654,6 @@ footer p{
   text-align: center;
 }
 
-.footer{
-  width: 90%;
-  margin-left: auto;
-  margin-right: auto;
-  padding-bottom:2rem; 
-}
 
 footer li:hover{
   color: #fff200;
@@ -591,7 +667,7 @@ footer ul{
 }
 
 footer h2{
-  text-align: left;
+  text-align: center;
 }
 
 #PReset{
@@ -626,27 +702,26 @@ footer{
     margin-top: -18rem;
 }
 
-@media (min-width: 335px) {
-  .marketing h2{
-    margin-top: 0rem;
-    padding-top: 1.5rem;
-    padding-bottom: 1rem;
-  }
-
-  .animated:hover h2 {
-      margin-top: -20rem;
-  }
-
-  .marketing ol, .marketing li {
-    font-size: 4vw;
-  }
-
-
-  .marketing p {
-      font-size: 3.3vw;
-      text-align: left;
-  }
+.marketing h2{
+  margin-top: 0rem;
+  padding-top: 1.5rem;
+  padding-bottom: 1rem;
 }
+
+.animated:hover h2 {
+    margin-top: -20rem;
+}
+
+.marketing ol, .marketing li {
+  font-size: 4vw;
+}
+
+
+.marketing p {
+    font-size: 3.3vw;
+    text-align: left;
+}
+
 
 @media (min-width: 431px) {
   .marketing h2{
@@ -660,12 +735,15 @@ footer{
 @media (min-width: 452px) {
   footer .col-md-3{
     width: 50%;
+    margin-left: 0%;
     float: left;
     height: 20rem;
   }
 
   footer h2{
-    font-size: 2vw;
+    font-size: 2rem;
+    text-align: left;
+
   }
 
   footer{
@@ -681,6 +759,82 @@ footer{
   footer h2{
     font-size: 3rem;
   }    
+}
+
+@media (min-width: 600px) {
+  footer .col-md-3{
+    width: 30%;
+    margin-left: 1%;
+  }
+
+  h1{
+    size: 40pt;
+  }
+
+  .carousel-caption .col-md-8{
+    float: left;
+    width: 66%;
+  }
+}
+
+@media (min-width: 700px) {
+  footer .container{
+    width: 70rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (min-width: 768px) {
+  /* Navbar positioning foo */
+  .carousel-caption .col-md-4{
+    margin-left: 0rem;
+    padding-left: 0rem;
+    margin-right: 2rem;
+    float: left;
+    width: 25%;
+    display: inline;
+    
+  }
+
+  .carousel-caption{
+    right: 0%;
+    max-width: 1048px;
+    left: 0%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+  }
+
+  .carousel-caption .col-md-8 {
+    margin-left: 0rem;
+}
+  .carousel-caption .col-md-4 img{
+  margin-left: 4rem;
+ }
+
+  .navbar-wrapper {
+    margin-top: 0px;
+  }
+  .navbar-wrapper .container {
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+  .navbar-wrapper .navbar {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  /* The navbar becomes detached from the top, so we round the corners */
+  .navbar-wrapper .navbar {
+    border-radius: 4px;
+  }
+
+  /* Bump up size of carousel content */
+  .carousel-caption p {
+    margin-bottom: 20px;
+    line-height: 1.4;
+  }
 }
 
 @media (min-width: 860px){
@@ -743,40 +897,9 @@ footer{
   }
 }
 
-@media (min-width: 768px) {
-  /* Navbar positioning foo */
-  .navbar-wrapper {
-    margin-top: 0px;
-  }
-  .navbar-wrapper .container {
-    padding-right: 0px;
-    padding-left: 0px;
-  }
-  .navbar-wrapper .navbar {
-    padding-right: 0;
-    padding-left: 0;
-  }
-
-  /* The navbar becomes detached from the top, so we round the corners */
-  .navbar-wrapper .navbar {
-    border-radius: 4px;
-  }
-
-  /* Bump up size of carousel content */
-  .carousel-caption p {
-    margin-bottom: 20px;
-    line-height: 1.4;
-  }
-}
-
 @media (min-width: 920px){
   footer li{
     font-size:14px;
-  }
-
-  footer .col-md-3{
-    width: 25%;
-    float: left;
   }
 
   h1 {

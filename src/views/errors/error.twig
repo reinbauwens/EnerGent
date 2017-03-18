@@ -6,7 +6,7 @@
 
 {# Page specific css #}
 {% block pageCss %}
-	<link rel="stylesheet" media="screen" href="{{ app.request.baseUrl }}/css/errorStyle.css" />
+	<link rel="stylesheet" media="screen" href="{{ app.request.baseUrl }}/public_html/css/errorStyle.css" />
 {% endblock %}
 
 {% block pageContent %}
@@ -27,5 +27,5 @@
 	</div>
 {% endblock %}
 {% block pageScripts %}
-	<script type="text/javascript" src="{{ app.request.baseUrl }}/js/errorScript.js" ></script>
+	<script type="text/javascript" src="{{ app.request.baseUrl }}/public_html/js/errorScript.js" ></script>
 {% endblock %}

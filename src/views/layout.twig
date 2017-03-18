@@ -62,31 +62,40 @@
         <div class="carousel-inner" role="listbox">
           <div class="item active">
             <img class="first-slide" src="{{ app.request.baseUrl }}/public_html/img/banner1.jpg" alt="First slide">
-            <div class="">
+            <div class="container">
               <div class="carousel-caption">
-                <h1>Dit is een test</h1>
-                <p>Note: If you're viewing this page via a <code>file://</code> URL, the "next" and "previous" Glyphicon buttons on the left and right might not load/display properly due to web browser security rules.</p>
-                <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>
+               <div class="col-md-4"><img src="{{ app.request.baseUrl }}/public_html/img/logoZonnestadklein.png"></div>
+                <div class="col-md-8">
+                  <p>Als alle Gentse daken zonnepanelen zouden hebben zou gent 1 TWH energie / jaar opwekken. Dat is een </p>
+                  <h1>Een stedelijke energiecentrale die <span class="colloryellow">groen én rendabel</span> is</h1>
+                  <a class="btn btn-lg btn-primary buttonWhite " href="#" role="button">Hoe Werkt het?</a>
+                </div>
               </div>
             </div>
           </div>
           <div class="item">
-            <img class="second-slide" src="{{ app.request.baseUrl }}/public_html/img/banner2.jpg" alt="Second slide">
+            <img class="second-slide" src="{{ app.request.baseUrl }}/public_html/img/banner1.jpg" alt="Second slide">
             <div class="container">
               <div class="carousel-caption">
-                <h1>Another example headline.</h1>
-                <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
+                <div class="col-md-4"><img src="{{ app.request.baseUrl }}/public_html/img/logoZonnestadklein.png"></div>
+                <div class="col-md-8">
+                  <p>Als alle Gentse daken zonnepanelen zouden hebben zou gent 1 TWH energie / jaar opwekken. Dat is een </p>
+                  <h1>Een stedelijke energiecentrale die <span class="colloryellow">groen én rendabel</span> is</h1>
+                  <a class="btn btn-lg btn-primary buttonWhite " href="#" role="button">Hoe Werkt het?</a>
+                </div>
               </div>
             </div>
           </div>
           <div class="item">
-            <img class="third-slide" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Third slide">
+            <img class="third-slide" src="{{ app.request.baseUrl }}/public_html/img/banner1.jpg" alt="Third slide">
             <div class="container">
               <div class="carousel-caption">
-                <h1>One more for good measure.</h1>
-                <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                <p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p>
+                <div class="col-md-4"><img src="{{ app.request.baseUrl }}/public_html/img/logoZonnestadklein.png"></div>
+                <div class="col-md-8">
+                  <p>Als alle Gentse daken zonnepanelen zouden hebben zou gent 1 TWH energie / jaar opwekken. Dat is een </p>
+                  <h1>Een stedelijke energiecentrale die <span class="colloryellow">groen én rendabel</span> is</h1>
+                  <a class="btn btn-lg btn-primary buttonWhite " href="#" role="button">Hoe Werkt het?</a>
+                </div>
               </div>
             </div>
           </div>
@@ -109,7 +118,8 @@
 			</div>
 		</div>
 		<footer class="blueHard">
-      <div class="footer ">
+      <footer>
+        <div class="container">
           <div class="col-md-3">
             <h2>Zonnestad</h2>
               <ul>
@@ -140,14 +150,9 @@
                 <li>zonnestad@energent.be</li>
               </ul>
           </div>
-          <div class="col-md-3">
-            <h2>Zelf zonnepanelen plaatsen?</h2>
-            <a class="btn btn-lg btn-primary buttonWhite" href="#" role="button">Ik heb interesse</a>
-          </div>
-            
-        </div>
           <p style="clear: both">&copy; 2017 | ENERGENT CVBA </p>
           <p> Design: Sam Van Cleemputte | Development: Rein Bauwens </p>
+          </div>
       </footer>
 
 		<script src="{{ app.request.baseUrl }}/public_html/js/jquery-2.1.3.min.js"></script>

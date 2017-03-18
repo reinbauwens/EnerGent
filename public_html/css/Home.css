@@ -1,3 +1,7 @@
 .bigteksthome{
   font-size: 20px;
 }
+
+.animated:hover .textWrapper{
+  margin-top:-20rem;
+}
