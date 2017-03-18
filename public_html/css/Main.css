@@ -23,6 +23,8 @@ h1{
     font-size:20pt;
   }
 
+  
+
 
 #navbar{
   float: right;
@@ -31,6 +33,16 @@ h1{
 .cWrapper{
   max-width: 1048px;
   margin: auto;
+}
+
+.thumbnail {
+    display: block;
+    padding: 0px;
+    margin-bottom: 20px;
+    line-height: 1.42857143;
+    background-color: #fff;
+    border: none;
+    border-radius: 0px;
 }
 
 /* Fonts
@@ -253,6 +265,18 @@ p{
   margin-left:-2rem;
 }
 
+.cWrapper .carousel-control.right, .cWrapper .carousel-control.left {
+  background-image:none;
+  color: #636464;
+  text-shadow: inherit;
+  background-color: rgba(0,0,0,0);
+  filter: inherit;
+  opacity: 1;
+}
+
+.cWrapper .carousel-control.right:hover, .cWrapper .carousel-control.left:hover {
+  color: #337ab7;
+}
 
 
 
@@ -314,7 +338,10 @@ img {
 
 .animated h2{
   text-align: center;
+  color: white;
 }
+
+
 
 .marketing p{
   text-align: justify;
@@ -408,7 +435,7 @@ img {
   color: #3f82c1;
 }
 
-.animated:hover .glyphicon-white{
+.animated:hover .glyphicon-white, .animated:hover h2{
   color: #fff200;
 }
 
@@ -626,12 +653,12 @@ img {
 
   .car2 .item{
     height: inherit;
-        background-color: #777;
+    background-color: #f1f2f2;
   }
 
   .car2{
     height: inherit;
-        background-color: #777;
+    background-color: #f1f2f2;
   }
 
 /*footer
@@ -733,7 +760,7 @@ footer{
 }
 
 @media (min-width: 452px) {
-  footer .col-md-3{
+  footer .col-md-4{
     width: 50%;
     margin-left: 0%;
     float: left;
@@ -762,9 +789,8 @@ footer{
 }
 
 @media (min-width: 600px) {
-  footer .col-md-3{
+  footer .col-md-4{
     width: 30%;
-    margin-left: 1%;
   }
 
   h1{
@@ -779,10 +805,18 @@ footer{
 
 @media (min-width: 700px) {
   footer .container{
-    width: 70rem;
+    max-width: 1048px;
     margin-left: auto;
     margin-right: auto;
   }
+
+    .col-sm-10 {
+    width: 83.33333333%;
+  }
+
+  .col-md-offset-1 {
+    margin-left: 8.33333333%;
+}
 }
 
 @media (min-width: 768px) {
@@ -856,7 +890,7 @@ footer{
   }
 
   .marketing h1{
-    font-size: 30ptn;
+    font-size: 40px;
   }
 
   .container {
@@ -882,9 +916,7 @@ footer{
     width: 25%;
   }
 
-  .col-sm-10 {
-    width: 83.33333333%;
-  }
+  
 
   #bigteksthome{
     font-size:1.5rem;

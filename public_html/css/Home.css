@@ -5,3 +5,21 @@
 .animated:hover .textWrapper{
   margin-top:-20rem;
 }
+
+ #slideCarousel2{
+  display: inherit;
+}
+
+ #slideCarousel{
+  display: none;
+}
+
+@media (min-width: 768px) {
+   #slideCarousel2{
+    display: none;
+  }
+
+     #slideCarousel{
+    display: inherit;
+  }
+}
