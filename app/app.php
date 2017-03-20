@@ -40,9 +40,7 @@ $app->error(function (\Exception $e, $code) use ($app) {
 		'errorTitle' => $title_error,
 		'msgOne' => $msgOne,
 		'msgTwo' => $msgTwo,
-		'errorMsg' => $error,
-		'access_level' => $access_level,
-		'username' => $username,
+		'errorMsg' => $error
 	));
 });
 

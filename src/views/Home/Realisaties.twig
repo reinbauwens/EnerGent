@@ -9,75 +9,156 @@
 
         <!-- START THE FEATURETTES -->
 
-        <div class="row featurette">
+        <div class="rowrealisatie">
           <div class="col-md-4">
             <div class="block blueHard big">
-              <h2 class="featurette-heading">Projecten</h2>
-              <h2 class="featurette-heading">Door</h2>
-              <h2 class="featurette-heading">Zonnestad</h2>
+              <h1 class="featurette-heading">Projecten </br>door </br>zonnestad</h1>
                 <p>
                   Gent heeft momenteel ongeveer <span class="collorYellow">xxxx</span> particuliere zonne-installaties op haar grondgebied. De zonnestad heeft de ambitie dit getal mee te helpen verdubbelen.
                 </p>
                 <p>
-                  Sinds de start werder al <span class="collorYellow">xxxx</span> installaties gebouwd.
+                  </br>Sinds de start werder al <span class="collorYellow">xxxx</span> installaties gebouwd.
                 </p>
               </div>
           </div>
           <div class="col-md-8">
             <div class="block big animated">
-              <img class="featurette-image img-responsive center-block" src="img/Zonnestad_Realisaties.png" alt="Generic placeholder image">
-              <h2 class="featurette-heading">Eigen woningen</h2>
-              <p class="lead">Je droomt misschien al jaren van zonnepanelen en nu je dak gerenoveerd is of binnenkort zal worden, zet je de stap. Over enkele weken kunnen de zonnepanelen er liggen en bespaar je meteen op je energierekening.</p>
-              <span class="glyphicon glyphicon-chevron-up arrowRightBottom glyphicon-white" aria-hidden="true"></span>
-            </div>
-          </div>
-        </div>
-      
-        <div id="slideCarousel" class="carousel slide car2" >
-          <h2>Andere realisaties</h2>
-          <!-- Carousel items -->
-          <div class="carousel-inner">
-            <div class="item active">
-              <div class="col-sm-10 col-md-offset-1 row carousel-parnters">
-                <div class="col-sm-3"><a class="thumbnail"><img class="featurette-image img-responsive center-block" src="img/natuurpunt.png" alt="Generic placeholder image"></a>
-                </div>
-                <div class="col-sm-3"><a class="thumbnail"><img class="featurette-image img-responsive center-block" src="img/gmf.png" alt="Generic placeholder image"></a>
-                </div>
-                <div class="col-sm-3"><a class="thumbnail"><img class="featurette-image img-responsive center-block" data-src="holder.js/200x200/auto" alt="Generic placeholder image"></a>
-                </div>
-                <div class="col-sm-3"><a class="thumbnail"><img class="featurette-image img-responsive center-block" data-src="holder.js/200x200/auto" alt="Generic placeholder image"></a>
-                </div>
-              </div>
-              <!--/row-->
-            </div>
-            <!--/item-->
-            <div class="item">
-              <div class="col-sm-10 col-md-offset-1 row carousel-parnters">
-                <div class="col-sm-3"><a class="thumbnail"><img class="featurette-image img-responsive center-block" src="img/natuurpunt.png" alt="Generic placeholder image"></a>
-                </div>
-                <div class="col-sm-3"><a class="thumbnail"><img class="featurette-image img-responsive center-block" src="img/gmf.png" alt="Generic placeholder image"></a>
-                </div>
-                <div class="col-sm-3"><a class="thumbnail"><img class="featurette-image img-responsive center-block" data-src="holder.js/200x200/auto" alt="Generic placeholder image"></a>
-                </div>
-                <div class="col-sm-3"><a class="thumbnail"><img class="featurette-image img-responsive center-block" data-src="holder.js/200x200/auto" alt="Generic placeholder image"></a>
-                </div>
-              </div>
-              <!--/row-->
-            </div>
-            <!--/item-->
-          </div>
-          <!--/carousel-inner-->
-          <a class="left carousel-control" href="#slideCarousel" role="button" data-slide="prev">
-          <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-        </a>
+              <div id="myCarousel2" class="carousel slide" data-ride="carousel">
+                <ul class="nav nav-pills nav-justified">
+                  <li data-target="#myCarousel2" data-slide-to="0"><a href="#"><img src="{{ app.request.baseUrl }}/public_html/img/R1.jpg"></a></li>
+                  <li data-target="#myCarousel2" data-slide-to="1"><a href="#"><img src="{{ app.request.baseUrl }}/public_html/img/R1.jpg"></a></li>
+                  <li data-target="#myCarousel2" data-slide-to="2"><a href="#"><img src="{{ app.request.baseUrl }}/public_html/img/R1.jpg"></a></li>
+                  <li data-target="#myCarousel2" data-slide-to="3"><a href="#"><img src="{{ app.request.baseUrl }}/public_html/img/R1.jpg"></a></li>
+                </ul>
 
-          <a class="right carousel-control" href="#slideCarousel" role="button" data-slide="next">
-          <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-        </a>
+
+        
+              <!-- Wrapper for slides -->
+              <div class="carousel-inner">
+              
+                <div class="item active">
+                  <img src="{{ app.request.baseUrl }}/public_html/img/R1.jpg">
+                  <div class="carousel-caption">
+                    <h2>Project x (prokject in de kijker)</h2>
+                    <div class="rowrealisatie">
+                      <div class="smallblock">
+                        <div class="blockimg">
+                          <img class="featurette-image img-responsive center-block" src="{{ app.request.baseUrl }}/public_html/img/Zonnestad_EigenWoning.png" alt="Generic placeholder image">
+                        </div>
+                        <p>Polykristallijn zonnepaneel</p>
+                      </div>
+                      <div class="smallblock">
+                        <h1>6kWp</h1>
+                        <p>geïnstalleerd vermogen</p>
+                      </div>
+                      <div class="smallblock">
+                        <div class="blockimg">
+                          <img class="featurette-image img-responsive center-block" src="{{ app.request.baseUrl }}/public_html/img/Zonnestad_EigenWoning.png" alt="Generic placeholder image">
+                        </div>
+                        <p>Eigen woning</p>
+                      </div>
+                      <div class="smallblock">
+                        <h1>30 jan 2017</h1>
+                        <p>installatiedatum</p>
+                      </div>
+                    </div>
+                  </div>
+                </div><!-- End Item -->
+        
+                <div class="item">
+                  <img src="{{ app.request.baseUrl }}/public_html/img/R1.jpg">
+                  <div class="carousel-caption">
+                    <h2>Project x (prokject in de kijker)</h2>
+                    <div class="rowrealisatie">
+                      <div class="smallblock">
+                        <div class="blockimg">
+                          <img class="featurette-image img-responsive center-block" src="{{ app.request.baseUrl }}/public_html/img/Zonnestad_EigenWoning.png" alt="Generic placeholder image">
+                        </div>
+                        <p>Polykristallijn zonnepaneel</p>
+                      </div>
+                      <div class="smallblock">
+                        <h1>6kWp</h1>
+                        <p>geïnstalleerd vermogen</p>
+                      </div>
+                      <div class="smallblock">
+                        <div class="blockimg">
+                          <img class="featurette-image img-responsive center-block" src="{{ app.request.baseUrl }}/public_html/img/Zonnestad_EigenWoning.png" alt="Generic placeholder image">
+                        </div>
+                        <p>Eigen woning</p>
+                      </div>
+                      <div class="smallblock">
+                        <h1>30 jan 2017</h1>
+                        <p>installatiedatum</p>
+                      </div>
+                    </div>
+                    </div>
+                </div><!-- End Item -->
+                
+                <div class="item">
+                  <img src="{{ app.request.baseUrl }}/public_html/img/R1.jpg">
+                  <div class="carousel-caption">
+                    <h2>Project x (prokject in de kijker)</h2>
+                    <div class="rowrealisatie">
+                      <div class="smallblock">
+                        <div class="blockimg">
+                          <img class="featurette-image img-responsive center-block" src="{{ app.request.baseUrl }}/public_html/img/Zonnestad_EigenWoning.png" alt="Generic placeholder image">
+                        </div>
+                        <p>Polykristallijn zonnepaneel</p>
+                      </div>
+                      <div class="smallblock">
+                        <h1>6kWp</h1>
+                        <p>geïnstalleerd vermogen</p>
+                      </div>
+                      <div class="smallblock">
+                        <div class="blockimg">
+                          <img class="featurette-image img-responsive center-block" src="{{ app.request.baseUrl }}/public_html/img/Zonnestad_EigenWoning.png" alt="Generic placeholder image">
+                        </div>
+                        <p>Eigen woning</p>
+                      </div>
+                      <div class="smallblock">
+                        <h1>30 jan 2017</h1>
+                        <p>installatiedatum</p>
+                      </div>
+                    </div>
+                    </div>
+                </div><!-- End Item -->
+                
+                <div class="item">
+                  <img src="{{ app.request.baseUrl }}/public_html/img/R1.jpg">
+                  <div class="carousel-caption">
+                    <h2>Project x (prokject in de kijker)</h2>
+                    <div class="rowrealisatie">
+                      <div class="smallblock">
+                        <div class="blockimg">
+                          <img class="featurette-image img-responsive center-block" src="{{ app.request.baseUrl }}/public_html/img/Zonnestad_EigenWoning.png" alt="Generic placeholder image">
+                        </div>
+                        <p>Polykristallijn zonnepaneel</p>
+                      </div>
+                      <div class="smallblock">
+                        <h1>6kWp</h1>
+                        <p>geïnstalleerd vermogen</p>
+                      </div>
+                      <div class="smallblock">
+                        <div class="blockimg">
+                          <img class="featurette-image img-responsive center-block" src="{{ app.request.baseUrl }}/public_html/img/Zonnestad_EigenWoning.png" alt="Generic placeholder image">
+                        </div>
+                        <p>Eigen woning</p>
+                      </div>
+                      <div class="smallblock">
+                        <h1>30 jan 2017</h1>
+                        <p>installatiedatum</p>
+                      </div>
+                    </div>
+                    </div>
+                </div><!-- End Item -->
+                        
+              </div><!-- End Carousel Inner -->
+              </div>
+            </div>
+          </div>
         </div>
-        <!--/myCarousel-->
+      </div>
+        
       </div>
 {% endblock %}
 {% block pageScripts %}

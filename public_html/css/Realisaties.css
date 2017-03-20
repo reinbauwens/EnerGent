@@ -10,14 +10,25 @@
   height: 100%;
 }
 
-.animated:hover h2{
-  margin-top: -53rem;
+.animated h2{
+  margin-top:  0 rem; /*-46rem;*/
+  width: 100%;
 }
 
-.animated h2{
-  margin-top: -4rem;
-  color: white;
+.blockimg{
+  widows: 80%;
 }
+
+.rowrealisatie{
+  margin-bottom:10rem;
+  z-index: 20; 
+}
+
+/*.animated h2{
+  margin-top: 57.3rem;
+  color: white;
+  width: 100%;
+}*/
 
 .glyphicon-chevron-right, .glyphicon-chevron-up {
     position: absolute;
@@ -30,4 +41,189 @@
     padding-left: 2rem;
     padding-top: 2rem;
     margin-bottom: 0rem;
+}
+
+.nav-justified>li {
+    width: inherit;
+    float: left;
+    width: 24%;
+    padding: 0.5rem;
+}
+
+#myCarousel2 .nav>li>a>img {
+    border: 1px solid white;
+}
+
+.col-md-8 .carousel .item {
+    height: 460px;
+}
+
+.animated ul {
+    padding: inherit;
+}
+
+
+.smallblock{
+  width: 50%;
+  float:left;
+  background-color: rgba(63,130,193,0.75);
+}
+
+.animated p {
+  background-color: rgba(63,130,193,-0.25);
+}
+
+
+
+.smallblock h1, .smallblock p{
+    width:100%;
+    text-align: center;
+}
+
+.animated:hover h2 {
+    margin-top: 0rem;
+}
+
+
+.block {
+    height: inherit;
+}
+
+.carousel-caption {
+    right: 0%;
+    max-width: 1048px;
+    left: 0%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+}
+
+
+
+.col-md-8 .block{
+  height: 500px;
+}
+.smallblock{
+  width: 50%;
+  height: 210px;
+  float:left;
+}
+
+.marketing p, .marketing ol, .marketing li {
+    font-size: 1.2rem;
+}
+
+.nav-justified>li>a {
+    margin-bottom: 0px;
+}
+.nav>li>a {
+    padding: 5px;
+}
+ .cWrapper .carousel-caption {
+    margin-bottom: -44.5rem;
+    transition: margin-bottom 0.5s ease;
+}
+
+ .cWrapper .carousel-caption:hover{
+    margin-bottom: -4rem;
+    -webkit-animation: out 2s;
+}
+
+.marketing h2{
+  font-size: 1.5rem;
+}
+
+.blockimg{
+    height: 60%;
+  }
+
+  .smallblock h1{
+      color: #fff200;
+      height: 60%;
+      padding-top: 23%;
+      margin-bottom: 0rem;
+  }
+
+
+@media (min-width: 451px){
+  .smallblock h1{
+      height: 60%;
+  }
+  .marketing h2 {
+    font-size: 2rem;}
+
+  .blockimg{
+    height: 60%;
+  }
+
+   .cWrapper .carousel-caption {
+    margin-bottom: -41rem;
+  }
+
+  .cWrapper .carousel-caption:hover{
+      margin-bottom: -5rem;
+  }
+}
+
+
+@media (min-width: 860px){
+
+  .smallblock h1{
+    height: 75%;
+    }
+
+    .blockimg{
+      height: 75%;
+    }
+
+
+    .marketing ol, .marketing p, .marketing li {
+        font-size: 1.3vw;
+    }
+
+    .marketing h1 {
+    font-size: 35px;
+  }
+
+    .big {
+    height: 530px;
+  }
+
+  .col-md-8 .block {
+    height: 530px;
+}
+
+  
+.smallblock{
+  width: 50%;
+  height: 205px;
+  float:left;
+}
+
+
+   .cWrapper .carousel-caption {
+    margin-bottom: -44rem;
+}
+
+ .cWrapper .carousel-caption:hover{
+    margin-bottom: -4.5rem;
+}
+
+}
+
+
+@media (min-width: 982px){
+  .marketing ol, .marketing p, .marketing li  {
+    font-size: 1.3rem;
+  }
+
+  .marketing h1 {
+    font-size: 40px;
+  }
+}
+@media (min-width: 1044px) {
+
+    h1 {
+        font-size: 25pt;
+    }
 }
