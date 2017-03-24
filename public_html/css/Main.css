@@ -377,16 +377,6 @@ img {
   position: relative;
 }
 
-.block:hover .glyphicon-white{
-  color: #fff200;
-}
-
-.block:hover .glyphicon-grey{
-  color: #337ab7;
-}
-
-
-
 .big{
   height: 530px;
 }
@@ -506,6 +496,26 @@ img {
 
 .marketing ol li:first-child{
       margin-bottom: 1rem;
+}
+
+.block:hover  h1{
+  color: #337ab7;
+}
+
+.block:hover .glyphicon-white{
+  color: #fff200;
+}
+
+.block:hover .glyphicon-grey{
+  color: #337ab7;
+}
+
+.blueHard:hover h1{
+  color: #fff200;
+}
+
+.yellow:hover h2{
+  color: #337ab7;
 }
 
 .marketing ol li:before{
@@ -784,7 +794,8 @@ footer{
   }
 
   footer h2{
-    font-size: 3rem;
+    font-size: 2.5rem;
+    margin-left: 3rem;
   }    
 }
 
@@ -872,6 +883,8 @@ footer{
 }
 
 @media (min-width: 860px){
+  
+
   .cWrapper .col-md-4{
     float: left;
     width: 33%;
@@ -891,6 +904,9 @@ footer{
 
   .marketing h1{
     font-size: 40px;
+    margin-top:10px;
+    line-height: 1.2;
+
   }
 
   .container {
@@ -901,6 +917,7 @@ footer{
 
     .animated img {
     margin-top: 3.5rem;
+    object-fit: cover;
   }
 
   .animated:hover h2 {
@@ -927,11 +944,22 @@ footer{
     padding-top: 1.5rem;
     padding-bottom: 1rem;
   }
+
+  #myCarousel p{
+    font-size: 20px;
+    line-height: 1.2;
+  }
+
+  #myCarousel h1{
+    font-size: 40px;
+  }
 }
 
 @media (min-width: 920px){
   footer li{
-    font-size:14px;
+    font-size:13px;
+    line-height: 1.5em;
+    margin-left: 3rem;
   }
 
   h1 {
