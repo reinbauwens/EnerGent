@@ -45,6 +45,11 @@ class HomeController implements ControllerProviderInterface {
 			->method('GET|POST')
 			->bind('Home.Realisaties');
 
+		$controllers
+			->get('/ZonnestadInCijfers', array($this, 'ZonnestadInCijfers'))
+			->method('GET|POST')
+			->bind('Home.ZonnestadInCijfers');
+
 		// Redirect to login by default
 		$controllers->get('/', function(Application $app) {
 			return $app->redirect($app['url_generator']->generate('Home.start'));
@@ -71,6 +76,11 @@ class HomeController implements ControllerProviderInterface {
 
 	public function Realisaties(Application $app) {
 		return $app['twig']->render('Home/Realisaties.twig', array(
+		));
+	}
+
+	public function ZonnestadInCijfers(Application $app) {
+		return $app['twig']->render('Home/ZonnestadInCijfers.twig', array(
 		));
 	}
 

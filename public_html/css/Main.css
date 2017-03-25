@@ -45,6 +45,10 @@ h1{
     border-radius: 0px;
 }
 
+.thumbnail:hover{
+  opacity: 0.5;
+    filter: alpha(opacity=50);
+}
 /* Fonts
 -------------------------------------------------- */
 
@@ -375,6 +379,7 @@ img {
   overflow: hidden;
   margin-bottom: 30px; 
   position: relative;
+
 }
 
 .big{
@@ -921,7 +926,7 @@ footer{
   }
 
   .animated:hover h2 {
-    margin-top: -19rem;
+    margin-top: -18.5rem;
   }
 
   .col-md-offset-1 {
