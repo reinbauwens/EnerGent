@@ -10,12 +10,14 @@
         <!-- START THE FEATURETTES -->
 
         <div class="row featurette">
-          <div class="col-md-8">
-            <div class="block blueHard ">
-              <h1 class="featurette-heading">Wat is </br> zonnestad</h1>
-              <p class="lead" id="bigteksthome">Met ‘Gent zonnestad’ voert de energiecoöperatie EnerGent campagne voor meer zonnepanelen in Gent. De campagne is gebaseerd op een groepsaankoop met vooraf bepaalde prijzen. </p>
-              <span class="glyphicon glyphicon-chevron-right glyphicon-white" aria-hidden="true"></span>
-            </div>
+          <a href="{{ path('Home.WatIsZonnestad') }}">
+            <div class="col-md-8">
+              <div class="block blueHard ">
+                <h1 class="featurette-heading">Wat is </br> zonnestad</h1>
+                <p class="lead" id="bigteksthome">Met ‘Gent zonnestad’ voert de energiecoöperatie EnerGent campagne voor meer zonnepanelen in Gent. De campagne is gebaseerd op een groepsaankoop met vooraf bepaalde prijzen. </p>
+                <span class="glyphicon glyphicon-chevron-right glyphicon-white" aria-hidden="true"></span>
+              </div>
+            </a>
           </div>
           
           <div class="col-md-4">
@@ -80,6 +82,7 @@
         </div>
 
         <div class="row featurette">
+          <a href="{{ path('Home.Installatie') }}">
           <div class="col-md-4">
             <div class="block animated yellow backgroundimage1">
               <img class="featurette-image img-responsive center-block" src="{{ app.request.baseUrl }}/public_html/img/Empty.png" alt="Generic placeholder image">
@@ -91,6 +94,7 @@
               </ul>
               <span class="glyphicon glyphicon-chevron-up arrowRightBottom glyphicon-grey" aria-hidden="true"></span>
             </div>
+            </a>
           </div>
           <div class="col-md-4">
             <a href="{{ path('Home.Realisaties') }}">
@@ -103,11 +107,13 @@
             </a>
           </div>
           <div class="col-md-4">
-            <div class="block">
-              <h1 class="featurette-heading">Help mee</h1>
-              <p>Help ons het zonnepotentieel van Gent waar te maken. Door zelf zonnepanelen te plaatsen of door vrienden en buren te wijzen op de campagne. Ontketen een echte zonnedynamiek in je straat. Ideeën? Contacteer ons.</p>
-              <span class="glyphicon glyphicon-chevron-right arrowRightBottom glyphicon-grey" aria-hidden="true"></span>
-            </div>
+            <a href="{{ path('Home.HelpMee') }}">
+              <div class="block">
+                <h1 class="featurette-heading">Help mee</h1>
+                <p>Help ons het zonnepotentieel van Gent waar te maken. Door zelf zonnepanelen te plaatsen of door vrienden en buren te wijzen op de campagne. Ontketen een echte zonnedynamiek in je straat. Ideeën? Contacteer ons.</p>
+                <span class="glyphicon glyphicon-chevron-right arrowRightBottom glyphicon-grey" aria-hidden="true"></span>
+              </div>
+            </a>
           </div>
         </div>
 

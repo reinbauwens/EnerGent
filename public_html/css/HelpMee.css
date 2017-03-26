@@ -34,38 +34,56 @@
     height: inherit;
     }
 
-
-@media (min-width: 860px){
-    .marketing ol, .marketing p, .marketing li {
-        font-size: 1.3vw;
-    }
-
-    .block {
-        height: 250px;
-    }
-
-    .small {
-        height: 90px;
+.col-md-4, .col-md-8, .block{
+    width: 100%;
 }
 
+.split{
+    display: none;
+}
 
-    .medium {
-        height: 330px;
+.block {
+    background-image: url(../img/pattern.png);
+    background-repeat: repeat;
+}
+@media (min-width: 860px){
+    .marketing ol, .marketing p, .marketing li {
+        font-size: 15px;
+    }
+    .col-md-4, .col-md-8{
+        width: inherit;
+    }
+
+    .blueHard{
+        width: 99%;
+    }
+
+    .split{
+        display: inherit;
+    }
+
+    .dontSplit{
+        display: none;
     }
 }
 
 @media (min-width: 957px){
   .marketing ol, .marketing p, .marketing li  {
-    font-size: 1.3rem;
+    font-size: 20px;
   }
 }
 @media (min-width: 1044px) {
-    .small {
-        height: 70px;
-    }
-
     h1 {
         font-size: 25pt;
     }
+}
+
+.equal {
+  display: flex;
+  flex-wrap: wrap;
+}
+    
+.equal > div[class*='col-'] {  
+  display: flex;
 }
 

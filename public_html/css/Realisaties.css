@@ -114,7 +114,9 @@
     padding-top: 2rem;
 }
 
-
+.animated h1, .animated h2, .animated p, .animated .collorblue, .animated li, .animated ul {
+    background-image: none;
+}
 
 .cWrapper .col-md-8 .block{
   height: 500px;

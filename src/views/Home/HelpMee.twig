@@ -1,6 +1,6 @@
 {% extends 'layout.twig' %}
 {% set pageTitle = 'Admin' %}
-
+{% set meerwaardeTitle ='Help mee in zonnestad' %}
 {% block pageCss %}
 	<link rel="stylesheet" media="screen" href="{{ app.request.baseUrl }}/public_html/css/HelpMee.css" />
 {% endblock %}
@@ -20,10 +20,11 @@
             </div>
           </div>
         </div>
-        <div class="row featurette">
+        <div class="row featurette equal">
           <div class="col-md-4">
             <div class="block lightBlue">
-            <h1>LEG ZELF ZONNEPANELEN</h1>
+            <h1 class="split">LEG ZELF ZONNE - PANELEN</h1>
+            <h1 class="dontSplit">LEG ZELF ZONNEPANELEN</h1>
             </div>
           </div>
           <div class="col-md-8  ">
@@ -34,7 +35,7 @@
             </div>
           </div>
         </div>
-        <div class="row featurette">
+        <div class="row featurette equal">
           <div class="col-md-8 ">
             <div class="block medium whiteGrey">
             <p>Argumenten nodig? Dit zijn onze troeven: </p>
@@ -57,7 +58,7 @@
             </div>
           </div>
         </div>
-        <div class="row featurette">
+        <div class="row featurette equal">
           <div class="col-md-4">
             <div class="block lightBlue">
             <h1>Vrijwilliger worden</h1>

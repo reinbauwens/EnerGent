@@ -41,6 +41,11 @@ class HomeController implements ControllerProviderInterface {
 			->bind('Home.HoeWerktHet');
 
 		$controllers
+			->get('/Installatie', array($this, 'Installatie'))
+			->method('GET|POST')
+			->bind('Home.Installatie');
+
+		$controllers
 			->get('/Realisaties', array($this, 'Realisaties'))
 			->method('GET|POST')
 			->bind('Home.Realisaties');
@@ -49,6 +54,11 @@ class HomeController implements ControllerProviderInterface {
 			->get('/ZonnestadInCijfers', array($this, 'ZonnestadInCijfers'))
 			->method('GET|POST')
 			->bind('Home.ZonnestadInCijfers');
+		
+		$controllers
+			->get('/WatIsZonnestad', array($this, 'WatIsZonnestad'))
+			->method('GET|POST')
+			->bind('Home.WatIsZonnestad');
 
 		// Redirect to login by default
 		$controllers->get('/', function(Application $app) {
@@ -88,6 +98,17 @@ class HomeController implements ControllerProviderInterface {
 		return $app['twig']->render('Home/HelpMee.twig', array(
 		));
 	}
+
+	public function Installatie(Application $app) {
+		return $app['twig']->render('Home/Installatie.twig', array(
+		));
+	}
+
+	public function WatIsZonnestad(Application $app) {
+		return $app['twig']->render('Home/WatIsZonnestad.twig', array(
+		));
+	}
+
 }
 
 

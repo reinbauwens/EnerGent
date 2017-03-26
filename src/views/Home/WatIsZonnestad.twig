@@ -1,0 +1,103 @@
+{% extends 'layout.twig' %}
+{% set pageTitle = 'Admin' %}
+{% set meerwaardeTitle ='Wat is zonnestad?' %}
+{% block pageCss %}
+	<link rel="stylesheet" media="screen" href="{{ app.request.baseUrl }}/public_html/css/HelpMee.css" />
+{% endblock %}
+{% block pageContent %}
+       <!-- Marketing messaging and featurettes
+    ================================================== -->
+    <!-- Wrap the rest of the page in another container to center all the content. -->
+    <div class="cWrapper">
+      <div class="container marketing">
+        <!-- START THE FEATURETTES -->
+        <div class="row featurette">
+          <div class="col-md-12">
+            <div class="block small blueHard">
+              <p>
+                Met het motto ‘Gent zonnestad? Ja graag!’ voert de energiecoöperatie EnerGent campagne voor meer zonnepanelen in Gent. EnerGent kan zelf die zonnepanelen leveren en heeft bij een installateur een zeer goede prijs bedongen voor een kwalitatieve installatie. Wie zich nu aanmeldt, kan over enkele weken al zonnepanelen op zijn dak hebben. Dit is dus een soort groepsaankoop, maar dan met vooraf bepaalde prijzen. 
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="row featurette equal">
+          <div class="col-md-4">
+            <div class="block lightBlue">
+            <h1>De troeven</h1>
+            </div>
+          </div>
+          <div class="col-md-8  ">
+            <div class="block whiteGrey">
+            <ul>
+              <li>een heel gunstige prijs</li>
+              <li>een hoge materiaalstandaard, waaronder 10 jaar garantie op de omvormer (zie installatie) (link naar installatiepagina)</li>
+              <li>een vrijblijvende, gedetailleerde raming op basis van jouw situatie. </li>
+              <li>een snellere afhandeling dan andere groepsaankopen</li>
+              <li>een hoge ecologische en sociale score van de TRINA-panelen, zie de solar scoreboard (link naar deze pagina)</li>
+              <li>kwaliteitscontrole na installatie door EnerGent (meer dan de wettelijke verplichting)</li>
+              <li>ook hulp in contracten voor de minder voor de hand liggende doelgroepen (bewoners van appartementen, huurders, verhuurders)</li>
+              <li>de organisatie gaat uit van EnerGent, dus een initiatief door en voor Gentse burgers.</li>
+            </ul>
+            </div>
+          </div>
+        </div>
+        <div class="row featurette equal">
+          <div class="col-md-8 ">
+            <div class="block medium whiteGrey">
+            <p>Waarom deze actie? Als alle daken in het Gentse vol zouden liggen met zonnepanelen, zou Gent 1 TWh/jaar energie kunnen opwekken. Dat is een kleine energiecentrale die groen én rendabel is. Toch liggen er nog heel veel daken te wachten om die groene stroom te produceren. Om dat onontgonnen potentieel waar te maken is er nu de actie ‘Gent zonnestad? Ja graag!’. EnerGent begint met deze campagne omdat de tijd er absoluut rijp voor is. </p>
+            </div>
+          </div>
+          <div class="col-md-4 ">
+            <div class="block medium lightBlue">
+            <h1></h1>
+            <h1 class="split">Een energie - centrale</h1>
+            <h1 class="dontSplit">Een energiecentrale</h1>
+            </div>
+          </div>
+        </div>
+        <div class="row featurette equal">
+         <div class="col-md-4 ">
+            <div class="block medium lightBlue">
+            <h1></h1>
+            <h1>Als iedereen wat zon opvangt</h1>
+            </div>
+          </div>
+          <div class="col-md-8 ">
+            <div class="block medium whiteGrey">
+              <p>We willen in het Gentse echt een campagne, een beweging van de grond krijgen rond de zonnekracht. Als zoveel mogelijk mensen de kracht van de zon capteren, wordt Gent een zonnestad. Je kan als particulier je zonnepanelen bij ons bestellen, maar ook je buren en vrienden meebrengen, en misschien kunnen we heuse ‘zonnestraten’ creëren in Gent. </br>Groenestroomcertificaten en injectievergoeding leken zonne-energie niet meer interessant te maken, maar de sterk gedaalde prijs van de zonnepanelen van de laatste jaren en nog steeds stijgende elektriciteitsprijs geven nu weer een boost aan deze investering voor iedereen die een dak heeft waar wat zon op valt. Ideale ligging of niet, er zijn tegenwoordig oplossingen voor bijna elke locatie. De installatie betaalt zich terug in 8 tot 12 jaar. Of: van de komende 25 jaar betaal je nog maximaal de helft van de tijd voor je stroom.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="row featurette equal">
+          <div class="col-md-8 ">
+            <div class="block medium whiteGrey">
+            <p>We willen graag zoveel mogelijk mensen betrekken bij de zonnecampagne. Bij huurders/verhuurders, appartementen of mensen die over onvoldoende inkomen beschikken om zelf panelen te leggen maar wel een dak hebben, ligt dat niet zo voor de hand. We zoeken naar formules zodat ook zij kunnen deelnemen. We willen dat iedereen kan genieten van de lagere stroomprijs die gepaard gaat met zonnepanelen: de zon moet schijnen voor iedereen.</p>
+            </div>
+          </div>
+          <div class="col-md-4 ">
+            <div class="block medium lightBlue">
+            <h1></h1>
+            <h1>Ook als het moeilijker is</h1>
+            </div>
+          </div>
+        </div>
+        <div class="row featurette equal">
+        <div class="col-md-4 ">
+            <div class="block medium lightBlue">
+            <h1></h1>
+            <h1>Grote daken</h1>
+            </div>
+          </div>
+          <div class="col-md-8 ">
+            <div class="block medium whiteGrey">
+            <p>Mensen die geen eigen dak hebben, willen we de kans bieden om te investeren in grotere installaties. EnerGent wil immers ook rendabele grotere zonneprojecten van de grond krijgen.</br>Voor die grotere PV-projecten (10 kWp of meer) zoeken we geschikte daken. EnerGent betaalt de installatie en haalt daarop een bescheiden rendement, terwijl de klant van een lagere stroomprijs kan genieten. De daken moeten voldoende groot zijn, weinig of geen schaduw hebben en de gebruiker van het gebouw heeft liefst een verbruik van 15.000 kWh elektriciteit per jaar.</p>
+            </div>
+          </div>
+        </div>
+        </div>
+    </div>
+{% endblock %}
+{% block pageScripts %}
+	<script src="{{ app.request.baseUrl }}/public_html/js/HelpMee.js"></script>
+{% endblock %}

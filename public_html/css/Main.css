@@ -224,7 +224,85 @@ p{
   padding: 4px 20px;
 }
 
+.header{
+  height: 250px;
+  background-image: url("../img/banner1.jpg");
+  margin-bottom: 30px;
+  background-size:     cover;                      /* <------ */
+    background-repeat:   no-repeat;
+    background-position: center center;   
+}
 
+.header img{
+  margin-top: 3rem;
+}
+
+.header h1{
+  color: white;
+  margin-top: 12rem;
+}
+
+.header .kader{
+	background-color:#3F82C1; 
+	width: auto; 
+	height: 150px;
+	padding: 15px; 
+	border:#FFF200 
+	5px solid;
+	position: relative;
+}
+.header	.super{
+		color:#FFF200;
+		font-size:2.3rem;
+		font-family:'Frutiger Roman';
+		text-transform:uppercase;
+		font-weight: 700;
+		line-height: 1;
+
+	}
+.header	.titel{
+		color:#fff;
+		font-size:2.7rem;
+		font-family:'Frutiger Roman';
+		text-transform:uppercase;
+		font-weight: 700;
+		line-height: 1.05;
+	}
+
+.header .image{
+	  float: left;
+    width: 100px;
+    height: 100px;
+    margin-top: 0rem;
+    margin-left: 0rem;
+}
+
+.header .padding{
+	position: absolute;
+    top: 50%;
+  transform: translateY(-50%);
+	padding-left: 110px;
+	padding-right: 10px;
+  margin-left: 1rem;
+}
+
+.header2{
+  margin-left: auto;
+    margin-right: auto;
+}
+
+.blockheader{
+   max-width: 410px; 
+   text-align: center;
+   margin-left: auto;
+   margin-right: auto;
+   padding-top: 6rem;
+    padding-bottom: 7rem;
+}
+
+.header1{
+  display: none;
+}
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */
 
@@ -555,9 +633,16 @@ img {
 
 /* colors 
 -----------------------------*/
-.blueHard{
+.cWrapper .blueHard{
   background-color: #3f82c1;
   color: white;
+  background-image: url("../img/pattern.png");
+  background-repeat: repeat;
+}
+
+.animated h1, .animated h2, .animated p, .animated .collorblue,  .animated li,  .animated ul{
+  background-image: url("../img/pattern.png");
+  background-repeat: repeat;
 }
 
 .yellow{
@@ -715,6 +800,7 @@ footer h2{
 #PReset{
   padding: 0px;
 }
+
 
 
 /* RESPONSIVE CSS
@@ -888,7 +974,13 @@ footer{
 }
 
 @media (min-width: 860px){
-  
+  .header1{
+    display: inherit;
+  }
+
+  .header2{
+    display: none;
+  }
 
   .cWrapper .col-md-4{
     float: left;
@@ -898,6 +990,11 @@ footer{
     float: left;
     width: 66%;
   }
+
+  .header .col-md-4{
+    width:17%;
+  }
+
   .marketing ol, .marketing p, .marketing li  {
     font-size: 1.3vw;
   }
