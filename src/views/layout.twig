@@ -10,10 +10,10 @@
     	<meta name="designer" content="Sam Van Cleemputte">
 		{# Global Css Start #}
 		
-		<link rel="stylesheet" media="screen" href="{{ app.request.baseUrl }}/public_html/css/bootstrap.min.css" />
-		<link rel="stylesheet" media="screen" href="{{ app.request.baseUrl }}/public_html/css/font-awesome-4.7.0/css/font-awesome.min.css" />
-		<link rel="stylesheet" media="screen" href="{{ app.request.baseUrl }}/public_html/css//ie10-viewport-bug-workaround.css" />
-		<link rel="stylesheet" media="screen" href="{{ app.request.baseUrl }}/public_html/css/Main.css" />
+		<link rel="stylesheet" media="screen" href="{{ app.request.baseUrl }}/{{ urlfix}}css/bootstrap.min.css" />
+		<link rel="stylesheet" media="screen" href="{{ app.request.baseUrl }}/{{ urlfix}}css/font-awesome-4.7.0/css/font-awesome.min.css" />
+		<link rel="stylesheet" media="screen" href="{{ app.request.baseUrl }}/{{ urlfix}}css//ie10-viewport-bug-workaround.css" />
+		<link rel="stylesheet" media="screen" href="{{ app.request.baseUrl }}/{{ urlfix}}css/Main.css" />
 		
 		{# Global Css END #}
 		{% block pageCss %}
@@ -23,6 +23,7 @@
 		<!-- NAVBAR
 ================================================== -->
   <body>
+  
     <div class="navbar-wrapper container">
 
         <nav class="navbar navbar-static-top ">
@@ -51,7 +52,7 @@
     <!-- Carousel
     ================================================== -->
     
-    
+    {{ app.request.baseUrl }}
     {% if app.request.get('_route') == 'Home.start' %}
 
       <div id="myCarousel" class="carousel slide" data-ride="carousel">
@@ -63,10 +64,10 @@
         </ol>
         <div class="carousel-inner" role="listbox">
           <div class="item active">
-            <img class="first-slide" src="{{ app.request.baseUrl }}/public_html/img/banner1.jpg" alt="First slide">
+            <img class="first-slide" src="{{ app.request.baseUrl }}/{{ urlfix}}img/banner1.jpg" alt="First slide">
             <div class="container">
               <div class="carousel-caption">
-               <div class="col-md-4"><img src="{{ app.request.baseUrl }}/public_html/img/logoZonnestadklein.png"></div>
+               <div class="col-md-4"><img src="{{ app.request.baseUrl }}/{{ urlfix}}img/logoZonnestadklein.png"></div>
                 <div class="col-md-8">
                   <p>Als alle Gentse daken zonnepanelen zouden hebben zou gent 1 TWH energie / jaar opwekken. Dat is een </p>
                   <h1>Een stedelijke energiecentrale die <span class="colloryellow">groen én rendabel</span> is</h1>
@@ -76,10 +77,10 @@
             </div>
           </div>
           <div class="item">
-            <img class="second-slide" src="{{ app.request.baseUrl }}/public_html/img/banner1.jpg" alt="Second slide">
+            <img class="second-slide" src="{{ app.request.baseUrl }}/{{ urlfix}}img/banner1.jpg" alt="Second slide">
             <div class="container">
               <div class="carousel-caption">
-                <div class="col-md-4"><img src="{{ app.request.baseUrl }}/public_html/img/logoZonnestadklein.png"></div>
+                <div class="col-md-4"><img src="{{ app.request.baseUrl }}/{{ urlfix}}img/logoZonnestadklein.png"></div>
                 <div class="col-md-8">
                   <p>Als alle Gentse daken zonnepanelen zouden hebben zou gent 1 TWH energie / jaar opwekken. Dat is een </p>
                   <h1>Een stedelijke energiecentrale die <span class="colloryellow">groen én rendabel</span> is</h1>
@@ -89,10 +90,10 @@
             </div>
           </div>
           <div class="item">
-            <img class="third-slide" src="{{ app.request.baseUrl }}/public_html/img/banner1.jpg" alt="Third slide">
+            <img class="third-slide" src="{{ app.request.baseUrl }}/{{ urlfix}}img/banner1.jpg" alt="Third slide">
             <div class="container">
               <div class="carousel-caption">
-                <div class="col-md-4"><img src="{{ app.request.baseUrl }}/public_html/img/logoZonnestadklein.png"></div>
+                <div class="col-md-4"><img src="{{ app.request.baseUrl }}/{{ urlfix}}img/logoZonnestadklein.png"></div>
                 <div class="col-md-8">
                   <p>Als alle Gentse daken zonnepanelen zouden hebben zou gent 1 TWH energie / jaar opwekken. Dat is een </p>
                   <h1>Een stedelijke energiecentrale die <span class="colloryellow">groen én rendabel</span> is</h1>
@@ -116,7 +117,7 @@
         <div class="cWrapper">
           <div class="container">
             <div class="row featurette">
-              <div class="col-md-4"><img src="{{ app.request.baseUrl }}/public_html/img/logoZonnestadklein.png"></div>
+              <div class="col-md-4"><img src="{{ app.request.baseUrl }}/{{ urlfix}}img/logoZonnestadklein.png"></div>
               <div class="col-md-8">
                 <h1>
                   {{ meerwaardeTitle }}
@@ -130,7 +131,7 @@
         <div class="blockheader">
           <div class="kader">
             <div>
-              <img src='{{ app.request.baseUrl }}/public_html/img/zon.svg' class="image">
+              <img src='{{ app.request.baseUrl }}/{{ urlfix}}img/zon.svg' class="image">
             </div>
             <div class="padding">
               <div>
@@ -190,14 +191,14 @@
           </div>
       </footer>
 
-		<script src="{{ app.request.baseUrl }}/public_html/js/jquery-2.1.3.min.js"></script>
-		<script src="{{ app.request.baseUrl }}/public_html/js/ie-emulation-modes-warning.js"></script>
+		<script src="{{ app.request.baseUrl }}/{{ urlfix}}js/jquery-2.1.3.min.js"></script>
+		<script src="{{ app.request.baseUrl }}/{{ urlfix}}js/ie-emulation-modes-warning.js"></script>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-		<script>window.jQuery || document.write('<script src="{{ app.request.baseUrl }}/public_html/../../assets/js/vendor/jquery.min.js"><\/script>')</script>
-		<script src="{{ app.request.baseUrl }}/public_html/js/bootstrap.min.js"></script>
-		<script src="{{ app.request.baseUrl }}/public_html/js/GoogleAnalytics.js"></script>
+		<script>window.jQuery || document.write('<script src="{{ app.request.baseUrl }}/{{ urlfix}}../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+		<script src="{{ app.request.baseUrl }}/{{ urlfix}}js/bootstrap.min.js"></script>
+		<script src="{{ app.request.baseUrl }}/{{ urlfix}}js/GoogleAnalytics.js"></script>
 		<!-- Just to make our placeholder images work. Don't actually copy the next line! -->
-		<script src="{{ app.request.baseUrl }}/public_html/js/holder.min.js"></script>
+		<script src="{{ app.request.baseUrl }}/{{ urlfix}}js/holder.min.js"></script>
 		<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
 		<script src="js/ie10-viewport-bug-workaround.js"></script>
 		{# pageScripts Start #}

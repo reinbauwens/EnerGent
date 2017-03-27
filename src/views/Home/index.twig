@@ -2,7 +2,7 @@
 {% set pageTitle = 'Admin' %}
 
 {% block pageCss %}
-	<link rel="stylesheet" media="screen" href="{{ app.request.baseUrl }}/public_html/css/Home.css" />
+	<link rel="stylesheet" media="screen" href="{{ app.request.baseUrl }}/{{ urlfix}}css/Home.css" />
 {% endblock %}
 {% block pageContent %}
       <div class="container marketing">
@@ -45,7 +45,7 @@
           </div>
           <div class="col-md-4">
             <div class="block animated">
-              <img class="featurette-image img-responsive center-block" src="{{ app.request.baseUrl }}/public_html/img/Zonnestad_EigenWoning.png" alt="Generic placeholder image">
+              <img class="featurette-image img-responsive center-block" src="{{ app.request.baseUrl }}/{{ urlfix}}img/Zonnestad_EigenWoning.png" alt="Generic placeholder image">
               <h2 class="featurette-heading">Eigen woning</h2>
               <p class="lead">Je droomt misschien al jaren van zonnepanelen en nu je dak gerenoveerd is of binnenkort zal worden, zet je de stap. Over enkele weken kunnen de zonnepanelen er liggen en bespaar je meteen op je energierekening.</p>
               <div class="collorblue"><a class="btn btn-lg btn-primary buttonWhite buttonannimated" href="HoeWerktHet.html" role="button">Ik heb interesse</a></div>
@@ -54,7 +54,7 @@
           </div>
           <div class="col-md-4">
             <div class="block animated">
-              <img class="featurette-image img-responsive center-block" src="{{ app.request.baseUrl }}/public_html/img/Zonnestad_Appartement.png" alt="Generic placeholder image">
+              <img class="featurette-image img-responsive center-block" src="{{ app.request.baseUrl }}/{{ urlfix}}img/Zonnestad_Appartement.png" alt="Generic placeholder image">
               <h2 class="featurette-heading">Appartement</h2>
               <p>Appartementen hebben vaak ideale daken, maar de eigendomsstructuur van het gebouw ligt moeilijker. Wij helpen mee in een plan van aanpak (RVB, syndicus, etc.) en het opstellen van de meest geschikte contracttypes.</p>
               <div class="collorblue"><a class="btn btn-lg btn-primary buttonWhite buttonannimated" href="HoeWerktHet.html" role="button">Ik heb interesse</a></div>
@@ -63,7 +63,7 @@
           </div>
           <div class="col-md-4">
             <div class="block animated">
-              <img class="featurette-image img-responsive center-block" src="{{ app.request.baseUrl }}/public_html/img/Zonnestad_Huurwoning.png" alt="Generic placeholder image">
+              <img class="featurette-image img-responsive center-block" src="{{ app.request.baseUrl }}/{{ urlfix}}img/Zonnestad_Huurwoning.png" alt="Generic placeholder image">
               <h2 class="featurette-heading">Huurwoning</h2>
               <p>Huurder of verhuurder? Ook hier bestaan er verschillende pistes met voordelen voor beide partijen. Wij helpen mee in de berekeningen en het opstellen van de meest geschikte contracttypes voor de lokale situatie. </p>
               <div class="collorblue"><a class="btn btn-lg btn-primary buttonWhite buttonannimated" href="HoeWerktHet.html" role="button">Ik heb interesse</a></div>
@@ -72,7 +72,7 @@
           </div>
           <div class="col-md-4">
             <div class="block animated">
-              <img class="featurette-image img-responsive center-block" src="{{ app.request.baseUrl }}/public_html/img/Zonnestad_GroteDaken.png" alt="Generic placeholder image">
+              <img class="featurette-image img-responsive center-block" src="{{ app.request.baseUrl }}/{{ urlfix}}img/Zonnestad_GroteDaken.png" alt="Generic placeholder image">
               <h2 class="featurette-heading">Groter dak</h2>
               <p>Ook grotere daken lenen zich tot heel interessante investeringen. Ofwel investeer je zelf, ofwel investeert EnerGent. Voor dit laatste zijn we op zoek naar daken die voldoende groot zijn en met voldoende eigen energieverbruik. </p>
               <div class="collorblue"><a class="btn btn-lg btn-primary buttonWhite buttonannimated" href="HoeWerktHet.html" role="button">Ik heb interesse</a></div>
@@ -85,7 +85,7 @@
           <a href="{{ path('Home.Installatie') }}">
           <div class="col-md-4">
             <div class="block animated yellow backgroundimage1">
-              <img class="featurette-image img-responsive center-block" src="{{ app.request.baseUrl }}/public_html/img/Empty.png" alt="Generic placeholder image">
+              <img class="featurette-image img-responsive center-block" src="{{ app.request.baseUrl }}/{{ urlfix}}img/Empty.png" alt="Generic placeholder image">
               <h2 class="featurette-heading">Installaties</h2>
               <ul>
                 <li>Prijs installatie: 1.095 EUR/kWp tot 1.385 EUR/kWp (excl. btw), naargelang dakeigenschappen</li>
@@ -99,7 +99,7 @@
           <div class="col-md-4">
             <a href="{{ path('Home.Realisaties') }}">
               <div class="block animated yellow backgroundimage2">
-                <img class="featurette-image img-responsive center-block" src="{{ app.request.baseUrl }}/public_html/img/Empty.png" alt="Generic placeholder image">
+                <img class="featurette-image img-responsive center-block" src="{{ app.request.baseUrl }}/{{ urlfix}}img/Empty.png" alt="Generic placeholder image">
                 <h2 class="featurette-heading">Realisaties</h2>
                 <p>Langzaam maar zeker worden de eerste aanmeldingen omgezet in concrete installaties. Polykristallijn of monokristallijn, de standaard omvormer of de duurdere variant. Van elk van de installaties wordt alles nauwkeurig bijgehouden. </p>
                 <span class="glyphicon glyphicon-chevron-up arrowRightBottom glyphicon-grey" aria-hidden="true"></span>
@@ -123,13 +123,13 @@
           <div class="carousel-inner carousel1">
             <div class="item active">
               <div class="col-sm-10 col-md-offset-1 row carousel-parnters">
-                <div class="col-sm-3"><a class="thumbnail" href="#"><img class="featurette-image img-responsive center-block" src="{{ app.request.baseUrl }}/public_html/img/natuurpunt.png" alt="Generic placeholder image"></a>
+                <div class="col-sm-3"><a class="thumbnail" href="#"><img class="featurette-image img-responsive center-block" src="{{ app.request.baseUrl }}/{{ urlfix}}img/natuurpunt.png" alt="Generic placeholder image"></a>
                 </div>
-                <div class="col-sm-3"><a class="thumbnail" href="#"><img class="featurette-image img-responsive center-block" src="{{ app.request.baseUrl }}/public_html/img/gmf.png" alt="Generic placeholder image"></a>
+                <div class="col-sm-3"><a class="thumbnail" href="#"><img class="featurette-image img-responsive center-block" src="{{ app.request.baseUrl }}/{{ urlfix}}img/gmf.png" alt="Generic placeholder image"></a>
                 </div>
-                <div class="col-sm-3"><a class="thumbnail" href="#"><img class="featurette-image img-responsive center-block" src="{{ app.request.baseUrl }}/public_html/img/beweging-net.png" alt="Generic placeholder image"></a>
+                <div class="col-sm-3"><a class="thumbnail" href="#"><img class="featurette-image img-responsive center-block" src="{{ app.request.baseUrl }}/{{ urlfix}}img/beweging-net.png" alt="Generic placeholder image"></a>
                 </div>
-                <div class="col-sm-3"><a class="thumbnail" href="#"><img class="featurette-image img-responsive center-block" src="{{ app.request.baseUrl }}/public_html/img/Gezinsbond.png" alt="Generic placeholder image"></a>
+                <div class="col-sm-3"><a class="thumbnail" href="#"><img class="featurette-image img-responsive center-block" src="{{ app.request.baseUrl }}/{{ urlfix}}img/Gezinsbond.png" alt="Generic placeholder image"></a>
                 </div>
               </div>
               <!--/row-->
@@ -137,9 +137,9 @@
             <!--/item-->
             <div class="item">
               <div class="col-sm-10 col-md-offset-1 row carousel-parnters">
-                <div class="col-sm-3"><a class="thumbnail" href="#"><img class="featurette-image img-responsive center-block" src="{{ app.request.baseUrl }}/public_html/img/Voem.png" alt="Generic placeholder image"></a>
+                <div class="col-sm-3"><a class="thumbnail" href="#"><img class="featurette-image img-responsive center-block" src="{{ app.request.baseUrl }}/{{ urlfix}}img/Voem.png" alt="Generic placeholder image"></a>
                 </div>
-                <div class="col-sm-3"><a class="thumbnail" href="#"><img class="featurette-image img-responsive center-block" src="{{ app.request.baseUrl }}/public_html/img/gmf.png" alt="Generic placeholder image"></a>
+                <div class="col-sm-3"><a class="thumbnail" href="#"><img class="featurette-image img-responsive center-block" src="{{ app.request.baseUrl }}/{{ urlfix}}img/gmf.png" alt="Generic placeholder image"></a>
                 </div>
               </div>
               <!--/row-->
@@ -161,31 +161,31 @@
           <div class="carousel-inner carousel2">
             <div class="item active">
               <div class="col-sm-10 col-md-offset-1 row carousel-parnters">
-                <div class="col-sm-3"><a class="thumbnail" href="#"><img class="featurette-image img-responsive center-block" src="{{ app.request.baseUrl }}/public_html/img/natuurpunt.png" alt="Generic placeholder image"></a>
+                <div class="col-sm-3"><a class="thumbnail" href="#"><img class="featurette-image img-responsive center-block" src="{{ app.request.baseUrl }}/{{ urlfix}}img/natuurpunt.png" alt="Generic placeholder image"></a>
                 </div>
               </div>
             </div>
             <div class="item">
               <div class="col-sm-10 col-md-offset-1 row carousel-parnters">
-                <div class="col-sm-3"><a class="thumbnail" href="#"><img class="featurette-image img-responsive center-block" src="{{ app.request.baseUrl }}/public_html/img/gmf.png" alt="Generic placeholder image"></a>
+                <div class="col-sm-3"><a class="thumbnail" href="#"><img class="featurette-image img-responsive center-block" src="{{ app.request.baseUrl }}/{{ urlfix}}img/gmf.png" alt="Generic placeholder image"></a>
                 </div>
               </div>
             </div>
             <div class="item">
               <div class="col-sm-10 col-md-offset-1 row carousel-parnters">
-                <div class="col-sm-3"><a class="thumbnail" href="#"><img class="featurette-image img-responsive center-block" src="{{ app.request.baseUrl }}/public_html/img/beweging-net.png" alt="Generic placeholder image"></a>
+                <div class="col-sm-3"><a class="thumbnail" href="#"><img class="featurette-image img-responsive center-block" src="{{ app.request.baseUrl }}/{{ urlfix}}img/beweging-net.png" alt="Generic placeholder image"></a>
                 </div>
               </div>
             </div>
             <div class="item">
               <div class="col-sm-10 col-md-offset-1 row carousel-parnters">
-                <div class="col-sm-3"><a class="thumbnail" href="#"><img class="featurette-image img-responsive center-block" src="{{ app.request.baseUrl }}/public_html/img/Gezinsbond.png" alt="Generic placeholder image"></a>
+                <div class="col-sm-3"><a class="thumbnail" href="#"><img class="featurette-image img-responsive center-block" src="{{ app.request.baseUrl }}/{{ urlfix}}img/Gezinsbond.png" alt="Generic placeholder image"></a>
                 </div>
               </div>
             </div>
             <div class="item">
               <div class="col-sm-10 col-md-offset-1 row carousel-parnters">
-                <div class="col-sm-3"><a class="thumbnail" href="#"><img class="featurette-image img-responsive center-block" src="{{ app.request.baseUrl }}/public_html/img/Voem.png" alt="Generic placeholder image"></a>
+                <div class="col-sm-3"><a class="thumbnail" href="#"><img class="featurette-image img-responsive center-block" src="{{ app.request.baseUrl }}/{{ urlfix}}img/Voem.png" alt="Generic placeholder image"></a>
                 </div>
               </div>
             </div>
@@ -205,5 +205,5 @@
     </div>
 {% endblock %}
 {% block pageScripts %}
-	<script src="{{ app.request.baseUrl }}/public_html/js/Home.js"></script>
+	<script src="{{ app.request.baseUrl }}/{{ urlfix}}js/Home.js"></script>
 {% endblock %}

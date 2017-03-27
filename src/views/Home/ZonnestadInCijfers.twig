@@ -2,8 +2,8 @@
 {% set pageTitle = 'Admin' %}
 {% set meerwaardeTitle ='Zonnestad in Cijfers' %}
 {% block pageCss %}
-	<link rel="stylesheet" media="screen" href="{{ app.request.baseUrl }}/public_html/css/Realisaties.css" />
-    <link rel="stylesheet" media="screen" href="{{ app.request.baseUrl }}/public_html/css/ZonnestadInCijfers.css" />
+	<link rel="stylesheet" media="screen" href="{{ app.request.baseUrl }}/{{ urlfix}}css/Realisaties.css" />
+    <link rel="stylesheet" media="screen" href="{{ app.request.baseUrl }}/{{ urlfix}}css/ZonnestadInCijfers.css" />
 {% endblock %}
 {% block pageContent %}
       <div class="container marketing">
@@ -24,11 +24,11 @@
             <div class="block big animated">
               <div id="myCarousel2" class="carousel slide" data-ride="carousel">
                 <ul class="nav nav-pills nav-justified">
-                  <li data-target="#myCarousel2" data-slide-to="0"><a href="#"><img src="{{ app.request.baseUrl }}/public_html/img/InCijfers/KaartGent.png"></a></li>
-                  <li data-target="#myCarousel2" data-slide-to="1"><a href="#"><img src="{{ app.request.baseUrl }}/public_html/img/InCijfers/PotentieelWijk.png"></a></li>
-                  <li data-target="#myCarousel2" data-slide-to="2"><a href="#"><img src="{{ app.request.baseUrl }}/public_html/img/InCijfers/PotGemeentes.png"></a></li>
-                  <li data-target="#myCarousel2" data-slide-to="3"><a href="#"><img src="{{ app.request.baseUrl }}/public_html/img/InCijfers/WereldZon.png"></a></li>
-                  <li data-target="#myCarousel2" data-slide-to="4"><a href="#"><img src="{{ app.request.baseUrl }}/public_html/img/InCijfers/ZonnePot2.png"></a></li>
+                  <li data-target="#myCarousel2" data-slide-to="0"><a href="#"><img src="{{ app.request.baseUrl }}/{{ urlfix}}img/InCijfers/KaartGent.png"></a></li>
+                  <li data-target="#myCarousel2" data-slide-to="1"><a href="#"><img src="{{ app.request.baseUrl }}/{{ urlfix}}img/InCijfers/PotentieelWijk.png"></a></li>
+                  <li data-target="#myCarousel2" data-slide-to="2"><a href="#"><img src="{{ app.request.baseUrl }}/{{ urlfix}}img/InCijfers/PotGemeentes.png"></a></li>
+                  <li data-target="#myCarousel2" data-slide-to="3"><a href="#"><img src="{{ app.request.baseUrl }}/{{ urlfix}}img/InCijfers/WereldZon.png"></a></li>
+                  <li data-target="#myCarousel2" data-slide-to="4"><a href="#"><img src="{{ app.request.baseUrl }}/{{ urlfix}}img/InCijfers/ZonnePot2.png"></a></li>
                 </ul>
 
 
@@ -37,7 +37,7 @@
               <div class="carousel-inner">
               
                 <div class="item active">
-                  <img src="{{ app.request.baseUrl }}/public_html/img/InCijfers/KaartGent.png">
+                  <img src="{{ app.request.baseUrl }}/{{ urlfix}}img/InCijfers/KaartGent.png">
                   <div class="carousel-caption">
                     <h2>Percentage gerealiseerd zonnepotentieel in de Gentse wijken</h2>
                     <div class="blocktekst">
@@ -48,7 +48,7 @@
                 </div><!-- End Item -->
         
                 <div class="item">
-                  <img src="{{ app.request.baseUrl }}/public_html/img/InCijfers/PotentieelWijk.png">
+                  <img src="{{ app.request.baseUrl }}/{{ urlfix}}img/InCijfers/PotentieelWijk.png">
                   <div class="carousel-caption">
                     <h2>Gerealiseerde oppervlakte (ha) en resterend potentieel (ha) aan zonnepotentieel in de Gentse wijken (zonder de kanaalzone)</h2>
                     <div class="blocktekst">
@@ -59,7 +59,7 @@
                 </div><!-- End Item -->
                 
                 <div class="item">
-                  <img src="{{ app.request.baseUrl }}/public_html/img/InCijfers/PotGemeentes.png">
+                  <img src="{{ app.request.baseUrl }}/{{ urlfix}}img/InCijfers/PotGemeentes.png">
                   <div class="carousel-caption">
                     <h2>Gerealiseerde oppervlakte (ha) en resterend potentieel (ha) aan zonnepotentieel in Gent en deelgemeenten</h2>
                     <div class="blocktekst">
@@ -70,7 +70,7 @@
                 </div><!-- End Item -->
                 
                 <div class="item">
-                  <img src="{{ app.request.baseUrl }}/public_html/img/InCijfers/WereldZon.png">
+                  <img src="{{ app.request.baseUrl }}/{{ urlfix}}img/InCijfers/WereldZon.png">
                   <div class="carousel-caption">
                     <h2>Wereldwijde energievraag weergegeven als oppervlakte zonnepanelen en –collectoren</h2>
                     <div class="blocktekst">
@@ -81,7 +81,7 @@
                 </div><!-- End Item -->
 
                 <div class="item">
-                  <img src="{{ app.request.baseUrl }}/public_html/img/InCijfers/ZonnePot2.png">
+                  <img src="{{ app.request.baseUrl }}/{{ urlfix}}img/InCijfers/ZonnePot2.png">
                   <div class="carousel-caption">
                     <h2>Gerealiseerde oppervlakte (ha) en resterend potentieel (ha) aan zonnepotentieel in de Gentse wijken</h2>
                     <div class="blocktekst">
@@ -101,5 +101,5 @@
       </div>
 {% endblock %}
 {% block pageScripts %}
-	<script src="{{ app.request.baseUrl }}/public_html/js/Realisaties.js"></script>
+	<script src="{{ app.request.baseUrl }}/{{ urlfix}}js/Realisaties.js"></script>
 {% endblock %}
