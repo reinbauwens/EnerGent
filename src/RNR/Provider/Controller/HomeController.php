@@ -91,36 +91,84 @@ class HomeController implements ControllerProviderInterface {
 
 	public function HoeWerktHet(Application $app) {
 		
+		$url = $_SERVER['REQUEST_URI'];
+		if (strpos($url, 'public_html') !== false){
+			$urlfix ='';
+		}
+		else{
+			$urlfix ='public_html/';
+		}
+		
 		return $app['twig']->render('Home/HoeWerktHet.twig', array(
 			'urlfix' => $urlfix
 		));
 	}
 
 	public function Realisaties(Application $app) {
+		
+		$url = $_SERVER['REQUEST_URI'];
+		if (strpos($url, 'public_html') !== false){
+			$urlfix ='';
+		}
+		else{
+			$urlfix ='public_html/';
+		}
 		return $app['twig']->render('Home/Realisaties.twig', array(
 			'urlfix' => $urlfix
 		));
 	}
 
 	public function ZonnestadInCijfers(Application $app) {
+		
+		$url = $_SERVER['REQUEST_URI'];
+		if (strpos($url, 'public_html') !== false){
+			$urlfix ='';
+		}
+		else{
+			$urlfix ='public_html/';
+		}
 		return $app['twig']->render('Home/ZonnestadInCijfers.twig', array(
 			'urlfix' => $urlfix
 		));
 	}
 
 	public function HelpMee(Application $app) {
+		
+		$url = $_SERVER['REQUEST_URI'];
+		if (strpos($url, 'public_html') !== false){
+			$urlfix ='';
+		}
+		else{
+			$urlfix ='public_html/';
+		}
 		return $app['twig']->render('Home/HelpMee.twig', array(
 			'urlfix' => $urlfix
 		));
 	}
 
 	public function Installatie(Application $app) {
+		
+		$url = $_SERVER['REQUEST_URI'];
+		if (strpos($url, 'public_html') !== false){
+			$urlfix ='';
+		}
+		else{
+			$urlfix ='public_html/';
+		}
 		return $app['twig']->render('Home/Installatie.twig', array(
 			'urlfix' => $urlfix
 		));
 	}
 
 	public function WatIsZonnestad(Application $app) {
+		
+		$url = $_SERVER['REQUEST_URI'];
+		if (strpos($url, 'public_html') !== false){
+			$urlfix ='';
+		}
+		else{
+			$urlfix ='public_html/';
+		}
 		return $app['twig']->render('Home/WatIsZonnestad.twig', array(
 			'urlfix' => $urlfix
 		));
