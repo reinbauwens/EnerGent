@@ -86,4 +86,5 @@
 .equal > div[class*='col-'] {  
   display: flex;
 }
-
+.block:hover  h1
+{color: #fff;}
