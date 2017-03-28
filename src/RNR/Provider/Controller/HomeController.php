@@ -59,9 +59,28 @@ class HomeController implements ControllerProviderInterface {
 			->method('GET|POST')
 			->bind('Home.WatIsZonnestad');
 
+		$controllers
+			->get('/EigenWoning', array($this, 'EigenWoning'))
+			->method('GET|POST')
+			->bind('Home.EigenWoning');
+
+		$controllers
+			->get('/Appartementen', array($this, 'Appartementen'))
+			->method('GET|POST')
+			->bind('Home.Appartementen');
+
+		$controllers
+			->get('/Huurwoning', array($this, 'Huurwoning'))
+			->method('GET|POST')
+			->bind('Home.Huurwoning');
+
+		$controllers
+			->get('/GroterDak', array($this, 'GroterDak'))
+			->method('GET|POST')
+			->bind('Home.GroterDak');
+
 		// Redirect to login by default
 		$controllers->get('/', function(Application $app) {
-			
 			return $app->redirect($app['url_generator']->generate('Home.start'));
 		});	
 
@@ -170,6 +189,62 @@ class HomeController implements ControllerProviderInterface {
 			$urlfix ='public_html/';
 		}
 		return $app['twig']->render('Home/WatIsZonnestad.twig', array(
+			'urlfix' => $urlfix
+		));
+	}
+
+	public function EigenWoning(Application $app) {
+		
+		$url = $_SERVER['REQUEST_URI'];
+		if (strpos($url, 'public_html') !== false){
+			$urlfix ='';
+		}
+		else{
+			$urlfix ='public_html/';
+		}
+		return $app['twig']->render('Home/EigenWoning.twig', array(
+			'urlfix' => $urlfix
+		));
+	}
+
+	public function Appartementen(Application $app) {
+		
+		$url = $_SERVER['REQUEST_URI'];
+		if (strpos($url, 'public_html') !== false){
+			$urlfix ='';
+		}
+		else{
+			$urlfix ='public_html/';
+		}
+		return $app['twig']->render('Home/Appartementen.twig', array(
+			'urlfix' => $urlfix
+		));
+	}
+
+	public function Huurwoning(Application $app) {
+		
+		$url = $_SERVER['REQUEST_URI'];
+		if (strpos($url, 'public_html') !== false){
+			$urlfix ='';
+		}
+		else{
+			$urlfix ='public_html/';
+		}
+		return $app['twig']->render('Home/Huurwoning.twig', array(
+			'urlfix' => $urlfix
+		));
+	}
+
+	public function GroterDak(Application $app) {
+		
+		$url = $_SERVER['REQUEST_URI'];
+		if (strpos($url, 'public_html') !== false){
+			$urlfix ='';
+		}
+		else{
+			$urlfix ='public_html/';
+		}
+		return $app['twig']->render('Home/GroterDak.twig', array(
 			'urlfix' => $urlfix
 		));
 	}

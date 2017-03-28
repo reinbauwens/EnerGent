@@ -11,7 +11,13 @@ date_default_timezone_set('Europe/Brussels');
 
 //Handle errors that were generated
 $app->error(function (\Exception $e, $code) use ($app) {
-
+	$url = $_SERVER['REQUEST_URI'];
+		if (strpos($url, 'public_html') !== false){
+			$urlfix ='';
+		}
+		else{
+			$urlfix ='public_html/';
+		}
 	if ($code == 404) { //set page content for 404 page not found error
 		//set the breadcrumbs for the page
 
@@ -40,7 +46,8 @@ $app->error(function (\Exception $e, $code) use ($app) {
 		'errorTitle' => $title_error,
 		'msgOne' => $msgOne,
 		'msgTwo' => $msgTwo,
-		'errorMsg' => $error
+		'errorMsg' => $error,
+		'urlfix' => $urlfix
 	));
 });
 
