@@ -11,9 +11,13 @@ body {
 
 }
 
-a, a:focus, a:hover {
-  color: inherit; /* blue colors for links too */
+a {
+  color: #337ab7; /* blue colors for links too */
   text-decoration: inherit; /* no underline */
+}
+a:focus, a:hover {
+ /* blue colors for links too */
+  text-decoration: underline; /* no underline */
 }
 
 p{
@@ -288,6 +292,7 @@ p{
 	padding-left: 110px;
 	padding-right: 10px;
   margin-left: 1rem;
+
 }
 
 .header2{
@@ -660,7 +665,7 @@ img {
 }
 
 .whiteGrey{
-  background-color: rgba(63,130,193,0.25);
+  background-color: #f1f2f2;
   
 }
 
