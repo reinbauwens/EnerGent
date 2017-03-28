@@ -276,16 +276,23 @@ p{
     height: 50px;
   }
 
+
   .backButton{
-    position: absolute;
-    top: 10px;
+    position: fixed;
+    top: 3px;
     left: 10px;
+    z-index: 10000;
   }
 
   .backButton span{
-    position: absolute;
-    top: 18px;
-    left: 19px;
+    position: fixed;
+    top: 21px;
+    left: 29px;
+    color: yellow;
+  }
+
+  .backButton:hover .glyphicon-chevron-left{
+    color: #3F82C1;
   }
 
 .header .image{
