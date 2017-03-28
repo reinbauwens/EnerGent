@@ -5,7 +5,7 @@
 body {
   color: #636464;
   background-color: #CFD0D2;
-  background-image: url("../img/roof_pattern.png");
+  
   background-repeat: repeat;
   counter-reset: section;
 
@@ -312,9 +312,9 @@ p{
 
 /* Carousel base class */
 .carousel {
-  height: 403px;
-  margin-bottom: 27px;
-  border-bottom: #777 3px solid;
+  height: 400px;
+  margin-bottom: 30px;
+
 }
 /* Since positioning the image, we need to help out the caption */
 .carousel-caption {
@@ -661,7 +661,6 @@ img {
 
 .whiteGrey{
   background-color: #f1f2f2;
-  font-size: 15px;
 }
 .whiteGrey a{
   color: #3f82c1; 
@@ -787,7 +786,7 @@ footer{
   text-align: center;
   background-image: url("../img/pattern_brick.png");
   background-repeat: repeat;
-  border-top: #333 solid 5px;
+  
 
 }
 
@@ -801,7 +800,7 @@ footer p{
 }
 
 
-footer a:hover{
+footer :hover{
   color: #fff200;
 }
 
