@@ -795,9 +795,15 @@ img {
 .car2{
   height: inherit;
   background-color: #f1f2f2;
-  box-shadow: 2px 2px 5px rgba(0,0,0,0.25);
-}
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.25);    
 
+}
+.carousel-control .glyphicon-chevron-right {
+  right: 20%;
+}
+.carousel-control .glyphicon-chevron-left {
+  left: 20%;
+}
 /*footer
 ------------------------*/
 
@@ -1015,6 +1021,7 @@ footer{
     margin-bottom: 20px;
     line-height: 1.4;
   }
+
 }
 
 @media (min-width: 860px){
@@ -1099,6 +1106,9 @@ footer{
   #myCarousel h1{
     font-size: 40px;
   }
+  .car2{
+    margin-right: 10px;
+}
 }
 
 @media (min-width: 920px){
