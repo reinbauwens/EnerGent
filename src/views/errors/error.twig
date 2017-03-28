@@ -1,19 +1,19 @@
 {# extend the parent tpl #}
 {% extends 'layout.twig' %}
-
+{% set meerwaardeTitle ='Error' %}
 {# set the pagetitle in the parent tpl #}
 {% set pageTitle = pageTitle %}
 
 {# Page specific css #}
 {% block pageCss %}
-	<link rel="stylesheet" media="screen" href="{{ app.request.baseUrl }}/public_html/css/errorStyle.css" />
+	<link rel="stylesheet" media="screen" href="{{ app.request.baseUrl }}/{{ urlfix}}css/errorStyle.css" />
 {% endblock %}
 
 {% block pageContent %}
 	<div class = "errorMessage">
 		<div class="error">
 		</div>
-
+		
 		<h2>{{ errorTitle }}</h2>
 		</br>
 		<h3>{{ msgOne }}</h3>
@@ -27,5 +27,5 @@
 	</div>
 {% endblock %}
 {% block pageScripts %}
-	<script type="text/javascript" src="{{ app.request.baseUrl }}/public_html/js/errorScript.js" ></script>
+	<script type="text/javascript" src="{{ app.request.baseUrl }}/{{ urlfix}}js/errorScript.js" ></script>
 {% endblock %}

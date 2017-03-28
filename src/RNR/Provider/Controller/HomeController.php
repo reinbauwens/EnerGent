@@ -12,7 +12,6 @@ use Symfony\Component\Validator\Constraints as Assert;
  * @author Rein Bauwens	<rein.bauwens@outlook.com>
  */
 class HomeController implements ControllerProviderInterface {
-
 	/**
 	 * Returns routes to connect to the given application.
 	 * @param Application $app An Application instance
@@ -62,6 +61,7 @@ class HomeController implements ControllerProviderInterface {
 
 		// Redirect to login by default
 		$controllers->get('/', function(Application $app) {
+			
 			return $app->redirect($app['url_generator']->generate('Home.start'));
 		});	
 
@@ -75,37 +75,102 @@ class HomeController implements ControllerProviderInterface {
 	 * @return string A blob of HTML
 	 */
 	public function index(Application $app) {
+		
+		$url = $_SERVER['REQUEST_URI'];
+		if (strpos($url, 'public_html') !== false){
+			$urlfix ='';
+		}
+		else{
+			$urlfix ='public_html/';
+		}
+		
 		return $app['twig']->render('Home/index.twig', array(
+			'urlfix' => $urlfix
 		));
 	}
 
 	public function HoeWerktHet(Application $app) {
+		
+		$url = $_SERVER['REQUEST_URI'];
+		if (strpos($url, 'public_html') !== false){
+			$urlfix ='';
+		}
+		else{
+			$urlfix ='public_html/';
+		}
+		
 		return $app['twig']->render('Home/HoeWerktHet.twig', array(
+			'urlfix' => $urlfix
 		));
 	}
 
 	public function Realisaties(Application $app) {
+		
+		$url = $_SERVER['REQUEST_URI'];
+		if (strpos($url, 'public_html') !== false){
+			$urlfix ='';
+		}
+		else{
+			$urlfix ='public_html/';
+		}
 		return $app['twig']->render('Home/Realisaties.twig', array(
+			'urlfix' => $urlfix
 		));
 	}
 
 	public function ZonnestadInCijfers(Application $app) {
+		
+		$url = $_SERVER['REQUEST_URI'];
+		if (strpos($url, 'public_html') !== false){
+			$urlfix ='';
+		}
+		else{
+			$urlfix ='public_html/';
+		}
 		return $app['twig']->render('Home/ZonnestadInCijfers.twig', array(
+			'urlfix' => $urlfix
 		));
 	}
 
 	public function HelpMee(Application $app) {
+		
+		$url = $_SERVER['REQUEST_URI'];
+		if (strpos($url, 'public_html') !== false){
+			$urlfix ='';
+		}
+		else{
+			$urlfix ='public_html/';
+		}
 		return $app['twig']->render('Home/HelpMee.twig', array(
+			'urlfix' => $urlfix
 		));
 	}
 
 	public function Installatie(Application $app) {
+		
+		$url = $_SERVER['REQUEST_URI'];
+		if (strpos($url, 'public_html') !== false){
+			$urlfix ='';
+		}
+		else{
+			$urlfix ='public_html/';
+		}
 		return $app['twig']->render('Home/Installatie.twig', array(
+			'urlfix' => $urlfix
 		));
 	}
 
 	public function WatIsZonnestad(Application $app) {
+		
+		$url = $_SERVER['REQUEST_URI'];
+		if (strpos($url, 'public_html') !== false){
+			$urlfix ='';
+		}
+		else{
+			$urlfix ='public_html/';
+		}
 		return $app['twig']->render('Home/WatIsZonnestad.twig', array(
+			'urlfix' => $urlfix
 		));
 	}
 

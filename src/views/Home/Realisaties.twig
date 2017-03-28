@@ -2,7 +2,7 @@
 {% set pageTitle = 'Admin' %}
 {% set meerwaardeTitle ='Realisaties' %}
 {% block pageCss %}
-	<link rel="stylesheet" media="screen" href="{{ app.request.baseUrl }}/public_html/css/Realisaties.css" />
+	<link rel="stylesheet" media="screen" href="{{ app.request.baseUrl }}/{{ urlfix}}css/Realisaties.css" />
 {% endblock %}
 {% block pageContent %}
       <div class="container marketing">
@@ -14,10 +14,13 @@
             <div class="block blueHard big">
               <h1 class="featurette-heading">Projecten </br>door </br>zonnestad</h1>
                 <p>
-                  Gent heeft momenteel ongeveer <span class="collorYellow">xxxx</span> particuliere zonne-installaties op haar grondgebied. De zonnestad heeft de ambitie dit getal mee te helpen verdubbelen.
+                  Gent heeft momenteel ongeveer <span class="collorYellow"><strong>5300</strong></span> particuliere zonne-installaties op haar grondgebied. De zonnestad heeft de ambitie dit getal mee te helpen verdubbelen.
                 </p>
                 <p>
-                  </br>Sinds de start werder al <span class="collorYellow">xxxx</span> installaties gebouwd.
+                  </br>Sinds de start zijn er ondertussen <span class="collorYellow"><strong>55</strong></span> aangemeld en <span class="collorYellow"><strong>2</strong></span> installaties afgewerkt.
+                </p>
+                <p>
+                  </br>Bewonder hiernaast de eerste realisaties.
                 </p>
               </div>
           </div>
@@ -25,10 +28,10 @@
             <div class="block big animated">
               <div id="myCarousel2" class="carousel slide" data-ride="carousel">
                 <ul class="nav nav-pills nav-justified">
-                  <li data-target="#myCarousel2" data-slide-to="0"><a href="#"><img src="{{ app.request.baseUrl }}/public_html/img/R1.JPG"></a></li>
-                  <li data-target="#myCarousel2" data-slide-to="1"><a href="#"><img src="{{ app.request.baseUrl }}/public_html/img/R1.JPG"></a></li>
-                  <li data-target="#myCarousel2" data-slide-to="2"><a href="#"><img src="{{ app.request.baseUrl }}/public_html/img/R1.JPG"></a></li>
-                  <li data-target="#myCarousel2" data-slide-to="3"><a href="#"><img src="{{ app.request.baseUrl }}/public_html/img/R1.JPG"></a></li>
+                  <li data-target="#myCarousel2" data-slide-to="0"><a href="#"><img src="{{ app.request.baseUrl }}/{{ urlfix}}img/R1.JPG"></a></li>
+                  <li data-target="#myCarousel2" data-slide-to="1"><a href="#"><img src="{{ app.request.baseUrl }}/{{ urlfix}}img/R1.JPG"></a></li>
+                  <li data-target="#myCarousel2" data-slide-to="2"><a href="#"><img src="{{ app.request.baseUrl }}/{{ urlfix}}img/R1.JPG"></a></li>
+                  <li data-target="#myCarousel2" data-slide-to="3"><a href="#"><img src="{{ app.request.baseUrl }}/{{ urlfix}}img/R1.JPG"></a></li>
                   
                 </ul>
 
@@ -38,28 +41,28 @@
               <div class="carousel-inner">
               
                 <div class="item active">
-                  <img src="{{ app.request.baseUrl }}/public_html/img/R1.JPG">
+                  <img src="{{ app.request.baseUrl }}/{{ urlfix}}img/R1.JPG">
                   <div class="carousel-caption">
-                    <h2>Project x (prokject in de kijker)</h2>
+                    <h2>Project 1</h2>
                     <div class="rowrealisatie">
                       <div class="smallblock">
                         <div class="blockimg">
-                          <img class="featurette-image img-responsive center-block" src="{{ app.request.baseUrl }}/public_html/img/Zonnestad_EigenWoning.png" alt="Generic placeholder image">
+                          <img class="featurette-image img-responsive center-block" src="{{ app.request.baseUrl }}/{{ urlfix}}img/polykristal.svg" alt="Generic placeholder image">
                         </div>
-                        <p>Polykristallijn zonnepaneel</p>
+                        <p>Type paneel: Polykristallijn</p>
                       </div>
                       <div class="smallblock">
-                        <h1>6kWp</h1>
+                        <h1>2,5 kWp</h1>
                         <p>geïnstalleerd vermogen</p>
                       </div>
                       <div class="smallblock">
                         <div class="blockimg">
-                          <img class="featurette-image img-responsive center-block" src="{{ app.request.baseUrl }}/public_html/img/Zonnestad_EigenWoning.png" alt="Generic placeholder image">
+                          <img class="featurette-image img-responsive center-block" src="{{ app.request.baseUrl }}/{{ urlfix}}img/Zonnestad_EigenWoning.png" alt="Generic placeholder image">
                         </div>
-                        <p>Eigen woning</p>
+                        <p>Type woning: eigen woning</p>
                       </div>
                       <div class="smallblock">
-                        <h1>30 jan 2017</h1>
+                        <h1>15 maart 2017</h1>
                         <p>installatiedatum</p>
                       </div>
                     </div>
@@ -67,92 +70,34 @@
                 </div><!-- End Item -->
         
                 <div class="item">
-                  <img src="{{ app.request.baseUrl }}/public_html/img/R1.JPG">
+                  <img src="{{ app.request.baseUrl }}/{{ urlfix}}img/R1.JPG">
                   <div class="carousel-caption">
-                    <h2>Project x (prokject in de kijker)</h2>
+                    <h2>Project 2</h2>
                     <div class="rowrealisatie">
                       <div class="smallblock">
                         <div class="blockimg">
-                          <img class="featurette-image img-responsive center-block" src="{{ app.request.baseUrl }}/public_html/img/Zonnestad_EigenWoning.png" alt="Generic placeholder image">
+                          <img class="featurette-image img-responsive center-block" src="{{ app.request.baseUrl }}/{{ urlfix}}img/Zonnestad_EigenWoning.png" alt="Generic placeholder image">
                         </div>
-                        <p>Polykristallijn zonnepaneel</p>
+                        <p>Type paneel: Polykristallijn</p>
                       </div>
                       <div class="smallblock">
-                        <h1>6kWp</h1>
+                        <h1>2,7 kWp</h1>
                         <p>geïnstalleerd vermogen</p>
                       </div>
                       <div class="smallblock">
                         <div class="blockimg">
-                          <img class="featurette-image img-responsive center-block" src="{{ app.request.baseUrl }}/public_html/img/Zonnestad_EigenWoning.png" alt="Generic placeholder image">
+                          <img class="featurette-image img-responsive center-block" src="{{ app.request.baseUrl }}/{{ urlfix}}img/Zonnestad_EigenWoning.png" alt="Generic placeholder image">
                         </div>
-                        <p>Eigen woning</p>
+                        <p>Type woning: eigen woning</p>
                       </div>
                       <div class="smallblock">
-                        <h1>30 jan 2017</h1>
+                        <h1>28 maart 2017</h1>
                         <p>installatiedatum</p>
                       </div>
                     </div>
                     </div>
                 </div><!-- End Item -->
-                
-                <div class="item">
-                  <img src="{{ app.request.baseUrl }}/public_html/img/R1.JPG">
-                  <div class="carousel-caption">
-                    <h2>Project x (prokject in de kijker)</h2>
-                    <div class="rowrealisatie">
-                      <div class="smallblock">
-                        <div class="blockimg">
-                          <img class="featurette-image img-responsive center-block" src="{{ app.request.baseUrl }}/public_html/img/Zonnestad_EigenWoning.png" alt="Generic placeholder image">
-                        </div>
-                        <p>Polykristallijn zonnepaneel</p>
-                      </div>
-                      <div class="smallblock">
-                        <h1>6kWp</h1>
-                        <p>geïnstalleerd vermogen</p>
-                      </div>
-                      <div class="smallblock">
-                        <div class="blockimg">
-                          <img class="featurette-image img-responsive center-block" src="{{ app.request.baseUrl }}/public_html/img/Zonnestad_EigenWoning.png" alt="Generic placeholder image">
-                        </div>
-                        <p>Eigen woning</p>
-                      </div>
-                      <div class="smallblock">
-                        <h1>30 jan 2017</h1>
-                        <p>installatiedatum</p>
-                      </div>
-                    </div>
-                    </div>
-                </div><!-- End Item -->
-                
-                <div class="item">
-                  <img src="{{ app.request.baseUrl }}/public_html/img/R1.JPG">
-                  <div class="carousel-caption">
-                    <h2>Project x (prokject in de kijker)</h2>
-                    <div class="rowrealisatie">
-                      <div class="smallblock">
-                        <div class="blockimg">
-                          <img class="featurette-image img-responsive center-block" src="{{ app.request.baseUrl }}/public_html/img/Zonnestad_EigenWoning.png" alt="Generic placeholder image">
-                        </div>
-                        <p>Polykristallijn zonnepaneel</p>
-                      </div>
-                      <div class="smallblock">
-                        <h1>6kWp</h1>
-                        <p>geïnstalleerd vermogen</p>
-                      </div>
-                      <div class="smallblock">
-                        <div class="blockimg">
-                          <img class="featurette-image img-responsive center-block" src="{{ app.request.baseUrl }}/public_html/img/Zonnestad_EigenWoning.png" alt="Generic placeholder image">
-                        </div>
-                        <p>Eigen woning</p>
-                      </div>
-                      <div class="smallblock">
-                        <h1>30 jan 2017</h1>
-                        <p>installatiedatum</p>
-                      </div>
-                    </div>
-                    </div>
-                </div><!-- End Item -->
-                        
+                             
               </div><!-- End Carousel Inner -->
               </div>
             </div>
@@ -163,5 +108,5 @@
       </div>
 {% endblock %}
 {% block pageScripts %}
-	<script src="{{ app.request.baseUrl }}/public_html/js/Realisaties.js"></script>
+	<script src="{{ app.request.baseUrl }}/{{ urlfix}}js/Realisaties.js"></script>
 {% endblock %}

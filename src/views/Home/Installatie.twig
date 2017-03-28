@@ -2,7 +2,7 @@
 {% set pageTitle = 'Admin' %}
 {% set meerwaardeTitle ='De installatie' %}
 {% block pageCss %}
-	<link rel="stylesheet" media="screen" href="{{ app.request.baseUrl }}/public_html/css/HelpMee.css" />
+	<link rel="stylesheet" media="screen" href="{{ app.request.baseUrl }}/{{ urlfix}}css/HelpMee.css" />
 {% endblock %}
 {% block pageContent %}
        <!-- Marketing messaging and featurettes
@@ -15,7 +15,7 @@
           <div class="col-md-12">
             <div class="block small blueHard">
               <p>
-                Meer weten over de technische installatie? Hier vind je  een overzicht over de kwalitatieve eisen van de installatie:
+                Meer weten over de technische installatie? Hieronder vind je  een overzicht over de technische eisen van de installatie.
                 </p>
             </div>
           </div>
@@ -30,24 +30,13 @@
           <div class="col-md-8  ">
             <div class="block whiteGrey">
               <ul>
-                <li>Merk: Trina (Chinees bedrijf, een van de wereldwijde marktleiders, scoort bovendien bij de top 3 van de wereld  voor ecologische, sociale criteria en recycleerbaarheid1)</li>
-                <li>Lineaire vermogensgarantie van de panelen:</li>
+                <li><strong>Merk:</strong><br> <a href="http://2016.trinasolar.com/eu/index.html">Trina Solar</a> (Chinees bedrijf, een van de wereldwijde marktleiders, en zit volgens de <a href="http://www.solarscorecard.com/2015/2015-SVTC-Solar-Scorecard.pdf">Solar Scorecard</a> in de top 3 voor ecologische criteria, sociale criteria en recycleerbaarheid)</li>
+                <li><strong>Lineairevermogensgarantie van de panelen:</strong><br> minimum 90% op 10 jaar; minimum 80% op 25 jaar</li>
+                <li><strong>Waarborg:</strong><br> Twee jaar omniumgarantie op materiaal en plaatsingskosten.</li>
+                <li><strong>Paneelyypes:</strong>
                 <ul>
-                  <li>Minimum 90% op 10 jaar</li>
-                  <li>Minimum 80% op 25 jaar</li>
-                </ul>
-                <li>Waarborg: twee jaar omniumgarantie op materiaal en plaatsingskosten.</li>
-                <li>Type 1: </li>
-                <ul>
-                  <li>Monokristallijne panelen van het type ALLMAX M PLUS-DD05A.08 </li>
-                  <li>Vermogen: ± 280 Wp/paneel</li>
-                  <li>Kleur: zwart</li>
-                </ul>
-                <li>Type 2: </li>
-                <ul>
-                  <li>Polykristallijne panelen van het type ALLMAX-PD05.08</li>
-                  <li>Vermogen: ± 270 Wp/paneel</li>
-                  <li>Kleur: donkerblauw </li>
+                <li> <span style="font-style: italic;">Monokristallijne panelen</span> (zwart) van het type <a href="http://www.trinasolar.com/us/product/allmax/allmaxmplus-dd05a08ii">ALLMAX M PLUS-DD05A.08</a>: 285 Wp/paneel</li>
+                <li><span style="font-style: italic;">Polykristallijne panelen</span> (donkerblauw) van het type <a href= "http://www.trinasolar.com/us/product/allmax/allmax-pd0508">ALLMAX-PD05.08</a>: 270 Wp/paneel </li>
                 </ul>
                 <li>Bij de opstelling wordt rekening gehouden met de esthetische voorkeuren van de  klant. </li>
               </ul>
@@ -58,7 +47,7 @@
           <div class="col-md-8 ">
             <div class="block medium whiteGrey">
             <ul>
-              <li>Merk: SOLIS</li>
+              <li>Merk: <a href="http://www.ginlong.com/en/PV_Inverters.html">Solis</a>  (optioneel ook met <a href="https://www.solaredge.com/us/products/power-optimizer#/">Solar Edge</a>, <a href="https://enphase.com/nl-nl/producten-en-services/micro-omvormers">Emphase micro-omvormers</a> en <a href="http://www.sma-benelux.com/producten.html">SMA</a>, al dan niet in combinatie met <a href="https://www.tigoenergy.com/nl/products/">TIGO-optimizers</a></li>
               <li>Garantie: 10 jaar vanaf plaatsing</li>
               <li>Lokale support van de fabrikant</li>
               <li>Automatische ENS-beveiliging</li>
@@ -67,7 +56,7 @@
               <li>Nominaal ingaand vermogen van de omvormer: tussen 85 en 105% van het piekvermogen van het aangesloten fotovoltaïsche array.</li>
               <li>De omvormer zoekt binnen voldoende ruime grenswaarden van de spanning steeds het maximale vermogen op. </li>
               <li>De omvormers starten automatisch op bij voldoende licht en automatisch af bij te weinig zonlicht.</li>
-              <li>Omvormers worden geplaatst in de technische ruimte, volgens de voorkeur van de klant</li>
+              <li>Omvormers worden geplaatst in een ruimte naar voorkeur.</li>
             </ul>
             </div>
           </div>
@@ -87,10 +76,10 @@
             <div class="block medium whiteGrey">
             <ul>
               <li>De bekabeling is UV-bestendig, weerbestendig en waterdicht.</li>
-              <li>De leidingen worden zo kort mogelijk gehouden om verliezen tot een minimum te beperken. De leidingsecties worden aangepast in functie van de afstanden.</li>
+              <li>De kabels worden zo kort mogelijk gehouden om verliezen tot een minimum te beperken. De kabelsecties worden aangepast in functie van de afstanden.</li>
               <li>Installateur staat in voor water- en luchtdichting dak, volgens dezelfde kwalitatieve eisen woning. </li>
               <li>Bekabeling onderscheidt zich van andere door specifieke kleur of markering. </li>
-              <li>De kabels worden binnen het huis in een opbouwkabelgoot (pvc) gemonteerd. </li>
+              <li>De kabels worden binnen het huis in een opbouwkabelgoot (pvc) gemonteerd. Er wordt gestreefd naar een maximale integratie met bestaande kabelsystemen.</li>
               <li>Tot 10 m kabellengte binnen de standaardprijs. </li>
             </ul>
             </div>
@@ -127,9 +116,7 @@
             <ul>
               <li>Productgarantie installatie (plaatsing van de panelen): 10 jaar vanaf plaatsing</li>
               <li>Garantie omvormers: 10 jaar vanaf plaatsing</li>
-              <li>Lineaire vermogensgarantie van de panelen:</li>
-              <li>Minimum 90% op 10 jaar</li>
-              <li>Minimum 80% op 25 jaar</li>
+              <li>Lineaire vermogensgarantie van de panelen: minimum 90% op 10 jaar; minimum 80% op 25 jaar</li>
               <li>Waarborg: twee jaar omniumgarantie op materiaal en plaatsingskosten. </li>
             </ul>
             </div>
@@ -139,5 +126,5 @@
     </div>
 {% endblock %}
 {% block pageScripts %}
-	<script src="{{ app.request.baseUrl }}/public_html/js/HelpMee.js"></script>
+	<script src="{{ app.request.baseUrl }}/{{ urlfix}}js/HelpMee.js"></script>
 {% endblock %}

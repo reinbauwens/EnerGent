@@ -2,7 +2,7 @@
 {% set pageTitle = 'Admin' %}
 {% set meerwaardeTitle ='Help mee in zonnestad' %}
 {% block pageCss %}
-	<link rel="stylesheet" media="screen" href="{{ app.request.baseUrl }}/public_html/css/HelpMee.css" />
+	<link rel="stylesheet" media="screen" href="{{ app.request.baseUrl }}/{{ urlfix}}css/HelpMee.css" />
 {% endblock %}
 {% block pageContent %}
        <!-- Marketing messaging and featurettes
@@ -38,18 +38,18 @@
         <div class="row featurette equal">
           <div class="col-md-8 ">
             <div class="block medium whiteGrey">
-            <p>Argumenten nodig? Dit zijn onze troeven: </p>
+            <h2>Argumenten nodig? Dit zijn onze troeven: </h2>
             <ul>
-              <li>Zonnestad heeft gunstige prijzen onderhandeld met de installateur</li>
+              <li>Zonnestad heeft gunstige prijzen onderhandeld met de installateur.</li>
               <li>Kwalitatieve materialen en toestellen , waaronder 10 jaar garantie op de omvormer, zie installatie (link naar installatiepagina)</li>
               <li>Een vrijblijvende gedetailleerde raming op basis van jouw situatie. </li>
-              <li>Een snelle afhandeling, sneller dan groepsaankopen</li>
-              <li>Een hoge eco- en sociale score van de TRINA panelen, zie de solar scoreboard (link naar deze pagina)</li>
+              <li>Een snelle afhandeling, sneller dan andere groepsaankopen</li>
+              <li>Een hoge eco- en sociale score van de TRINA panelen, zie <a href="http://www.solarscorecard.com/2015/2015-SVTC-Solar-Scorecard.pdf">de solar scorecard</a>
+              </li>
               <li>Kwaliteitscontrole na installatie door EnerGent (meer dan de wettelijke verplichting)</li>
               <li>Ook hulp in contracten voor de minder evidente doelgroepen (bewoners van appartementen, huurders, verhuurders)</li>
               <li>De organisatie gaat uit van EnerGent, dus het initiatief is door en voor Gentse burgers.</li>
             </ul>
-            <p>Heb je met succes jouw buren kunnen overtuigen? Indien jullie in dezelfde straat wonen en jullie houden er ongeveer dezelfde timing op na voor de installatie, dan maak je aanspraak op de burenkorting! </p>
             </div>
           </div>
           <div class="col-md-4 ">
@@ -67,7 +67,7 @@
           <div class="col-md-4">
             <div class="block whiteGrey" >
             <h2>Brainstorm samen met ons over de zonnecampagne </h2>
-            <p>Een campagne als Gent zonnestad is een campagne die regelmatig nieuwe impulsen nodig heeft. Kom gerust mee nadenken voor nieuwe ideëen, werkwijzes, etc. Contacteer ons op: info@energent.be.</p>
+            <p>Een campagne als Gent zonnestad is een campagne die regelmatig nieuwe impulsen nodig heeft. Kom gerust mee nadenken voor nieuwe ideëen, werkwijzes, enz. Contacteer ons op <a href="mailto:zonnestad@energent.be">zonnestad@energent.be</a>.</p>
             </div>
           </div>
           <div class="col-md-4 ">
@@ -81,5 +81,5 @@
     </div>
 {% endblock %}
 {% block pageScripts %}
-	<script src="{{ app.request.baseUrl }}/public_html/js/HelpMee.js"></script>
+	<script src="{{ app.request.baseUrl }}/{{ urlfix}}js/HelpMee.js"></script>
 {% endblock %}

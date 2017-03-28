@@ -4,12 +4,13 @@
 
 body {
   color: #636464;
-  background-color: #efefef;
+  background-color: #CFD0D2;
+  background-repeat: repeat;
   counter-reset: section;
-}
 
+}
 a, a:focus, a:hover {
-  color: inherit; /* blue colors for links too */
+  color: inherit;/* blue colors for links too */
   text-decoration: inherit; /* no underline */
 }
 
@@ -33,6 +34,7 @@ h1{
 .cWrapper{
   max-width: 1048px;
   margin: auto;
+
 }
 
 .thumbnail {
@@ -269,6 +271,23 @@ p{
 		line-height: 1.05;
 	}
 
+  .backButton img{
+    width: 50px;
+    height: 50px;
+  }
+
+  .backButton{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+  }
+
+  .backButton span{
+    position: absolute;
+    top: 18px;
+    left: 19px;
+  }
+
 .header .image{
 	  float: left;
     width: 100px;
@@ -281,9 +300,10 @@ p{
 	position: absolute;
     top: 50%;
   transform: translateY(-50%);
-	padding-left: 110px;
+	padding-left: 85px;
 	padding-right: 10px;
   margin-left: 1rem;
+
 }
 
 .header2{
@@ -292,7 +312,7 @@ p{
 }
 
 .blockheader{
-   max-width: 410px; 
+   max-width: 500px; 
    text-align: center;
    margin-left: auto;
    margin-right: auto;
@@ -310,6 +330,7 @@ p{
 .carousel {
   height: 400px;
   margin-bottom: 30px;
+
 }
 /* Since positioning the image, we need to help out the caption */
 .carousel-caption {
@@ -451,12 +472,13 @@ img {
 
 .block{
   padding: 2rem;
-  box-shadow: 1px 1px 3px rgba(0,0,0,0.25);
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.25);
   height: 250px;
   background-color: #f1f2f2;
   overflow: hidden;
   margin-bottom: 30px; 
   position: relative;
+  
 
 }
 
@@ -654,11 +676,20 @@ img {
 }
 
 .whiteGrey{
-  background-color: rgba(63,130,193,0.25);
-  
+  background-color: #f1f2f2;
 }
-
-
+.whiteGrey a{
+  color: #3f82c1; 
+}
+.whiteGrey a:hover{
+  color: #c1cde3;
+}
+.whiteGrey li{
+ margin:0 0 10px 0;   
+}
+.whiteGrey p{
+  margin:0 0 10px 0; 
+}
 
 /* buttons & readmores
 -----------------------------*/
@@ -736,8 +767,6 @@ img {
   line-height: 1;
 }
 
-
-
 .icon{
   width: 30px;
   height: 30px;
@@ -751,25 +780,30 @@ img {
   float: right;
 }
 
-  .car2 .item{
-    height: inherit;
-    background-color: #f1f2f2;
-  }
+.car2 .item{
+  height: inherit;
+  background-color: #f1f2f2;
+}
 
-  .car2{
-    height: inherit;
-    background-color: #f1f2f2;
-  }
+.car2{
+  height: inherit;
+  background-color: #f1f2f2;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.25);
+}
 
 /*footer
 ------------------------*/
 
 footer{
   color: white;
-  background-color: #3f82c1;
+  background-color: #66676d;
   text-transform: uppercase;
   padding-bottom:1rem; 
   text-align: center;
+  background-image: url("../img/pattern_brick.png");
+  background-repeat: repeat;
+  
+
 }
 
 footer ul{
@@ -782,7 +816,7 @@ footer p{
 }
 
 
-footer li:hover{
+footer a:hover{
   color: #fff200;
 }
 
@@ -857,6 +891,9 @@ footer{
   }
   .marketing p {
     font-size: 1.5rem;
+  }
+  .header .padding{
+	    padding-left: 110px;
   }
 }
 
@@ -975,11 +1012,11 @@ footer{
 
 @media (min-width: 860px){
   .header1{
-    display: inherit;
+    display: none;
   }
 
   .header2{
-    display: none;
+    display: inherit;
   }
 
   .cWrapper .col-md-4{
