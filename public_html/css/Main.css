@@ -5,7 +5,6 @@
 body {
   color: #636464;
   background-color: #CFD0D2;
-  
   background-repeat: repeat;
   counter-reset: section;
 
@@ -800,7 +799,7 @@ footer p{
 }
 
 
-footer :hover{
+footer a:hover{
   color: #fff200;
 }
 
