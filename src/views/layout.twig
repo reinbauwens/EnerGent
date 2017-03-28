@@ -75,7 +75,19 @@
 
     <!-- Carousel
     ================================================== -->
-  
+    {% if app.request.get('_route') != 'Home.start' %}
+      <div class="backButton">
+        <div>
+          <img src='{{ app.request.baseUrl }}/{{ urlfix}}img/zon.svg' class="image">
+        </div>
+        <div class="tekst">
+          <div>
+            <span class="glyphicon glyphicon-chevron-left arrowRightBottom glyphicon-yellow" aria-hidden="true"></span>
+          </div>
+        </div>
+      </div>
+    {% endif %}
+
     {% if app.request.get('_route') == 'Home.start' %}
 
       <div id="myCarousel" class="carousel slide" data-ride="carousel">
