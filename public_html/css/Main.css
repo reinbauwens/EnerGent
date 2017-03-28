@@ -4,20 +4,15 @@
 
 body {
   color: #636464;
-  background-color: #7e7f89;
+  background-color: #CFD0D2;
   background-image: url("../img/roof_pattern.png");
   background-repeat: repeat;
   counter-reset: section;
 
 }
-
-a {
-  color: #337ab7; /* blue colors for links too */
+a a:focus, a:hover {
+  color: inherit;/* blue colors for links too */
   text-decoration: inherit; /* no underline */
-}
-a:focus, a:hover {
- /* blue colors for links too */
-  text-decoration: underline; /* no underline */
 }
 
 p{
@@ -668,7 +663,12 @@ img {
   background-color: #f1f2f2;
   
 }
-
+.whiteGrey a{
+  color: #3f82c1; 
+}
+.whiteGrey a:hover{
+  color: #c1cde3;
+}
 
 
 /* buttons & readmores
