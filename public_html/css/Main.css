@@ -1022,9 +1022,9 @@ footer{
   .carousel-caption .col-md-4 img{
     margin-left: 4rem;
     position: fixed;
-    max-width: none;
-        left: -58rem;
-    top: 2rem;
+    max-width: 18rem;
+    left: 2rem;
+    top: 12rem;
  }
 
   .navbar-wrapper {
@@ -1058,8 +1058,9 @@ footer{
   }
 
   .carousel-caption .col-md-4 img{
-    left: -56rem;
-    top: 2rem;
+    max-width: 18rem;
+    left: 2rem;
+    top: 12rem;
  }
 
   .header2{
@@ -1167,8 +1168,8 @@ footer{
 
 @media (min-width: 1060px){
 .carousel-caption .col-md-4 img{
-    left: -53rem;
-    top: -12rem;
+    left: 2rem;
+    top: -1rem;
     position: absolute;
  }
 }
