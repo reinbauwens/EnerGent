@@ -14,7 +14,15 @@
   display: none;
 }
 
+#slideCarousel2 h2{
+  margin-bottom: 0rem;
+  padding-bottom: 0rem;
+}
 
+#slideCarousel h2{
+  margin-bottom: 0rem;
+  padding-bottom: 0rem;
+}
 
 @media (min-width: 768px) {
    #slideCarousel2{
