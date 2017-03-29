@@ -281,8 +281,8 @@ p{
 	}
 
   .backButton img{
-    width: 50px;
-    height: 50px;
+    width: 51px;
+    height: 51px;
   }
 
 
@@ -295,8 +295,8 @@ p{
 
   .backButton span{
     position: fixed;
-    top: 21px;
-    left: 29px;
+    top: 22px;
+    left: 30px;
     color: yellow;
   }
 
