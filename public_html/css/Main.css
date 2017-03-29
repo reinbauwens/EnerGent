@@ -619,6 +619,7 @@ img {
   color: #337ab7;
 }
 
+
 .block:hover .glyphicon-white{
   color: #fff200;
 }
@@ -1147,4 +1148,9 @@ footer{
   .marketing ol, .marketing p, .marketing li  {
     font-size: 1.3rem;
   }
+}
+
+/*op te kuisten*/
+.partnercarousel a:hover{
+  color: #337ab7;
 }
