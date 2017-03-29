@@ -1,0 +1,104 @@
+{% extends 'layout.twig' %}
+{% set pageTitle = 'Admin' %}
+{% set meerwaardeTitle ='Partners' %}
+{% block pageCss %}
+	<link rel="stylesheet" media="screen" href="{{ app.request.baseUrl }}/{{ urlfix}}css/SliderPagina.css" />
+    <link rel="stylesheet" media="screen" href="{{ app.request.baseUrl }}/{{ urlfix}}css/ZonnestadInCijfers.css" />
+{% endblock %}
+{% block pageContent %}
+      <div class="container marketing">
+
+        <!-- START THE FEATURETTES -->
+
+        <div class="rowrealisatie">
+          <div class="col-md-4">
+            <div class="block blueHard big">
+              <h1 class="featurette-heading">Partners</h1>
+                <p>
+                  Introtekst AANVULLEN
+                </p>
+              </div>
+          </div>
+          <div class="col-md-8">
+            <div class="block big animated">
+              <div id="myCarousel2" class="carousel slide" data-ride="carousel">
+                <ul class="nav nav-pills nav-justified">
+                  <li data-target="#myCarousel2" data-slide-to="0"><a href="#"><img src="{{ app.request.baseUrl }}/{{ urlfix}}img/natuurpunt.png"></a></li>
+                  <li data-target="#myCarousel2" data-slide-to="1"><a href="#"><img src="{{ app.request.baseUrl }}/{{ urlfix}}img/gmf.png"></a></li>
+                  <li data-target="#myCarousel2" data-slide-to="2"><a href="#"><img src="{{ app.request.baseUrl }}/{{ urlfix}}img/beweging-net.png"></a></li>
+                  <li data-target="#myCarousel2" data-slide-to="3"><a href="#"><img src="{{ app.request.baseUrl }}/{{ urlfix}}img/Voem.png"></a></li>
+                  <!--<li data-target="#myCarousel2" data-slide-to="4"><a href="#"><img src="{{ app.request.baseUrl }}/{{ urlfix}}img/InCijfers/ZonnePot2.svg"></a></li>-->
+                </ul>
+
+
+        
+              <!-- Wrapper for slides -->
+              <div class="carousel-inner">
+              
+                <div class="item active">
+                  <img src="{{ app.request.baseUrl }}/{{ urlfix}}img/natuurpunt.png">
+                  <div class="carousel-caption">
+                    <h2>NATUURPUNT</h2>
+                    <div class="blocktekst">
+                        
+                        <p>Aanvullen Slechts een beperkte oppervlakte van alle daken komt in aanmerking voor zonnepanelen. Dit noemen we het realistisch zonnepotentieel en bedraagt ongeveer 40% van de totale oppervlakte. <br><br>Op deze figuur wordt weergegeven welke oppervlakte van het realistisch zonne-potentieel reeds gerealiseerd werd (geel) en welk potentieel er nog is (blauw) in de Gentse wijken. <br><br>(Data: Eandis).</p>
+                    </div>
+                  </div>
+                </div><!-- End Item -->
+        
+                <div class="item">
+                  <img src="{{ app.request.baseUrl }}/{{ urlfix}}img/InCijfers/gmf.png">
+                  <div class="carousel-caption">
+                    <h2>Gents Milieu Front</h2>
+                    <div class="blocktekst">
+                        
+                        <p>AANVULLEN</p>
+                    </div>
+                    </div>
+                </div><!-- End Item -->
+                
+                <div class="item">
+                  <img src="{{ app.request.baseUrl }}/{{ urlfix}}img/beweging-net.png">
+                  <div class="carousel-caption">
+                    <h2>Beweging.net</h2>
+                    <div class="blocktekst">
+                        
+                        <p>AANVULLEN</p>
+                    </div>
+                    </div>
+                </div><!-- End Item -->
+                
+                <div class="item">
+                  <img src="{{ app.request.baseUrl }}/{{ urlfix}}img/Voem.png">
+                  <div class="carousel-caption">
+                    <h2>Voem</h2>
+                    <div class="blocktekst">
+                        
+                        <p>AANVULLEN</p>
+                    </div>
+                    </div>
+                </div><!-- End Item -->
+
+                <!--<div class="item">
+                  <img src="{{ app.request.baseUrl }}/{{ urlfix}}img/InCijfers/ZonnePot2.svg">
+                  <div class="carousel-caption">
+                    <h2>Gerealiseerde oppervlakte (ha) en resterend potentieel (ha) aan zonnepotentieel in de Gentse wijken</h2>
+                    <div class="blocktekst">
+                        <p>Slechts een beperkte oppervlakte van alle daken komt in aanmerking voor zonnepanelen. Dit noemen we het realistisch zonnepotentieel en bedraagt ongeveer 40% van de totale oppervlakte. <br><br>Op deze figuur wordt weergegeven welke oppervlakte van het realistisch zonne-potentieel reeds gerealiseerd werd (geel) en welk potentieel er nog is (blauw) in de Gentse wijken. <br><br>(Data: Eandis).</p>
+                      
+                    </div>
+                    </div>
+                </div>--><!-- End Item -->
+                        
+              </div><!-- End Carousel Inner -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+        
+      </div>
+{% endblock %}
+{% block pageScripts %}
+	<script src="{{ app.request.baseUrl }}/{{ urlfix}}js/Realisaties.js"></script>
+{% endblock %}

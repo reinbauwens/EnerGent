@@ -78,6 +78,10 @@ class HomeController implements ControllerProviderInterface {
 			->get('/GroterDak', array($this, 'GroterDak'))
 			->method('GET|POST')
 			->bind('Home.GroterDak');
+		$controllers
+			->get('/Partners', array($this, 'Partners'))
+			->method('GET|POST')
+			->bind('Home.Partners');
 
 		// Redirect to login by default
 		$controllers->get('/', function(Application $app) {
@@ -248,7 +252,19 @@ class HomeController implements ControllerProviderInterface {
 			'urlfix' => $urlfix
 		));
 	}
-
+	public function Partners(Application $app) {
+		
+		$url = $_SERVER['REQUEST_URI'];
+		if (strpos($url, 'public_html') !== false){
+			$urlfix ='';
+		}
+		else{
+			$urlfix ='public_html/';
+		}
+		return $app['twig']->render('Home/Partners.twig', array(
+			'urlfix' => $urlfix
+		));
+	}
 }
 
 
