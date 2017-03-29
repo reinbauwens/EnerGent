@@ -24,6 +24,10 @@ h1{
     font-size:20pt;
   }
 
+carousel-caption {
+    bottom: 0px;
+}
+
   
 
 
@@ -1168,11 +1172,70 @@ footer{
 
 @media (min-width: 1060px){
 .carousel-caption .col-md-4 img{
-    left: 2rem;
-    top: -1rem;
-    position: absolute;
+    left: 3rem;
+    top: 12rem;
  }
 }
+@media (min-width: 1160px){
+.carousel-caption .col-md-4 img{
+    left: 10rem;
+    top: 12rem;
+ }
+}
+@media (min-width: 1260px){
+.carousel-caption .col-md-4 img{
+    left: 15rem;
+    top: 12rem;
+ }
+}
+@media (min-width: 1360px){
+.carousel-caption .col-md-4 img{
+    left: 20rem;
+    top: 12rem;
+ }
+}
+@media (min-width: 1460px){
+.carousel-caption .col-md-4 img{
+    left: 25rem;
+    top: 12rem;
+ }
+}
+
+@media (min-width: 1520px){
+.carousel-caption .col-md-4 img{
+    left: 30rem;
+    top: 12rem;
+ }
+}
+
+@media (min-width: 1620px){
+.carousel-caption .col-md-4 img{
+    left: 35rem;
+    top: 12rem;
+ }
+}
+
+@media (min-width: 1720px){
+.carousel-caption .col-md-4 img{
+    left: 40rem;
+    top: 12rem;
+ }
+}
+
+@media (min-width: 1820px){
+.carousel-caption .col-md-4 img{
+    left: 45rem;
+    top: 12rem;
+ }
+}
+
+@media (min-width: 1920px){
+.carousel-caption .col-md-4 img{
+    left: 45rem;
+    top: 12rem;
+ }
+}
+
 
 /*op te kuisten*/
 /*linkkleur partnercarousel homepage*/
