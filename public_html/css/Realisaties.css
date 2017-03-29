@@ -33,6 +33,9 @@
   margin-top: 0rem;
   padding-top: 0rem;
 }
+.smallblock h1{
+  text-transform: none;
+}
 
 /*.animated h2{
   margin-top: 57.3rem;

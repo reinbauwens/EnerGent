@@ -51,6 +51,9 @@ h1{
   opacity: 0.5;
     filter: alpha(opacity=50);
 }
+.italic{
+  font-style: italic;
+}
 /* Fonts
 -------------------------------------------------- */
 
@@ -255,7 +258,7 @@ p{
 }
 .header	.super{
 		color:#FFF200;
-		font-size:2.3rem;
+		font-size: 3.5rem;
 		font-family:'Frutiger Roman';
 		text-transform:uppercase;
 		font-weight: 700;
@@ -264,7 +267,7 @@ p{
 	}
 .header	.titel{
 		color:#fff;
-		font-size:2.7rem;
+		font-size: 4.5rem;
 		font-family:'Frutiger Roman';
 		text-transform:uppercase;
 		font-weight: 700;
@@ -320,7 +323,7 @@ p{
 
 .blockheader{
    max-width: 500px; 
-   text-align: center;
+   /*text-align: center;*/
    margin-left: auto;
    margin-right: auto;
    padding-top: 6rem;
@@ -356,7 +359,7 @@ p{
   text-justify: inter-word;
 }
 
-.carousel-caption  h2, .carousel-caption h1,.carousel-caption p{
+.carousel-caption  h2, .carousel-caption h1{
   text-align: left;
   text-transform: uppercase;
 }
@@ -622,9 +625,14 @@ img {
   color: #337ab7;
 }
 
+.blueHard h1{
+  color: #fff200;
+}
 .blueHard:hover h1{
   color: #fff200;
 }
+
+
 
 .yellow:hover h2{
   color: #337ab7;
