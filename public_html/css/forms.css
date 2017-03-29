@@ -1,0 +1,95 @@
+.cWrapper .buttonWhite {
+    background-color: transparent;
+    border: #3f82c1 2px solid;
+    color: #3f82c1;
+    float: right;
+    margin-top: 1rem;
+}
+
+.cWrapper .buttonWhite:hover{
+  background-color :#fff200;
+  color : #3f82c1;
+  border-color: #3f82c1;
+}
+
+.small {
+        height: 90px;
+}
+
+.marketing p, .marketing ol, .marketing li {
+    font-size: 1.5rem;
+}
+
+.marketing h2 {
+    margin-top: 0rem;
+    padding-top: 0rem;
+    padding-bottom: 0rem;
+}
+
+.block {
+    height: inherit;
+}
+    
+.medium {
+    height: inherit;
+    }
+
+.col-md-4, .col-md-8, .block{
+    width: 100%;
+}
+
+.split{
+    display: none;
+}
+
+.lightBlue {
+    background-image: url(../img/pattern.png);
+    background-repeat: repeat;
+}
+@media (min-width: 860px){
+    .marketing ol, .marketing p, .marketing li {
+        font-size: 15px;
+    }
+    .col-md-4, .col-md-8{
+        width: inherit;
+    }
+
+    .blueHard{
+        width: 99%;
+    }
+
+    .split{
+        display: inherit;
+    }
+
+    .dontSplit{
+        display: none;
+    }
+}
+
+@media (min-width: 957px){
+  .marketing ol, .marketing p, .marketing li  {
+    font-size: 20px;
+  }
+}
+@media (min-width: 1044px) {
+    h1 {
+        font-size: 25pt;
+    }
+}
+
+.equal {
+  display: flex;
+  flex-wrap: wrap;
+}
+    
+.equal > div[class*='col-'] {  
+  display: flex;
+}
+
+h1.yellow {
+ color: #fff200;
+}
+
+.block:hover  h1{
+    color: #fff;}
