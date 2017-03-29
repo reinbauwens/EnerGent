@@ -1,0 +1,285 @@
+.cWrapper .collorYellow{
+  color: #fff200;
+}
+
+
+.cWrapper .animated img{
+  z-index: -1;
+  margin-top: 0rem;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.cWrapper .animated h2{
+  margin-top:  0 rem; /*-46rem;*/
+  width: 100%;
+}
+
+.cWrapper .blockimg{
+  widows: 80%;
+}
+
+.cWrapper .rowrealisatie{
+  margin-bottom:10rem;
+  z-index: 20; 
+}
+
+.smallblock h1{
+  margin-top: 0rem;
+}
+
+.smallblock p{
+  margin-top: 0rem;
+  padding-top: 0rem;
+}
+.smallblock h1{
+  text-transform: none;
+}
+
+/*.animated h2{
+  margin-top: 57.3rem;
+  color: white;
+  width: 100%;
+}*/
+
+.cWrapper .glyphicon-chevron-right, .glyphicon-chevron-up {
+    position: absolute;
+    right: 15px;
+    top: 497px;
+}
+
+.cWrapper #slideCarousel h2{
+  color: white;
+    padding-left: 2rem;
+    padding-top: 2rem;
+    margin-bottom: 0rem;
+}
+
+.cWrapper .nav-justified>li {
+    width: inherit;
+    display: inline-block;
+    width: 75px;
+    padding: 0.5rem;
+}
+
+.cWrapper #myCarousel2 .nav>li>a>img {
+    border: 2px solid white;
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+}
+
+.cWrapper .col-md-8 .carousel .item {
+    height: 460px;
+}
+
+.cWrapper .animated ul {
+    padding: inherit;
+    text-align: center;
+}
+
+
+.cWrapper .smallblock{
+  width: 50%;
+  float:left;
+  background-color: rgba(63,130,193,0.75);
+}
+
+.cWrapper .animated p {
+  background-color: rgba(63,130,193,-0.25);
+}
+
+
+
+.cWrapper .smallblock h1, .smallblock p{
+    width:100%;
+    text-align: center;
+}
+
+
+
+.cWrapper .block {
+    height: inherit;
+}
+
+.cWrapper .carousel-caption {
+    right: 0%;
+    max-width: 1048px;
+    left: 0%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+}
+
+.cWrapper .animated:hover h2 {
+    margin-top: 0rem;
+    padding-top: 5rem;
+}
+
+.animated h1, .animated h2, .animated p, .animated .collorblue, .animated li, .animated ul {
+    background-image: none;
+}
+
+.cWrapper .col-md-8 .block{
+  height: inherit;
+}
+
+.cWrapper .carousel {
+  height: inherit;
+  margin-bottom: 0rem;
+}
+
+
+.cWrapper .smallblock{
+  width: 50%;
+  height: 210px;
+  float:left;
+}
+
+.cWrapper .marketing p, .marketing ol, .marketing li {
+    font-size: 1.2rem;
+}
+
+.cWrapper .nav-justified>li>a {
+    margin-bottom: 0px;
+}
+.cWrapper .nav>li>a {
+    padding: 5px;
+}
+ .cWrapper .carousel-caption {
+    margin-bottom: -43.5rem;
+    transition: margin-bottom 0.5s ease;
+}
+
+
+
+.cWrapper .block:hover .carousel-caption {
+    margin-bottom: -7rem;
+    -webkit-animation: out 2s;
+}
+
+.cWrapper .marketing h2{
+  font-size: 1.5rem;
+}
+
+.cWrapper .blockimg{
+    height: 60%;
+  }
+
+ .cWrapper  .smallblock h1{
+      color: #fff200;
+      height: 60%;
+      padding-top: 23%;
+      margin-bottom: 0rem;
+  }
+
+@media (min-width: 395px){
+  .cWrapper .carousel-caption {
+    margin-bottom: -41.5rem;
+  }
+}
+
+@media (min-width: 451px){
+  .cWrapper .smallblock h1{
+      height: 60%;
+  }
+  .cWrapper .marketing h2 {
+    font-size: 2rem;}
+
+  .cWrapper .blockimg{
+    height: 60%;
+  }
+
+  .cWrapper .col-md-8 .block{
+  height: 500px;
+  }
+
+  .carousel {
+  height: 400px;
+  margin-bottom:30px; 
+}
+
+ .cWrapper .block:hover .carousel-caption{
+    margin-bottom: -4rem;
+    
+}
+
+
+   .cWrapper .carousel-caption {
+    margin-bottom: -41rem;
+  }
+
+  .cWrapper .carousel-caption:hover{
+      margin-bottom: -5rem;
+  }
+}
+
+
+@media (min-width: 860px){
+
+  .cWrapper .smallblock h1{
+    height: 75%;
+    }
+
+    .cWrapper .blockimg{
+      height: 75%;
+    }
+  .cWrapper .carousel-caption {
+      margin-bottom: -32.5rem;
+  }
+
+    .cWrapper .marketing ol, .cWrapper .marketing p, .cWrapper .marketing li {
+        font-size: 1.3vw;
+    }
+
+    .cWrapper .marketing h1 {
+    font-size: 35px;
+  }
+
+    .cWrapper .big {
+    height: 530px;
+  }
+
+  .cWrapper .col-md-8 .block {
+    height: 530px;
+}
+
+.cWrapper .col-md-4 {
+    margin-left: 0rem;
+    padding-left: 0rem;
+}
+  
+.cWrapper .smallblock{
+  width: 50%;
+  height: 205px;
+  float:left;
+}
+
+
+   .cWrapper .carousel-caption {
+    margin-bottom: -44rem;
+}
+
+ .cWrapper .carousel-caption:hover{
+    margin-bottom: -4.5rem;
+}
+
+}
+
+
+@media (min-width: 982px){
+  .cWrapper .marketing ol, .cWrapper .marketing p, .cWrapper .marketing li  {
+    font-size: 1.3rem;
+  }
+
+  .cWrapper .marketing h1 {
+    font-size: 40px;
+  }
+}
+@media (min-width: 1044px) {
+
+    .cWrapper h1 {
+        font-size: 25pt;
+    }
+}

@@ -258,16 +258,18 @@ p{
 }
 .header	.super{
 		color:#FFF200;
-		font-size: 3.5rem;
+		font-size: 2.5rem;
 		font-family:'Frutiger Roman';
 		text-transform:uppercase;
 		font-weight: 700;
 		line-height: 1;
+}
 
-	}
+
+
 .header	.titel{
 		color:#fff;
-		font-size: 4.5rem;
+		font-size: 3.5rem;
 		font-family:'Frutiger Roman';
 		text-transform:uppercase;
 		font-weight: 700;
@@ -934,6 +936,14 @@ footer{
 
   footer{
     text-align: left;
+  }
+
+  .header	.super{
+		font-size: 3.5rem;
+  }
+
+  .header	.titel{
+		font-size: 4.5rem;
   }
 }
 

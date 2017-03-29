@@ -2,7 +2,8 @@
 {% set pageTitle = 'Admin' %}
 {% set meerwaardeTitle ='Realisaties' %}
 {% block pageCss %}
-	<link rel="stylesheet" media="screen" href="{{ app.request.baseUrl }}/{{ urlfix}}css/Realisaties.css" />
+	<link rel="stylesheet" media="screen" href="{{ app.request.baseUrl }}/{{ urlfix}}css/SliderPagina.css" />
+  <link rel="stylesheet" media="screen" href="{{ app.request.baseUrl }}/{{ urlfix}}css/Realisaties.css" />
 {% endblock %}
 {% block pageContent %}
       <div class="container marketing">
@@ -46,7 +47,7 @@
                     <h2>Project 1</h2>
                     <div class="rowrealisatie">
                       <div class="smallblock">
-                        <div class="blockimg">
+                        <div class="blockimg sollarpanel">
                           <img class="featurette-image img-responsive center-block" src="{{ app.request.baseUrl }}/{{ urlfix}}img/polykristal.svg" alt="Generic placeholder image">
                         </div>
                         <p>Type paneel: Polykristallijn</p>
