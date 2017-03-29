@@ -1,11 +1,13 @@
 {% extends 'layout.twig' %}
 {% set pageTitle = 'Admin' %}
-{% set meerwaardeTitle ='Help mee in zonnestad' %}
+{% set meerwaardeTitle ='Appartement' %}
 {% block pageCss %}
 	<link rel="stylesheet" media="screen" href="{{ app.request.baseUrl }}/{{ urlfix}}css/HelpMee.css" />
 {% endblock %}
 {% block pageContent %}
-     
+<div class="block">
+    <div class="typeform-widget" data-url="https://jeroenbaet.typeform.com/to/Aevut0" style="width: 100%; height: 500px;"></div><script>(function(){var qs,js,q,s,d=document,gi=d.getElementById,ce=d.createElement,gt=d.getElementsByTagName,id="typef_orm",b="https://s3-eu-west-1.amazonaws.com/share.typeform.com/";if(!gi.call(d,id)){js=ce.call(d,"script");js.id=id;js.src=b+"widget.js";q=gt.call(d,"script")[0];q.parentNode.insertBefore(js,q)}})()</script>
+</div> 
 {% endblock %}
 {% block pageScripts %}
 {% endblock %}
