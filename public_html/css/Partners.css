@@ -18,18 +18,15 @@
     margin-top: 0rem;
     padding-top: 15rem;
 }
-.blueHard a{
+.big a{
     color:#fff200;
 }
  .blocktekst a{
     color:#fff200;
 }
-.blueHard a:hover{
+.big a:hover{
     color:#c1cde3;
 }
- .blocktekst a{
-    color:#fff200;
-}
-.blocktekst a:hover{
+.blocktekst:hover a{
     color:#c1cde3;
 }

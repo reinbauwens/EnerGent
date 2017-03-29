@@ -629,10 +629,10 @@ img {
 }
 
 .blueHard h1{
-  color: #fff200;
+  color: #fff;
 }
-.blueHard:hover h1{
-  color: #fff200;
+.blueHard:hover h1 {
+  color: #fff;
 }
 
 
@@ -1151,6 +1151,11 @@ footer{
 }
 
 /*op te kuisten*/
+/*linkkleur partnercarousel homepage*/
 .partnercarousel a:hover{
   color: #337ab7;
+}
+/*linkkleur wat is zonnestad homepage*/
+.zonnestad:hover h1 {
+  color: #fff200!important;
 }
