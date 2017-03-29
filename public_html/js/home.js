@@ -4,3 +4,9 @@ $(document).ready(function() {
     interval: 10000
   });
 });
+
+$("#scrollmiddle").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#middle").offset().top
+    }, 2000);
+});

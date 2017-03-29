@@ -105,43 +105,59 @@
           <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
           <li data-target="#myCarousel" data-slide-to="1"></li>
           <li data-target="#myCarousel" data-slide-to="2"></li>
+          <li data-target="#myCarousel" data-slide-to="3"></li>
         </ol>
         <div class="carousel-inner" role="listbox">
-          <div class="item active">
-            <img class="first-slide" src="{{ app.request.baseUrl }}/{{ urlfix}}img/banner1.jpg" alt="First slide">
+        <div class="item active">
+            <img class="first-slide" src="{{ app.request.baseUrl }}/{{ urlfix}}img/banner/pano_gent.png" alt="Second slide">
             <div class="container">
               <div class="carousel-caption">
-               <div class="col-md-4"><img src="{{ app.request.baseUrl }}/{{ urlfix}}img/logoZonnestadklein.png"></div>
+                <div class="col-md-4"><img src="{{ app.request.baseUrl }}/{{ urlfix}}img/banner/pano_sign.png"></div>
                 <div class="col-md-8">
-                  <p>Als alle Gentse daken zonnepanelen zouden hebben zou gent 1 TWH energie / jaar opwekken. Dat is een </p>
+                  <p>Als alle Gentse daken zonnepanelen zouden hebben, zou gent 1 TWH energie / jaar opwekken. Dat is een </p>
                   <h1>Een stedelijke energiecentrale die <span class="colloryellow">groen én rendabel</span> is</h1>
-                  <a class="btn btn-lg btn-primary buttonWhite " href="#" role="button">Hoe Werkt het?</a>
+                  <a class="btn btn-lg btn-primary buttonWhite " href="{{ path('Home.WatIsZonnestad') }}" role="button" >Wat is zonnestad?</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="item ">
+            <img class="second-slide" src="{{ app.request.baseUrl }}/{{ urlfix}}img/banner/pano_installatie.png" alt="First slide">
+            <div class="container">
+              <div class="carousel-caption">
+               <div class="col-md-4"><img src="{{ app.request.baseUrl }}/{{ urlfix}}img/banner/pano_sign.png"></div>
+                <div class="col-md-8">
+                  <p>Dankzij energent plaats je </p>
+                  <h1>Sociaal-ecologisch verantwoorde zonnepanelen tegen een <span class="colloryellow">goede prijs</span> is</h1>
+                  <a class="btn btn-lg btn-primary buttonWhite " href="{{ path('Home.ZonnestadInCijfers') }}" role="button">Zonnestad in cijfers</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="item">
+            <img class="third-slide" src="{{ app.request.baseUrl }}/{{ urlfix}}img/banner/pano_financieel.png" alt="Third slide">
+            <div class="container">
+              <div class="carousel-caption">
+                <div class="col-md-4"><img src="{{ app.request.baseUrl }}/{{ urlfix}}img/banner/pano_sign.png"></div>
+                <div class="col-md-8">
+                  <p>Een zonne-installatie betaalt zich terug in 7 tot 11 jaar. de komende 25 jaar</p>
+                  <h1>betaal je dus nog <span class="colloryellow">maximaal de helft</span> van de tijd voor je stroom</h1>
+                  <a class="btn btn-lg btn-primary buttonWhite " href="{{ path('Home.Installatie') }}" role="button">De installatie</a>
                 </div>
               </div>
             </div>
           </div>
           <div class="item">
-            <img class="second-slide" src="{{ app.request.baseUrl }}/{{ urlfix}}img/banner1.jpg" alt="Second slide">
+            <img class="fourth-slide" src="{{ app.request.baseUrl }}/{{ urlfix}}img/banner/pano_financieel.png" alt="Third slide">
             <div class="container">
               <div class="carousel-caption">
-                <div class="col-md-4"><img src="{{ app.request.baseUrl }}/{{ urlfix}}img/logoZonnestadklein.png"></div>
+                <div class="col-md-4"><img src="{{ app.request.baseUrl }}/{{ urlfix}}img/banner/pano_sign.png"></div>
                 <div class="col-md-8">
-                  <p>Als alle Gentse daken zonnepanelen zouden hebben zou gent 1 TWH energie / jaar opwekken. Dat is een </p>
-                  <h1>Een stedelijke energiecentrale die <span class="colloryellow">groen én rendabel</span> is</h1>
-                  <a class="btn btn-lg btn-primary buttonWhite " href="#" role="button">Hoe Werkt het?</a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="item">
-            <img class="third-slide" src="{{ app.request.baseUrl }}/{{ urlfix}}img/banner1.jpg" alt="Third slide">
-            <div class="container">
-              <div class="carousel-caption">
-                <div class="col-md-4"><img src="{{ app.request.baseUrl }}/{{ urlfix}}img/logoZonnestadklein.png"></div>
-                <div class="col-md-8">
-                  <p>Als alle Gentse daken zonnepanelen zouden hebben zou gent 1 TWH energie / jaar opwekken. Dat is een </p>
-                  <h1>Een stedelijke energiecentrale die <span class="colloryellow">groen én rendabel</span> is</h1>
-                  <a class="btn btn-lg btn-primary buttonWhite " href="#" role="button">Hoe Werkt het?</a>
+                  <p>Energent laat de ZON SCHIJNen VOOR IEDEREEN</p>
+                  <h1>EIGENAARS,  HUURDERS,  APPARTEMENTEN & BEDRIJVEN</h1>
+                  <a class="btn btn-lg btn-primary buttonWhite " href="#" id="scrollmiddle" role="button">doe mee</a>
                 </div>
               </div>
             </div>
