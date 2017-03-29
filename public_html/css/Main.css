@@ -619,6 +619,7 @@ img {
   color: #337ab7;
 }
 
+
 .block:hover .glyphicon-white{
   color: #fff200;
 }
@@ -628,10 +629,10 @@ img {
 }
 
 .blueHard h1{
-  color: #fff200;
+  color: #fff;
 }
-.blueHard:hover h1{
-  color: #fff200;
+.blueHard:hover h1 {
+  color: #fff;
 }
 
 
@@ -1147,4 +1148,14 @@ footer{
   .marketing ol, .marketing p, .marketing li  {
     font-size: 1.3rem;
   }
+}
+
+/*op te kuisten*/
+/*linkkleur partnercarousel homepage*/
+.partnercarousel a:hover{
+  color: #337ab7;
+}
+/*linkkleur wat is zonnestad homepage*/
+.zonnestad:hover h1 {
+  color: #fff200!important;
 }

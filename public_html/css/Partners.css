@@ -1,0 +1,32 @@
+@media (min-width: 860px){
+    .cWrapper .carousel-caption {
+        margin-bottom: -45rem;
+    }
+    
+    .cWrapper .block:hover .carousel-caption {
+        margin-bottom: -20rem;
+    }
+    
+}
+
+.cWrapper .marketing .blocktekst p{
+    background-color: rgba(63,130,193,0.75); 
+    height: 40rem;  
+}
+
+.cWrapper .animated:hover h2 {
+    margin-top: 0rem;
+    padding-top: 15rem;
+}
+.big a{
+    color:#fff200;
+}
+ .blocktekst a{
+    color:#fff200;
+}
+.big a:hover{
+    color:#c1cde3;
+}
+.blocktekst:hover a{
+    color:#c1cde3;
+}
