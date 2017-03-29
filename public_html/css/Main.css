@@ -1011,6 +1011,10 @@ footer{
     
   }
 
+  .carousel-caption .btn {
+    margin-bottom: 4rem;
+}
+
   .carousel-caption{
     right: 0%;
     max-width: 1048px;
