@@ -97,7 +97,7 @@
             <div class="block animated yellow backgroundimage1">
               <img class="featurette-image img-responsive center-block" src="{{ app.request.baseUrl }}/{{ urlfix}}img/Empty.png" alt="Generic placeholder image">
               <h2 class="featurette-heading">De installatie</h2>
-             <p>Een heel scherpe prijs (1095 EUR/kWp - 1385 EUR/kWp), hoge technische standaarden (waaronder 10 jaar garantie op de omvormer) en zonnepanelen met een hoge eco- en sociale score. </p>
+             <p>Een heel scherpe prijs (1095 EUR/kWp - 1385 EUR/kWp), hoge technische standaarden (waaronder 10 jaar garantie op de omvormer) en zonnepanelen met een hoge eco- en sociale score. De plaatsing gebeurt door de Belgische aannemer Linea Trovata. </p>
               <span class="glyphicon glyphicon-chevron-up arrowRightBottom glyphicon-grey" aria-hidden="true"></span>
             </div>
             </a>
@@ -130,13 +130,13 @@
           <div class="carousel-inner carousel1">
             <div class="item active">
               <div class="col-sm-10 col-md-offset-1 row carousel-parnters">
-                <div class="col-sm-3"><a class="thumbnail" href="http://www.natuurpuntgent.be" target="_blank"><img class="featurette-image img-responsive center-block" src="{{ app.request.baseUrl }}/{{ urlfix}}img/natuurpunt.png" alt="Natuurpunt"></a>
+                <div class="col-sm-3"><a class="thumbnail" href="{{ path('Home.Partners') }}" target="_blank"><img class="featurette-image img-responsive center-block" src="{{ app.request.baseUrl }}/{{ urlfix}}img/natuurpunt.png" alt="Natuurpunt"></a>
                 </div>
-                <div class="col-sm-3"><a class="thumbnail" href="https://www.gentsmilieufront.be/" target="_blank"><img class="featurette-image img-responsive center-block" src="{{ app.request.baseUrl }}/{{ urlfix}}img/gmf.png" alt="GMF"></a>
+                <div class="col-sm-3"><a class="thumbnail" href="{{ path('Home.Partners') }}" target="_blank"><img class="featurette-image img-responsive center-block" src="{{ app.request.baseUrl }}/{{ urlfix}}img/gmf.png" alt="GMF"></a>
                 </div>
-                <div class="col-sm-3"><a class="thumbnail" href="http://www.beweging.net" target="_blank"><img class="featurette-image img-responsive center-block" src="{{ app.request.baseUrl }}/{{ urlfix}}img/beweging-net.png" alt="Beweging.net"></a>
+                <div class="col-sm-3"><a class="thumbnail" href="{{ path('Home.Partners') }}" target="_blank"><img class="featurette-image img-responsive center-block" src="{{ app.request.baseUrl }}/{{ urlfix}}img/beweging-net.png" alt="Beweging.net"></a>
                 </div>
-                <div class="col-sm-3"><a class="thumbnail" href="http://www.voem-vzw.be/" target="_blank"><img class="featurette-image img-responsive center-block" src="{{ app.request.baseUrl }}/{{ urlfix}}img/Voem.png" alt="Voem"></a>
+                <div class="col-sm-3"><a class="thumbnail" href="{{ path('Home.Partners') }}" target="_blank"><img class="featurette-image img-responsive center-block" src="{{ app.request.baseUrl }}/{{ urlfix}}img/Voem.png" alt="Voem"></a>
                 </div>
               </div>
               <!--/row-->
@@ -144,9 +144,9 @@
             <!--/item-->
             <div class="item">
               <div class="col-sm-10 col-md-offset-1 row carousel-parnters">
-                <div class="col-sm-3"><a class="thumbnail" href="http://www.lineatrovata.com/" target="_blank"><img class="featurette-image img-responsive center-block" src="{{ app.request.baseUrl }}/{{ urlfix}}img/LineaTrovata.png" alt="Linea Trovata"></a>
+                <div class="col-sm-3"><a class="thumbnail" href="{{ path('Home.Partners') }}" target="_blank"><img class="featurette-image img-responsive center-block" src="{{ app.request.baseUrl }}/{{ urlfix}}img/LineaTrovata.png" alt="Linea Trovata"></a>
                   </div>
- -                <div class="col-sm-3"><a class="thumbnail" href="http://www.energent.be" target="_blank"><img class="featurette-image img-responsive center-block" src="{{ app.request.baseUrl }}/{{ urlfix}}img/LogoEnergent.png" alt="Energent"></a>
+ -                <div class="col-sm-3"><a class="thumbnail" href="{{ path('Home.Partners') }}" target="_blank"><img class="featurette-image img-responsive center-block" src="{{ app.request.baseUrl }}/{{ urlfix}}img/LogoEnergent.png" alt="Energent"></a>
                 </div>
               </div>
               <!--/row-->
@@ -169,31 +169,36 @@
           <div class="carousel-inner carousel2">
             <div class="item active">
               <div class="col-sm-10 col-md-offset-1 row carousel-parnters">
-                <div class="col-sm-3"><a class="thumbnail" href="http://www.natuurpuntgent.be"><img class="featurette-image img-responsive center-block" src="{{ app.request.baseUrl }}/{{ urlfix}}img/natuurpunt.png" alt="Generic placeholder image"></a>
+                <div class="col-sm-3"><a class="thumbnail" href="{{ path('Home.Partners') }}"><img class="featurette-image img-responsive center-block" src="{{ app.request.baseUrl }}/{{ urlfix}}img/natuurpunt.png" alt="Generic placeholder image"></a>
                 </div>
               </div>
             </div>
             <div class="item">
               <div class="col-sm-10 col-md-offset-1 row carousel-parnters">
-                <div class="col-sm-3"><a class="thumbnail" href="https://www.gentsmilieufront.be/"><img class="featurette-image img-responsive center-block" src="{{ app.request.baseUrl }}/{{ urlfix}}img/gmf.png" alt="Generic placeholder image"></a>
+                <div class="col-sm-3"><a class="thumbnail" href="{{ path('Home.Partners') }}"><img class="featurette-image img-responsive center-block" src="{{ app.request.baseUrl }}/{{ urlfix}}img/gmf.png" alt="Generic placeholder image"></a>
                 </div>
               </div>
             </div>
             <div class="item">
               <div class="col-sm-10 col-md-offset-1 row carousel-parnters">
-                <div class="col-sm-3"><a class="thumbnail" href="http://www.beweging.net"><img class="featurette-image img-responsive center-block" src="{{ app.request.baseUrl }}/{{ urlfix}}img/beweging-net.png" alt="Generic placeholder image"></a>
+                <div class="col-sm-3"><a class="thumbnail" href="{{ path('Home.Partners') }}"><img class="featurette-image img-responsive center-block" src="{{ app.request.baseUrl }}/{{ urlfix}}img/beweging-net.png" alt="Generic placeholder image"></a>
                 </div>
               </div>
             </div>
             <div class="item">
               <div class="col-sm-10 col-md-offset-1 row carousel-parnters">
-                <div class="col-sm-3"><a class="thumbnail" href="#"><img class="featurette-image img-responsive center-block" src="{{ app.request.baseUrl }}/{{ urlfix}}img/Gezinsbond.png" alt="Generic placeholder image"></a>
+                <div class="col-sm-3"><a class="thumbnail" href="{{ path('Home.Partners') }}"><img class="featurette-image img-responsive center-block" src="{{ app.request.baseUrl }}/{{ urlfix}}img/Voem.png" alt="Generic placeholder image"></a>
                 </div>
               </div>
             </div>
             <div class="item">
               <div class="col-sm-10 col-md-offset-1 row carousel-parnters">
-                <div class="col-sm-3"><a class="thumbnail" href="#"><img class="featurette-image img-responsive center-block" src="{{ app.request.baseUrl }}/{{ urlfix}}img/Voem.png" alt="Generic placeholder image"></a>
+                <div class="col-sm-3"><a class="thumbnail" href="{{ path('Home.Partners') }}"><img class="featurette-image img-responsive center-block" src="{{ app.request.baseUrl }}/{{ urlfix}}img/LineaTrovata.png" alt="Generic placeholder image"></a>
+                </div>
+              </div>
+            </div>
+             <div class="col-sm-10 col-md-offset-1 row carousel-parnters">
+                <div class="col-sm-3"><a class="thumbnail" href="{{ path('Home.Partners') }}"><img class="featurette-image img-responsive center-block" src="{{ app.request.baseUrl }}/{{ urlfix}}img/LogoEnergent.png" alt="Generic placeholder image"></a>
                 </div>
               </div>
             </div>

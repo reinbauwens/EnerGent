@@ -88,3 +88,9 @@
 }
 .block:hover  h1{
     color: #fff;}
+.intro a{
+    color:#fff200;
+}
+.intro a:hover{
+    color:#c1cde3;
+}
