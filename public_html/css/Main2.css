@@ -1,0 +1,1434 @@
+/* GLOBAL STYLES
+-------------------------------------------------- */
+/* Padding below the footer and lighter body text */
+
+body {
+  color: #636464;
+  background-color: #CFD0D2;
+  background-repeat: repeat;
+  counter-reset: section;
+
+}
+a, a:focus, a:hover {
+  color: inherit;/* blue colors for links too */
+  text-decoration: inherit; /* no underline */
+}
+
+p{
+  text-align: justify;
+  font-size: 13px;
+    margin: 0 0 0px;
+}
+
+h1{
+    font-size:20pt;
+  }
+
+carousel-caption {
+    bottom: 0px;
+}
+
+  
+
+
+#navbar{
+  float: right;
+}
+
+.cWrapper{
+  max-width: 1048px;
+  margin: auto;
+
+}
+
+.thumbnail {
+    display: block;
+    padding: 0px;
+    margin-bottom: 20px;
+    line-height: 1.42857143;
+    background-color: #fff;
+    border: none;
+    border-radius: 0px;
+}
+
+.thumbnail:hover{
+  opacity: 0.5;
+    filter: alpha(opacity=50);
+}
+.italic{
+  font-style: italic;
+}
+/* Fonts
+-------------------------------------------------- */
+
+
+@font-face {
+  font-family: 'Frutiger Roman';
+  src: url('fonts/Frutiger_Roman.ttf'); /* IE9 Compat Modes */
+  src: url('fonts/Frutiger_Roman.ttf')  format('truetype'), /* Safari, Android, iOS */
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url('fonts/OpenSans-Regular.ttf'); /* IE9 Compat Modes */
+  src: url('fonts/OpenSans-Regular.ttf')  format('truetype'), /* Safari, Android, iOS */
+}
+
+@font-face {
+  font-family: 'Frutiger Roman';
+  src: url('fonts/Frutiger_Roman.ttf'); /* IE9 Compat Modes */
+  src: url('fonts/Frutiger_Roman.ttf')  format('truetype'), /* Safari, Android, iOS */
+}
+
+h1{
+  font-family: 'Frutiger Roman';
+  font-weight: bold;
+  size: 40pt;
+  text-transform: uppercase;
+}
+
+h2{
+  font-family: 'Frutiger Roman';
+  font-weight: bold;
+  size: 20pt;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+p{
+  font-family: 'Open Sans';
+  font-weight: normal;
+  size: 13pt;
+  text-align: left;
+}
+
+
+/* CUSTOMIZE THE NAVBAR
+-------------------------------------------------- */
+
+/* Special class on .container surrounding .navbar, used for positioning it into place. */
+.navbar-wrapper {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 20;
+
+}
+
+/* Flip around the padding for proper display in narrow viewports */
+.navbar-wrapper > .container {
+  padding-right: 0;
+  padding-left: 0;
+}
+.navbar-wrapper .navbar {
+  padding-right: 15px;
+  padding-left: 15px;
+  
+}
+.navbar-wrapper .navbar .container {
+  width: 1141;
+  text-align: right;
+}
+
+.fullsize {
+    width: 100%;
+    height: 100%;
+}
+
+
+
+.navbar-nav>li>a{
+  font: "frutiger light";
+  color: #f1f2f2;
+  text-shadow: 1px  1px #343538;
+  padding:0px 5px 0px 0px;
+  text-transform: uppercase;
+  
+}
+
+.icon-header {
+    margin-top: 0px;
+    margin-left:0.5rem; 
+}
+
+.icon-header:first-child {
+    margin-left: 1rem;
+}
+
+.fa:hover{
+  color: #fff200;
+}
+
+.navbar-inverse {
+    background-color:none;
+    border-color: none; 
+}
+
+.nav .open>a, .nav .open>a:focus, .nav .open>a:hover{
+    text-decoration: none;
+    background-color:transparent;
+}
+.nav>li>a:focus, .nav>li>a:hover {
+    text-decoration: none;
+    background-color: transparent;
+}
+
+.glyphicon-envelope{
+  font-size: 2.5rem;
+}
+
+.icon-header a {
+    padding-top: none;
+    padding-bottom: none;
+    line-height: none;
+}
+
+.navbar ul{
+  margin-top:2rem; 
+}
+
+.nav>li>a>img {
+    margin-top: -0.5rem;
+}
+
+.nav li{
+  display: inline-block;
+}
+
+.glyphicon {
+    top: 6px;
+  }
+
+@media (min-width: 768px){
+  .glyphicon {
+    top: -9px;
+  }
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+    background-color: transparent;
+    border: none;
+    margin: 0;
+    padding: 0;
+ }
+
+.dropdown-menu li{
+  background-color: rgba(63,130,193,0.75);
+  border-bottom: 1px solid white;
+  clear: both;
+  text-align: right;
+  width: 100%;
+}
+
+.dropdown-menu li a{
+  color: #f1f2f2;
+  text-transform: uppercase;
+}
+
+.dropdown-menu li a:hover{
+  color: #fff200;
+  background-color: rgba(63,130,193,0.75);
+  padding: 4px 20px;
+}
+
+.header{
+  height: 250px;
+  background-image: url("../img/banner1.jpg");
+  margin-bottom: 30px;
+  background-size:     cover;                      /* <------ */
+    background-repeat:   no-repeat;
+    background-position: center center;   
+}
+
+.header img{
+  margin-top: 3rem;
+}
+
+.header h1{
+  color: white;
+  margin-top: 12rem;
+}
+
+.header .kader{
+	background-color:#3F82C1; 
+	width: auto; 
+	height: 150px;
+	padding: 15px; 
+	border:#FFF200 
+	5px solid;
+	position: relative;
+}
+.header	.super{
+		color:#FFF200;
+		font-size: 2.5rem;
+		font-family:'Frutiger Roman';
+		text-transform:uppercase;
+		font-weight: 700;
+		line-height: 1;
+}
+
+
+
+.header	.titel{
+		color:#fff;
+		font-size: 3.5rem;
+		font-family:'Frutiger Roman';
+		text-transform:uppercase;
+		font-weight: 700;
+		line-height: 1.05;
+	}
+
+  .backButton img{
+    width: 51px;
+    height: 51px;
+  }
+
+
+  .backButton{
+    position: fixed;
+    top: 3px;
+    left: 10px;
+    z-index: 10000;
+  }
+
+  .backButton span{
+    position: fixed;
+    top: 22px;
+    left: 30px;
+    color: yellow;
+  }
+
+  .backButton:hover .glyphicon-chevron-left{
+    color: #3F82C1;
+  }
+
+.header .image{
+	  float: left;
+    width: 100px;
+    height: 100px;
+    margin-top: 0rem;
+    margin-left: 0rem;
+}
+
+.header .padding{
+	position: absolute;
+    top: 50%;
+  transform: translateY(-50%);
+	padding-left: 85px;
+	padding-right: 10px;
+  margin-left: 1rem;
+
+}
+
+.header2{
+  margin-left: auto;
+    margin-right: auto;
+}
+
+.blockheader{
+   max-width: 500px; 
+   /*text-align: center;*/
+   margin-left: auto;
+   margin-right: auto;
+   padding-top: 6rem;
+    padding-bottom: 7rem;
+}
+
+.header1{
+  display: none;
+}
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+/* Carousel base class */
+.carousel {
+  height: 400px;
+  margin-bottom: 30px;
+
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  z-index: 10;
+}
+
+.carouselImg img{
+  float: left;
+  width: 100%;
+}
+
+.carousel-caption h2, .carousel-caption h1, .carousel-caption p, .carousel-caption a{
+  clear: both;
+  float:left;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.carousel-caption  h2, .carousel-caption h1{
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.carousel-caption h1{
+  margin-top: 0rem;
+  padding-top: 0rem;
+}
+
+ #myCarousel p{
+        text-transform: uppercase;
+  }
+
+
+
+.carousel-caption .col-md-4{
+  display: none;
+}
+
+.carousel-caption .col-md-8{
+  margin-left:-2rem;
+}
+
+.cWrapper .carousel-control.right, .cWrapper .carousel-control.left {
+  background-image:none;
+  color: #636464;
+  text-shadow: inherit;
+  background-color: rgba(0,0,0,0);
+  filter: inherit;
+  opacity: 1;
+}
+
+.cWrapper .carousel-control.right:hover, .cWrapper .carousel-control.left:hover {
+  color: #337ab7;
+}
+
+
+
+
+
+/* Declare heights because of positioning of img element */
+.carousel .item {
+  height: 400px;
+  /*background-color: #777;*/
+}
+.carousel-inner > .item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 400px;
+  max-width: none;
+}
+
+.carousel-parnters{
+  margin-top: 2rem;
+}
+
+.carousel-indicators .active {
+    background-color: #fff200;
+    border-color: #fff200;
+}
+
+.carousel-indicators li{
+  background-color: #efefef;
+  border-color: #efefef;
+}
+
+img {
+  max-width: 100%;
+  width: auto   9;
+  height: auto;
+  vertical-align: middle;
+  border: 0;
+  -ms-interpolation-mode: bicubic;
+}
+
+.colloryellow{
+  color:  #fff200;
+}
+
+/* Blocks CONTENT
+-------------------------------------------------- */
+
+/* Center align the text within the three columns below the carousel */
+.marketing .col-lg-4 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+.marketing h2 {
+  text-transform: uppercase;
+  font-size: 3rem;
+}
+
+.animated h2{
+  text-align: center;
+  color: white;
+}
+
+
+
+.marketing p{
+  text-align: justify;
+  font-size: 2rem;
+}
+.marketing .col-lg-4 p {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.col-md-6{
+  background-color: #d3d3d3;
+  height: 25rem;
+}
+
+.col-md-5{
+  background-color: #C0C0C0;
+  height: 25rem;
+  float: right;
+}
+
+.row{
+  overflow: hidden;
+}
+
+.block{
+  padding: 2rem;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.25);
+  height: 250px;
+  background-color: #f1f2f2;
+  overflow: hidden;
+  margin-bottom: 30px; 
+  position: relative;
+  
+
+}
+
+.big{
+  height: 530px;
+}
+
+.medium{
+  height: 330px;
+}
+
+.small{
+  height: 70px;
+}
+
+.marketing .blueHard:hover h2{
+  color: #fff200;
+}
+
+.block p{
+  padding-right: 4rem;
+}
+
+.animated{
+  padding: 0rem;
+}
+
+.animated p, .animated ul{
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    color: #f1f2f2;
+    padding: 2rem;
+    position: relative;
+    background-color: rgba(63,130,193,0.75);
+}
+
+.animated:hover p, .animated ul, .animated a{
+  margin-top: 0rem;
+  z-index: 15;
+}
+
+.animated li{
+  font-size: 13pt;
+}
+
+.animated:hover .glyphicon-grey{
+  color: #3f82c1;
+}
+
+.animated:hover .glyphicon-white, .animated:hover h2{
+  color: #fff200;
+}
+
+.animated h2{
+    background-color: rgba(63,130,193,0.75);
+    margin: 0rem;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    padding-top:2.5rem;
+    padding-bottom:0.5rem;  
+    position: relative;
+}
+
+.animated p{
+    padding-top: 1rem;
+
+}
+
+.yellow h2, .yellow p, .yellow ul{
+  background-color: rgba(255,242,00,0.75);
+  color: #636464;
+  
+}
+
+.yellow p, .yellow ul{
+  height: 100%;
+}
+
+.animated ul{
+  padding-left:5rem;
+}
+
+
+.animated:hover h2{
+  margin-top:-20rem;
+}
+.lead {
+    margin-bottom: 0px;
+}
+#buttonannimated{
+  font-size:13px;
+  margin-top: 1rem;
+  margin-left: 3rem;
+  clear: both;
+}
+.collorblue{
+  background-color: rgba(63,130,193,0.75);
+  height: 100%;
+  text-align: center;
+}
+.animated img{
+  z-index: -1;
+  margin-top:5rem;
+  width: 300px;
+  height: 150px;
+}
+
+.marketing ol{
+  font-size: 2rem;
+  list-style: none;
+}
+
+.marketing ol li{
+  padding-bottom:1.5rem;
+}
+
+.marketing ol li:first-child{
+      margin-bottom: 1rem;
+}
+
+.block:hover  h1{
+  color: #337ab7;
+}
+
+
+.block:hover .glyphicon-white{
+  color: #fff200;
+}
+
+.block:hover .glyphicon-grey{
+  color: #337ab7;
+}
+
+.blueHard h1{
+  color: #fff;
+}
+.blueHard:hover h1 {
+  color: #fff;
+}
+
+
+
+.yellow:hover h2{
+  color: #337ab7;
+}
+
+.marketing ol li:before{
+  background-color: white;
+  color: #3f82c1;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  margin-right: 1rem;
+  counter-increment: section;
+  content: counter(section);
+  position: absolute;
+  left:2rem;
+}
+
+.center{
+  text-align: center;
+}
+
+.backgroundimage1{
+  background-image: url("../img/Zonnestad_Installatie.png");
+  background-size:     cover;                     
+  background-repeat:   no-repeat;
+  background-position: center center;  
+}
+
+.backgroundimage2{
+  background-image: url("../img/Zonnestad_Realisaties.png");
+  background-size:     cover;                      
+  background-repeat:   no-repeat;
+  background-position: center center;  
+}
+
+
+/* colors 
+-----------------------------*/
+.cWrapper .blueHard{
+  background-color: #3f82c1;
+  color: white;
+  background-image: url("../img/pattern.png");
+  background-repeat: repeat;
+}
+
+.animated h1, .animated h2, .animated p, .animated .collorblue,  .animated li,  .animated ul{
+  background-image: url("../img/pattern.png");
+  background-repeat: repeat;
+}
+
+.yellow{
+  background-color: FFF200;
+}
+.lightBlue{
+  background-color: rgba(63,130,193,0.75);
+  color: white; 
+}
+
+.whiteGrey{
+  background-color: #f1f2f2;
+}
+.whiteGrey a{
+  color: #3f82c1; 
+}
+.whiteGrey a:hover{
+  color: #c1cde3;
+}
+.whiteGrey li{
+ margin:0 0 10px 0;   
+}
+.whiteGrey p{
+  margin:0 0 10px 0; 
+}
+
+/* buttons & readmores
+-----------------------------*/
+
+.buttonBlue{
+  background-color: transparent;
+  border: #3f82c1 2px solid;
+  color: #3f82c1;
+  text-align: center;
+  font: 18pt, sans, semibold; 
+  text-transform: uppercase;
+  background-color:#f1f2f2; 
+}
+
+.buttonBlue:hover{
+  background-color :#3f82c1;
+  color : #f1f2f2;
+}
+
+.buttonWhite{
+  background-color: transparent;
+  border: #f1f2f2 2px solid;
+  color: #f1f2f2;
+  text-align: center;
+  font: 18pt, sans, semibold; 
+  text-transform: uppercase;
+}
+
+.buttonWhite:hover{
+  background-color :#fff200;
+  color : #3f82c1;
+  border-color: #3f82c1;
+}
+
+.textWrapper{
+  text-align: center;
+  width: 100%;
+}
+
+.glyphicon-grey{
+  font-size: 20pt;
+  color: #636464;
+  text-align: center;
+}
+
+.glyphicon-grey:hover{
+  color: #3f82c1;
+}
+
+.glyphicon-white{
+  font-size: 20pt;
+  color: #f1f2f2;
+  text-align: center;
+}
+
+.glyphicon-white:hover{
+  color: #fff200;
+}
+
+.glyphicon-chevron-right, .glyphicon-chevron-up{
+  position: absolute;
+  right: 15px;
+  top: 213px;
+  z-index: 1000;
+}
+/* Featurettes
+------------------------- */
+
+.featurette-divider {
+  margin: 80px 0; /* Space out the Bootstrap <hr> more */
+}
+
+/* Thin out the marketing headings */
+.featurette-heading {
+  line-height: 1;
+}
+
+.icon{
+  width: 30px;
+  height: 30px;
+  float: left;
+  margin-right: 1rem;
+  margin-top: 1rem;
+}
+
+
+.col-md-4 button{
+  float: right;
+}
+
+.car2 .item{
+  height: inherit;
+  background-color: #f1f2f2;
+}
+
+.car2{
+  height: inherit;
+  background-color: #f1f2f2;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.25);    
+
+}
+.carousel-control .glyphicon-chevron-right {
+  right: 20%;
+}
+.carousel-control .glyphicon-chevron-left {
+  left: 20%;
+}
+/*footer
+------------------------*/
+
+footer{
+  color: white;
+  background-color: #66676d;
+  text-transform: uppercase;
+  padding-bottom:1rem; 
+  text-align: center;
+  background-image: url("../img/pattern_brick.png");
+  background-repeat: repeat;
+  
+
+}
+
+footer ul{
+  padding-left:0px;
+}
+
+footer p{
+  margin-bottom: 0rem;
+  text-align: center;
+}
+
+
+footer a:hover{
+  color: #fff200;
+}
+
+
+
+footer ul{
+  margin-top: 2rem;
+  list-style-type: none;
+}
+
+footer h2{
+  text-align: center;
+}
+
+#PReset{
+  padding: 0px;
+}
+
+
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+footer{
+  padding-top:1rem; 
+  text-align: center;
+}
+.marketing ol, .marketing li {
+    font-size: 4vw;
+}
+
+
+
+.marketing p {
+    font-size: 1.1rem;
+    text-align: left;
+}
+
+.marketing h2{
+    font-size: 2rem;
+    margin-top: 2.5rem;
+}
+
+.animated:hover h2 {
+    margin-top: -18rem;
+}
+
+.marketing h2{
+  margin-top: 0rem;
+  padding-top: 1.5rem;
+  padding-bottom: 1rem;
+}
+
+.animated:hover h2 {
+    margin-top: -20rem;
+}
+
+.marketing ol, .marketing li {
+  font-size: 4vw;
+}
+
+
+.marketing p {
+    font-size: 3.3vw;
+    text-align: left;
+}
+
+@media (min-width: 200px) {
+    .carouselheader {
+    height:250px;
+    }
+    .carouselheader-inner {
+      height:250px; 
+    }
+    .carouselheader-inner > .item > img {
+      height:250px;
+      margin-left: -600px; 
+    }
+    .carouselheader-indicators li {
+    width: 7px;
+    height: 7px;
+  }
+  .carouselheader-indicators .active {
+    width: 8px;
+    height: 8px;
+  }
+    .carouselheader-indicators {
+    bottom: -6px;
+    }
+    .carouselheader-caption .col-md-4{
+    margin-left: 0rem;
+    padding-left: 0rem;
+    margin-right: 2rem;
+    float: right;
+    width: 25%;
+    display: inline;
+    
+  }
+   .carouselheader-caption .col-md-4 img{
+    margin-left: 4rem;
+    position: fixed;
+    max-width: 12rem;
+    right: 2%;
+    top: 7rem;
+ }
+ .carouselheader-caption .col-md-8 {
+    margin-left: -4rem;
+}
+
+ .carouselheader-caption p {
+  text-align:left;
+  padding-right: 20%;
+   font-size: 11px;
+ 
+ }
+ .carouselheader-caption h1{
+ padding-right: 20%; 
+ font-size: 17px;
+}
+ .carouselheader-caption {
+ padding-bottom: 180px; 
+
+}
+.carouselheader-caption .btn {
+  font-size: 12px;
+  text-shadow: 0 1px 2px rgba(0,0,0,.6);
+  padding: 4px 7px;
+  border-radius: 4px;
+}
+@media (min-width: 431px) {
+  .marketing h2{
+      font-size: 2.3rem;
+
+  }
+  .marketing p {
+    font-size: 1.5rem;
+  }
+  .header .padding{
+	    padding-left: 110px;
+  }
+ } 
+@media (min-width: 452px) {
+  footer .col-md-4{
+    width: 50%;
+    margin-left: 0%;
+    float: left;
+    height: 20rem;
+  }
+
+  footer h2{
+    font-size: 2rem;
+    text-align: left;
+
+  }
+
+  footer{
+    text-align: left;
+  }
+
+  .header	.super{
+		font-size: 3.5rem;
+  }
+
+  .header	.titel{
+		font-size: 4.5rem;
+  }
+   .carouselheader-caption .col-md-4 img{
+    right: 7%; 
+}
+
+@media (min-width: 541px) {
+  .marketing ol, .marketing li {
+    font-size: 2.7vw;
+  }
+
+  footer h2{
+    font-size: 2.5rem;
+    margin-left: 3rem;
+  } 
+  .carouselheader-caption .col-md-4 img{
+    right: 5%; 
+}
+
+@media (min-width: 600px) {
+  footer .col-md-4{
+    width: 30%;
+  }
+
+  h1{
+    size: 40pt;
+  }
+
+  .carouselheader-caption .col-md-8{
+    float: left;
+    
+  }
+  .carouselheader-caption p {
+  text-align:left;
+  padding-right: 20%;
+   font-size: 13px;
+ 
+ }
+ .carouselheader-caption h1{
+ padding-right: 20%; 
+ font-size: 20px;
+}
+    .carouselheader-caption .col-md-4{
+    margin-left: 0rem;
+    padding-left: 0rem;
+    margin-right: 2rem;
+    float: right;
+    width: 25%;
+    display: inline;
+    
+  }
+   .carouselheader-caption .col-md-4 img{
+    margin-left: 4rem;
+    position: fixed;
+    max-width: 13rem;
+    right: 7%;
+    top: 5rem;
+ } 
+}
+
+@media (min-width: 700px) {
+  footer .container{
+    max-width: 1048px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+    .col-sm-10 {
+    width: 83.33333333%;
+  }
+
+  .col-md-offset-1 {
+    margin-left: 8.33333333%;
+}
+ 
+}
+
+@media (min-width: 768px) {
+  /* Navbar positioning foo */
+ 
+    .carouselheader-caption .col-md-4{
+    margin-left: 0rem;
+    padding-left: 0rem;
+    margin-right: 2rem;
+    float: right;
+    width: 25%;
+    display: inline;
+    
+  }
+   .carouselheader-caption .col-md-4 img{
+    margin-left: 4rem;
+    position: fixed;
+    max-width: 13rem;
+    right: 10%;
+    top: 5rem;
+ }
+ .carouselheader-caption .col-md-8 {
+    margin-left: -4rem;
+}
+
+ .carouselheader-caption p {
+  text-align:left;
+  padding-right: 20%;
+   font-size: 13px;
+ 
+ }
+ .carouselheader-caption h1{
+ padding-right: 15%; 
+ font-size: 24px;
+}
+ .carouselheader-caption {
+ padding-bottom: 180px; 
+
+}
+.carouselheader-caption .btn {
+  font-size: 13px;
+  text-shadow: 0 1px 2px rgba(0,0,0,.6);
+  padding: 4px 7px;
+  border-radius: 4px;
+}
+
+
+  .navbar-wrapper {
+    margin-top: 0px;
+  }
+  .navbar-wrapper .container {
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+  .navbar-wrapper .navbar {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  /* The navbar becomes detached from the top, so we round the corners */
+  .navbar-wrapper .navbar {
+    border-radius: 4px;
+  }
+
+  /* Bump up size of carousel content */
+  .carousel-caption p {
+
+    line-height: 1.4;
+  }
+
+}
+
+@media (min-width: 860px){
+ 
+    .carouselheader-caption .col-md-4{
+    margin-left: 0rem;
+    padding-left: 0rem;
+    margin-right: 2rem;
+    float: right;
+    width: 25%;
+    display: inline;
+    
+  }
+   .carouselheader-caption .col-md-4 img{
+    margin-left: 4rem;
+    position: fixed;
+    max-width: 21rem;
+    right: 7%;
+    top: 8rem;
+ }
+ .carouselheader-caption .col-md-8 {
+    margin-left: -14rem;
+}
+
+ .carouselheader-caption p {
+  text-align:left;
+  padding-right: 20%;
+   font-size: 11px;
+ 
+ }
+ .carouselheader-caption h1{
+ padding-right: 20%; 
+ font-size: 17px;
+}
+ .carouselheader-caption {
+ padding-bottom: 40px; 
+
+}
+.carouselheader-caption .btn {
+  font-size: 18px;
+  text-shadow: 0 1px 2px rgba(0,0,0,.6);
+  padding: 7px 14px;
+  border-radius: 5px;
+}
+
+
+
+
+
+  .carouselheader {
+    height:400px;
+    }
+    .carouselheader-inner {
+      height:400px; 
+    }
+    .carouselheader-inner > .item > img {
+      height:400px;
+      margin-left: -960px; 
+    }
+    .header-indicators li {
+    width: 10px;
+    height: 10px;
+  }
+  .carouselheader-indicators .active {
+    width: 12px;
+    height: 12px;
+  }
+    .carouselheader-indicators {
+    bottom: 10px;
+    }
+  .header1{
+    display: none;
+  }
+
+  .header2{
+    display: inherit;
+  }
+
+  .cWrapper .col-md-4{
+    float: left;
+    width: 33%;
+  }
+    .cWrapper .col-md-8{
+    float: left;
+    width: 66%;
+  }
+
+  .header .col-md-4{
+    width:17%;
+  }
+
+  .marketing ol, .marketing p, .marketing li  {
+    font-size: 1.3vw;
+  }
+
+  .marketing h2 {
+      font-size: 2rem;
+      margin-top: 0.2rem;
+  }
+
+  .marketing h1{
+    font-size: 40px;
+    margin-top:10px;
+    line-height: 1.2;
+
+  }
+
+  .container {
+      width: 95%;
+      margin-left: 2.5%;
+      margin-right: 2.5%;
+  }
+
+    .animated img {
+    margin-top: 3.5rem;
+    object-fit: cover;
+  }
+
+  .animated:hover h2 {
+    margin-top: -18.5rem;
+  }
+
+  .col-md-offset-1 {
+    margin-left: 8.33333333%;
+  }
+
+  .col-sm-3{
+    float: left;
+    width: 25%;
+  }
+
+  
+
+  #bigteksthome{
+    font-size:1.5rem;
+  }
+
+  .marketing h2{
+    margin-top: 1.5rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1rem;
+  }
+
+  #myCarousel p{
+    font-size: 20px;
+    line-height: 1.2;
+  }
+
+  #myCarousel h1{
+    font-size: 37px;
+  }
+  .car2{
+    margin-right: 10px;
+  }
+}
+
+@media (min-width: 920px){
+  footer li{
+    font-size:13px;
+    line-height: 1.5em;
+    margin-left: 3rem;
+  }
+
+  h1 {
+    size: 40pt;
+  }
+
+  .cWrapper .col-md-8{
+    float: left;
+    width: 66%;
+  }
+  .marketing ol, .marketing p, .marketing li  {
+    font-size: 1.3rem;
+  }
+   .carouselheader-caption .col-md-4 img{
+    margin-left: 4rem;
+    position: fixed;
+    max-width: 21rem;
+    right: 9%;
+    top: 8rem;
+ } 
+}
+
+@media (min-width: 992px){
+.carouselheader-caption .col-md-8{
+  width: inherit;
+}
+.carouselheader-caption .col-md-8 {
+    margin-left: -12rem;
+}
+.carouselheader-caption .col-md-4 img {
+    right: 14%;
+}
+@media (min-width: 1160px){
+
+}
+@media (min-width: 1260px){
+.carouselheader-caption .col-md-8 {
+    margin-left: -8rem;
+}
+.carouselheader-caption .col-md-4 img {
+    right: 17%;
+}
+}
+@media (min-width: 1360px){
+.carouselheader-caption .col-md-8 {
+    margin-left: -7rem;
+}
+.carouselheader-caption .col-md-4 img {
+    right: 18%;
+}
+}
+@media (min-width: 1460px){
+.carouselheader-caption .col-md-8 {
+    margin-left: -4rem;
+    width:100%;
+}
+.carouselheader-caption .col-md-4 img {
+    right: 21%;
+}
+}
+
+@media (min-width: 1520px){
+.carouselheader-caption .col-md-8 {
+    margin-left: -2rem;
+    width: 90%
+
+}
+.carouselheader-caption .col-md-4 img {
+    right: 20%;
+}
+.carouselheader-caption {
+    padding-bottom: 60px;
+}
+}
+
+@media (min-width: 1620px){
+.carouselheader-caption .col-md-8 {
+    margin-left: 1rem;
+    width: 85%
+
+}
+.carouselheader-caption .col-md-4 img {
+    right: 25%;
+}
+}
+
+@media (min-width: 1720px){
+.carouselheader-caption .col-md-8 {
+    margin-left: 4rem;
+    width: 85%
+
+}
+.carouselheader-caption .col-md-4 img {
+    right: 25%;
+}
+}
+
+@media (min-width: 1820px){
+
+}
+
+
+
+/*op te kuisten*/
+/*linkkleur partnercarousel homepage*/
+.partnercarousel a:hover{
+  color: #337ab7;
+}
+/*linkkleur wat is zonnestad homepage*/
+.zonnestad:hover h1 {
+  color: #fff200!important;
+}

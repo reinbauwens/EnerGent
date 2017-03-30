@@ -235,7 +235,7 @@ p{
 
 .header{
   height: 250px;
-  background-image: url("../img/banner1.jpg");
+  background-image: url("../img/banner/pano_gent.png");
   margin-bottom: 30px;
   background-size:     cover;                      /* <------ */
     background-repeat:   no-repeat;
@@ -252,33 +252,33 @@ p{
 }
 
 .header .kader{
-	background-color:#3F82C1; 
-	width: auto; 
-	height: 150px;
-	padding: 15px; 
-	border:#FFF200 
-	5px solid;
-	position: relative;
+  background-color:#3F82C1; 
+  width: auto; 
+  height: 150px;
+  padding: 15px; 
+  border:#FFF200 
+  5px solid;
+  position: relative;
 }
-.header	.super{
-		color:#FFF200;
-		font-size: 2.5rem;
-		font-family:'Frutiger Roman';
-		text-transform:uppercase;
-		font-weight: 700;
-		line-height: 1;
+.header .super{
+    color:#FFF200;
+    font-size: 2.5rem;
+    font-family:'Frutiger Roman';
+    text-transform:uppercase;
+    font-weight: 700;
+    line-height: 1;
 }
 
 
 
-.header	.titel{
-		color:#fff;
-		font-size: 3.5rem;
-		font-family:'Frutiger Roman';
-		text-transform:uppercase;
-		font-weight: 700;
-		line-height: 1.05;
-	}
+.header .titel{
+    color:#fff;
+    font-size: 3.5rem;
+    font-family:'Frutiger Roman';
+    text-transform:uppercase;
+    font-weight: 700;
+    line-height: 1.05;
+  }
 
   .backButton img{
     width: 50px;
@@ -305,7 +305,7 @@ p{
   }
 
 .header .image{
-	  float: left;
+    float: left;
     width: 100px;
     height: 100px;
     margin-top: 0rem;
@@ -313,11 +313,11 @@ p{
 }
 
 .header .padding{
-	position: absolute;
+  position: absolute;
     top: 50%;
   transform: translateY(-50%);
-	padding-left: 85px;
-	padding-right: 10px;
+  padding-left: 85px;
+  padding-right: 10px;
   margin-left: 1rem;
 
 }
@@ -401,7 +401,9 @@ p{
 .cWrapper .carousel-control.right:hover, .cWrapper .carousel-control.left:hover {
   color: #337ab7;
 }
-
+.carousel-caption .btn {
+  text-shadow: 0 1px 2px rgba(0,0,0,.6);
+}
 
 
 
@@ -926,7 +928,7 @@ footer{
     font-size: 1.5rem;
   }
   .header .padding{
-	    padding-left: 110px;
+      padding-left: 110px;
   }
 }
 
@@ -948,12 +950,12 @@ footer{
     text-align: left;
   }
 
-  .header	.super{
-		font-size: 3.5rem;
+  .header .super{
+    font-size: 3.5rem;
   }
 
-  .header	.titel{
-		font-size: 4.5rem;
+  .header .titel{
+    font-size: 4.5rem;
   }
 }
 
@@ -1034,9 +1036,9 @@ footer{
   .carousel-caption .col-md-4 img{
     margin-left: 4rem;
     position: fixed;
-    max-width: 18rem;
+    max-width: 16rem;
     left: 2rem;
-    top: 12rem;
+    top: 15rem;
  }
 
   .navbar-wrapper {
@@ -1150,7 +1152,10 @@ footer{
   }
 
   #myCarousel h1{
-    font-size: 37px;
+    font-size: 30px;
+  }
+   #myCarousel p{
+    font-size: 17px;
   }
   .car2{
     margin-right: 10px;
@@ -1175,14 +1180,19 @@ footer{
   .marketing ol, .marketing p, .marketing li  {
     font-size: 1.3rem;
   }
-  
+    #myCarousel h1{
+    font-size: 37px;
+  }
+    #myCarousel p{
+    font-size: 20px;
+  }
 }
 
 @media (min-width: 960px){
 .carousel-caption .col-md-4 img{
     max-width: 20rem;
     left: 3rem;
-    top: 3rem;
+    top: 9rem;
  }
 }
 
