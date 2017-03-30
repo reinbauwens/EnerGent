@@ -414,10 +414,11 @@ p{
 .carousel-inner > .item > img {
   position: absolute;
   top: 0;
-  left: 0;
+  left: 50%;
   min-width: 100%;
   height: 400px;
   max-width: none;
+  margin-left: -960px;
 }
 
 .carousel-parnters{
@@ -921,6 +922,7 @@ footer{
 @media (min-width: 431px) {
   .marketing h2{
       font-size: 2.3rem;
+
   }
   .marketing p {
     font-size: 1.5rem;
@@ -928,8 +930,42 @@ footer{
   .header .padding{
 	    padding-left: 110px;
   }
+    .carousel-caption .col-md-4{
+    margin-left: 0rem;
+    padding-left: 0rem;
+    margin-right: 2rem;
+    float: right;
+    width: 25%;
+    display: inline;
+    
+  }
+   .carousel-caption .col-md-4 img{
+    margin-left: 4rem;
+    position: fixed;
+    max-width: 18rem;
+    right: 3%;
+    top: 12rem;
+ }
+ .carousel-caption .col-md-8 {
+    margin-left: -6rem;
 }
 
+ .carousel-caption p {
+  text-align:left;
+  padding-right: 25%;
+ }
+ .carousel-caption h1{
+ padding-right: 29%; 
+
+}
+ .carousel-caption {
+ padding-bottom: 60px; 
+
+}
+.carousel-caption .btn {
+  font-size: 15px;
+  text-shadow: 0 1px 2px rgba(0,0,0,.6);
+}
 @media (min-width: 452px) {
   footer .col-md-4{
     width: 50%;
@@ -955,6 +991,22 @@ footer{
   .header	.titel{
 		font-size: 4.5rem;
   }
+      .carousel-caption .col-md-4{
+    margin-left: 0rem;
+    padding-left: 0rem;
+    margin-right: 2rem;
+    float: right;
+    width: 25%;
+    display: inline;
+    
+  }
+   .carousel-caption .col-md-4 img{
+    margin-left: 4rem;
+    position: fixed;
+    max-width: 19rem;
+    right: 3%;
+    top: 11rem;
+ }  
 }
 
 @media (min-width: 541px) {
@@ -965,7 +1017,23 @@ footer{
   footer h2{
     font-size: 2.5rem;
     margin-left: 3rem;
-  }    
+  } 
+    .carousel-caption .col-md-4{
+    margin-left: 0rem;
+    padding-left: 0rem;
+    margin-right: 2rem;
+    float: right;
+    width: 25%;
+    display: inline;
+    
+  }
+   .carousel-caption .col-md-4 img{
+    margin-left: 4rem;
+    position: fixed;
+    max-width: 20rem;
+    right: 3%;
+    top: 9rem;
+ }   
 }
 
 @media (min-width: 600px) {
@@ -981,6 +1049,7 @@ footer{
     float: left;
     width: 66%;
   }
+ 
 }
 
 @media (min-width: 700px) {
@@ -997,6 +1066,22 @@ footer{
   .col-md-offset-1 {
     margin-left: 8.33333333%;
 }
+ .carousel-caption .col-md-4{
+    margin-left: 0rem;
+    padding-left: 0rem;
+    margin-right: 2rem;
+    float: left;
+    width: 25%;
+    display: inline;
+    
+  }
+   .carousel-caption .col-md-4 img{
+    margin-left: 4rem;
+    position: fixed;
+    max-width: 18rem;
+    left: 0rem;
+    top: 12rem;
+ } 
 }
 
 @media (min-width: 768px) {
@@ -1035,7 +1120,7 @@ footer{
     margin-left: 4rem;
     position: fixed;
     max-width: 18rem;
-    left: 2rem;
+    left: 0rem;
     top: 12rem;
  }
 
@@ -1182,7 +1267,7 @@ footer{
 .carousel-caption .col-md-4 img{
     max-width: 20rem;
     left: 3rem;
-    top: 3rem;
+    top: 9rem;
  }
 }
 
