@@ -1,3 +1,15 @@
+h1 {
+    font-size: 19pt;
+}
+
+.header .super{
+    font-size:1.8rem;
+}
+
+.header .titel {
+    font-size: 2.4rem;
+}
+
 .cWrapper .buttonWhite {
     background-color: transparent;
     border: #3f82c1 2px solid;
@@ -47,6 +59,21 @@
     background-image: url(../img/pattern.png);
     background-repeat: repeat;
 }
+
+@media (min-width: 368px){
+    h1 {
+    font-size: 25pt;
+    }
+
+    .header .super{
+        font-size:2.5rem;
+    }
+
+    .header .titel {
+        font-size: 3rem;
+    }
+}
+
 @media (min-width: 860px){
     .marketing ol, .marketing p, .marketing li {
         font-size: 15px;

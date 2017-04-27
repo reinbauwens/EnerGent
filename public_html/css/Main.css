@@ -21,7 +21,7 @@ p{
 }
 
 h1{
-    font-size:20pt;
+    font-size:25pt;
   }
 
 carousel-caption {
@@ -51,10 +51,6 @@ carousel-caption {
     border-radius: 0px;
 }
 
-.thumbnail:hover{
-  opacity: 0.5;
-    filter: alpha(opacity=50);
-}
 .italic{
   font-style: italic;
 }
@@ -527,6 +523,18 @@ img {
 
 .animated{
   padding: 0rem;
+}
+
+.bluebox{
+  display: none;
+}
+
+.animated2:hover .bluebox{
+  display: inherit;
+    background-color: rgba(63,130,193,0.75);
+    position: absolute;
+    background-image: url(../img/pattern.png);
+    background-repeat: repeat;
 }
 
 .animated p, .animated ul{
