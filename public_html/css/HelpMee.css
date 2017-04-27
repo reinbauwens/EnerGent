@@ -6,6 +6,7 @@
     margin-top: 1rem;
 }
 
+
 .cWrapper .buttonWhite:hover{
   background-color :#fff200;
   color : #3f82c1;
@@ -82,7 +83,9 @@
   display: flex;
   flex-wrap: wrap;
 }
-    
+
+
+
 .equal > div[class*='col-'] {  
   display: flex;
 }
@@ -93,4 +96,23 @@
 }
 .intro a:hover{
     color:#c1cde3;
+}
+
+#smallScreen{
+    display: inherit;
+}
+
+#bigScreen{
+    display: none;
+}
+
+
+@media (min-width: 860px){
+    #smallScreen{
+    display: none;
+    }
+
+    #bigScreen{
+        display: inherit;
+    }
 }
