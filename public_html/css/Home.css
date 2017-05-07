@@ -24,6 +24,13 @@
   padding-bottom: 0rem;
 }
 
+.bluebox h2{
+  color: #f1f2f2;
+  text-align: center;
+  font: 18pt, sans, semibold; 
+  padding-top: 9rem;
+}
+
 @media (min-width: 768px) {
    #slideCarousel2{
     display: none;
@@ -31,5 +38,18 @@
 
      #slideCarousel{
     display: inherit;
+  }
+}
+
+@media (min-width: 860px) {
+   .bluebox h2{
+    padding-top: 5rem;
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 1020px) {
+   .bluebox h2{
+    font-size: 2rem;
   }
 }

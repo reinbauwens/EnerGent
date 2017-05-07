@@ -243,27 +243,27 @@
 
   .cWrapper .col-md-8 .block {
     height: 530px;
-}
+  }
 
-.cWrapper .col-md-4 {
-    margin-left: 0rem;
-    padding-left: 0rem;
-}
-  
-.cWrapper .smallblock{
-  width: 50%;
-  height: 205px;
-  float:left;
-}
+  .cWrapper .col-md-4 {
+      margin-left: 0rem;
+      padding-left: 0rem;
+  }
+    
+  .cWrapper .smallblock{
+    width: 50%;
+    height: 205px;
+    float:left;
+  }
 
 
-   .cWrapper .carousel-caption {
-    margin-bottom: -44rem;
-}
+    .cWrapper .carousel-caption {
+      margin-bottom: -44rem;
+  }
 
- .cWrapper .carousel-caption:hover{
-    margin-bottom: -4.5rem;
-}
+  .cWrapper .carousel-caption:hover{
+      margin-bottom: -4.5rem;
+  }
 
 }
 
