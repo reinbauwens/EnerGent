@@ -1,3 +1,15 @@
+h1 {
+    font-size: 19pt;
+}
+
+.header .super{
+    font-size:1.8rem;
+}
+
+.header .titel {
+    font-size: 2.4rem;
+}
+
 .cWrapper .buttonWhite {
     background-color: transparent;
     border: #3f82c1 2px solid;
@@ -5,6 +17,7 @@
     float: right;
     margin-top: 1rem;
 }
+
 
 .cWrapper .buttonWhite:hover{
   background-color :#fff200;
@@ -46,6 +59,42 @@
     background-image: url(../img/pattern.png);
     background-repeat: repeat;
 }
+
+li:before
+{
+    /*Using a Bootstrap glyphicon as the bullet point*/
+    content: "\e080";
+    font-family: 'Glyphicons Halflings';
+    font-size: 9px;
+    float: left;
+    margin-top: 4px;
+    margin-left: -17px;
+    color: black;
+}
+
+ul ul li:before{
+    content:"\25cf";
+}
+
+
+li {
+    display: block;
+}
+
+@media (min-width: 368px){
+    h1 {
+    font-size: 25pt;
+    }
+
+    .header .super{
+        font-size:2.5rem;
+    }
+
+    .header .titel {
+        font-size: 3rem;
+    }
+}
+
 @media (min-width: 860px){
     .marketing ol, .marketing p, .marketing li {
         font-size: 15px;
@@ -67,11 +116,6 @@
     }
 }
 
-@media (min-width: 957px){
-  .marketing ol, .marketing p, .marketing li  {
-    font-size: 20px;
-  }
-}
 @media (min-width: 1044px) {
     h1 {
         font-size: 25pt;
@@ -82,7 +126,9 @@
   display: flex;
   flex-wrap: wrap;
 }
-    
+
+
+
 .equal > div[class*='col-'] {  
   display: flex;
 }
@@ -93,4 +139,23 @@
 }
 .intro a:hover{
     color:#c1cde3;
+}
+
+#smallScreen{
+    display: inherit;
+}
+
+#bigScreen{
+    display: none;
+}
+
+
+@media (min-width: 860px){
+    #smallScreen{
+    display: none;
+    }
+
+    #bigScreen{
+        display: inherit;
+    }
 }

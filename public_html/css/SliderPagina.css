@@ -2,6 +2,9 @@
   color: #fff200;
 }
 
+.animated:hover h2 {
+    margin-top: inher;
+}
 
 .cWrapper .animated img{
   z-index: -1;
@@ -35,6 +38,10 @@
 }
 .smallblock h1{
   text-transform: none;
+}
+
+.animated:hover h2 {
+    margin-top: inherit;
 }
 
 /*.animated h2{
@@ -112,7 +119,7 @@
     text-align: left;
 }
 
-.cWrapper .animated:hover h2 {
+.cWrapper .carousel-inner:hover h2 {
     margin-top: 0rem;
     padding-top: 5rem;
 }
@@ -154,7 +161,7 @@
 
 
 
-.cWrapper .block:hover .carousel-caption {
+.cWrapper .carousel-inner:hover .carousel-caption {
     margin-bottom: -7rem;
     -webkit-animation: out 2s;
 }
@@ -200,7 +207,7 @@
   margin-bottom:30px; 
 }
 
- .cWrapper .block:hover .carousel-caption{
+ .cWrapper .carousel-inner:hover .carousel-caption{
     margin-bottom: -4rem;
     
 }
@@ -220,10 +227,12 @@
 
   .cWrapper .smallblock h1{
     height: 75%;
+    margin-bottom: -2rem;
     }
 
     .cWrapper .blockimg{
       height: 75%;
+      margin-bottom: -2rem;
     }
   .cWrapper .carousel-caption {
       margin-bottom: -32.5rem;
@@ -240,6 +249,8 @@
     .cWrapper .big {
     height: 530px;
   }
+
+  
 
   .cWrapper .col-md-8 .block {
     height: 530px;

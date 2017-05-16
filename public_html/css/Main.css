@@ -21,7 +21,7 @@ p{
 }
 
 h1{
-    font-size:20pt;
+    font-size:25pt;
   }
 
 carousel-caption {
@@ -51,10 +51,6 @@ carousel-caption {
     border-radius: 0px;
 }
 
-.thumbnail:hover{
-  opacity: 0.5;
-    filter: alpha(opacity=50);
-}
 .italic{
   font-style: italic;
 }
@@ -529,6 +525,18 @@ img {
   padding: 0rem;
 }
 
+.bluebox{
+  display: none;
+}
+
+.animated2:hover .bluebox{
+  display: inherit;
+    background-color: rgba(63,130,193,0.75);
+    position: absolute;
+    background-image: url(../img/pattern.png);
+    background-repeat: repeat;
+}
+
 .animated p, .animated ul{
     -webkit-transition: all 0.5s ease-in-out;
     -moz-transition: all 0.5s ease-in-out;
@@ -893,10 +901,6 @@ footer{
 .marketing h2{
     font-size: 2rem;
     margin-top: 2.5rem;
-}
-
-.animated:hover h2 {
-    margin-top: -18rem;
 }
 
 .marketing h2{

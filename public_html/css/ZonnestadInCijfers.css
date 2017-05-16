@@ -3,7 +3,7 @@
         margin-bottom: -45rem;
     }
     
-    .cWrapper .block:hover .carousel-caption {
+    .cWrapper .carousel-inner:hover .carousel-caption {
         margin-bottom: -18rem;
     }
     
@@ -14,7 +14,7 @@
     height: 40rem;  
 }
 
-.cWrapper .animated:hover h2 {
+.cWrapper .carousel-inner:hover h2 {
     margin-top: 0rem;
     padding-top: 20rem;
 }
