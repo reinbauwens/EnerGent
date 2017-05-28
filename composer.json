@@ -1,5 +1,6 @@
 {
 	"require": {
+		"google/apiclient": "^2.0",
 		"php": "^5.2|^7.0",
 			"silex/silex": "~1.1",
 		"twig/twig": "~1.0",
