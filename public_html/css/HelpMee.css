@@ -2,13 +2,6 @@ h1 {
     font-size: 19pt;
 }
 
-.header .super{
-    font-size:1.8rem;
-}
-
-.header .titel {
-    font-size: 2.4rem;
-}
 
 .cWrapper .buttonWhite {
     background-color: transparent;
@@ -60,7 +53,7 @@ h1 {
     background-repeat: repeat;
 }
 
-li:before
+.page-content li:before
 {
     /*Using a Bootstrap glyphicon as the bullet point*/
     content: "\e080";

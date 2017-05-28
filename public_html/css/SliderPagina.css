@@ -183,9 +183,11 @@
 
 @media (min-width: 395px){
   .cWrapper .carousel-caption {
-    margin-bottom: -41.5rem;
+    margin-bottom: -43.5rem;
   }
 }
+
+
 
 @media (min-width: 451px){
   .cWrapper .smallblock h1{
@@ -198,30 +200,33 @@
     height: 60%;
   }
 
-  .cWrapper .col-md-8 .block{
-  height: 500px;
-  }
-
-  .carousel {
-  height: 400px;
-  margin-bottom:30px; 
+  .cWrapper .carousel-caption {
+    margin-bottom: -44rem;
 }
+
+ .carousel {
+    height: 400px;
+    margin-bottom:30px; 
+  }
 
  .cWrapper .carousel-inner:hover .carousel-caption{
     margin-bottom: -4rem;
     
 }
 
-
-   .cWrapper .carousel-caption {
-    margin-bottom: -41rem;
-  }
-
   .cWrapper .carousel-caption:hover{
       margin-bottom: -5rem;
   }
 }
+@media (min-width: 768px){
+  .cWrapper .carousel-caption {
+    margin-bottom: -47rem;
+  }
 
+  .cWrapper .carousel-inner:hover .carousel-caption {
+    margin-bottom: -9rem;
+}
+}
 
 @media (min-width: 860px){
 

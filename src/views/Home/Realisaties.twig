@@ -28,18 +28,33 @@
           <div class="col-md-8">
             <div class="block big animated">
               <div id="myCarousel2" class="carousel slide" data-ride="carousel">
-                <ul class="nav nav-pills nav-justified">
+                <ul class="nav nav-pills nav-justified active">
                   <li data-target="#myCarousel2" data-slide-to="0"><a href="#"><img src="{{ app.request.baseUrl }}/{{ urlfix}}img/Realisaties/R1.JPG"></a></li>
                   <li data-target="#myCarousel2" data-slide-to="1"><a href="#"><img src="{{ app.request.baseUrl }}/{{ urlfix}}img/Realisaties/R2.JPG"></a></li>
                   <li data-target="#myCarousel2" data-slide-to="2"><a href="#"><img src="{{ app.request.baseUrl }}/{{ urlfix}}img/Realisaties/R3.JPG"></a></li>
                   <li data-target="#myCarousel2" data-slide-to="3"><a href="#"><img src="{{ app.request.baseUrl }}/{{ urlfix}}img/Realisaties/Z24.JPG"></a></li>
-                  <li data-target="#myCarousel2" data-slide-to="4"><a href="#"><img src="{{ app.request.baseUrl }}/{{ urlfix}}img/Realisaties/Z03.JPG"></a></li>
-                  <li data-target="#myCarousel2" data-slide-to="5"><a href="#"><img src="{{ app.request.baseUrl }}/{{ urlfix}}img/Realisaties/Z19.JPG"></a></li>
-                  <!--<li data-target="#myCarousel2" data-slide-to="3"><a href="#"><img src="{{ app.request.baseUrl }}/{{ urlfix}}img/R1.JPG"></a></li>-->
-                  
+                <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                  <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                  <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
                 </ul>
 
-
+                <ul class="nav nav-pills nav-justified">
+                  <li data-target="#myCarousel2" data-slide-to="4"><a href="#"><img src="{{ app.request.baseUrl }}/{{ urlfix}}img/Realisaties/Z03.JPG"></a></li>
+                  <li data-target="#myCarousel2" data-slide-to="5"><a href="#"><img src="{{ app.request.baseUrl }}/{{ urlfix}}img/Realisaties/Z19.JPG"></a></li>
+                <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                  <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                  <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+                </ul>
         
               <!-- Wrapper for slides -->
               <div class="carousel-inner">

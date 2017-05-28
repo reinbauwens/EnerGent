@@ -5,3 +5,49 @@
 	width: 100px!important;
 	height:100px!important;
 }
+
+
+@media (min-width: 451px){
+  .cWrapper .carousel-inner:hover .carousel-caption {
+    margin-bottom: -6rem;
+  }
+}
+
+.cWrapper .glyphicon-chevron-right, .glyphicon-chevron-up {
+    top: 50%;
+}
+
+.carousel-control .glyphicon-chevron-right, .carousel-control .icon-next {
+    right:15px;
+}
+
+.carousel-control .glyphicon-chevron-left {
+    left: 15px;
+}
+
+#myCarousel2 ul{
+	display: none;
+}
+
+#myCarousel2 .active{
+	display: inherit;
+}
+
+@media (min-width: 768px){
+    .cWrapper .glyphicon-chevron-right, .glyphicon-chevron-up {
+    top: 46%;
+    }
+
+    .carousel-control .glyphicon-chevron-right, .carousel-control .icon-next {
+        right:33px;
+    }
+
+    .cWrapper .glyphicon-chevron-left, .glyphicon-chevron-up {
+    top: 46%;
+    }
+
+    .carousel-control .glyphicon-chevron-left, .carousel-control .icon-next {
+        left:33px;
+    }
+
+}
